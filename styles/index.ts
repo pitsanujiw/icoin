@@ -1,5 +1,5 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import Colors, { gray1, primary, secondary } from 'styles/colors'
+import Colors, { gray1, gray3, primary, secondary } from 'styles/colors'
 
 const Theme = createMuiTheme({
   palette: {
@@ -15,10 +15,11 @@ const Theme = createMuiTheme({
   },
 
   typography: {
+    fontSize: 13,
     fontFamily: "'Inter', sans-serif;",
     body1: { color: gray1 },
     button: { color: gray1 },
-    subtitle2: { color: gray1 },
+    subtitle2: { color: gray3 },
   },
 })
 
