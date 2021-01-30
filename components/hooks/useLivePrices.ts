@@ -6,7 +6,7 @@ const useLivePrices = () => {
   const dispatch = useDispatch()
 
   const liveUpdate = () => {
-    const priceWs = new WebSocket('wss://ws.coincap.io/prices?assets=ALL')
+    const priceWs = new WebSocket(process.env.NEXT_PUBLIC_COINCAP_WEBSOCKET_ALL)
 
     priceWs.onmessage = (msg: MessageEvent) => {
       const dataObject = JSON.parse(msg.data)
@@ -16,7 +16,7 @@ const useLivePrices = () => {
 
   useEffect(() => {
     liveUpdate()
-  }, [liveUpdate])
+  }, [])
 }
 
 export default useLivePrices
