@@ -5,8 +5,89 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorDefault MuiPaper-outlined"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular TopBar-topbar-1 MuiToolbar-gutters"
+        >
+          <div
+            class="TopBar-info-2"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              Cryptocurrencies: 
+              <span
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+              >
+                6191
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              Markets: 
+              <span
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+              >
+                564
+              </span>
+            </span>
+          </div>
+          <div
+            class="TopBar-info-2"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              Market Cap: 
+              <span
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+              >
+                $1,016,628,962,622.60
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              24h Volume: 
+              <span
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+              >
+                $162,857,223,748.66
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              Dominance: 
+              <span
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+              >
+                BTC 
+                62.02
+                %
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+            >
+              ETH 
+              15.17
+              %
+            </span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorDefault MuiPaper-outlined"
+    >
       <div
-        class="TopBar-topbar-1"
+        class="MuiToolbar-root MuiToolbar-regular TopBar-topbar-1 MuiToolbar-gutters"
       >
         <div
           class="TopBar-info-2"
@@ -76,80 +157,7 @@ Object {
           </span>
         </div>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="TopBar-topbar-1"
-    >
-      <div
-        class="TopBar-info-2"
-      >
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2"
-        >
-          Cryptocurrencies: 
-          <span
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-          >
-            6191
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2"
-        >
-          Markets: 
-          <span
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-          >
-            564
-          </span>
-        </span>
-      </div>
-      <div
-        class="TopBar-info-2"
-      >
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2"
-        >
-          Market Cap: 
-          <span
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-          >
-            $1,016,628,962,622.60
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2"
-        >
-          24h Volume: 
-          <span
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-          >
-            $162,857,223,748.66
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2"
-        >
-          Dominance: 
-          <span
-            class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-          >
-            BTC 
-            62.02
-            %
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-        >
-          ETH 
-          15.17
-          %
-        </span>
-      </div>
-    </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

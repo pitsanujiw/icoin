@@ -1,5 +1,5 @@
 import { API, Format } from 'services'
-import { makeStyles, Typography } from '@material-ui/core'
+import { makeStyles, Typography, AppBar, Toolbar } from '@material-ui/core'
 import { useAsync } from 'react-use'
 
 const useStyles = makeStyles(
@@ -29,45 +29,47 @@ const TopBar = () => {
     const { data } = value.data
 
     return (
-      <div className={classes.topbar}>
-        <div className={classes.info}>
-          <Typography variant="subtitle2" component="span">
-            Cryptocurrencies:&nbsp;
-            <Typography variant="subtitle2" component="span" color="primary">
-              {data.active_cryptocurrencies}
+      <AppBar position="relative" color="default" variant="outlined">
+        <Toolbar className={classes.topbar}>
+          <div className={classes.info}>
+            <Typography variant="subtitle2" component="span">
+              Cryptocurrencies:&nbsp;
+              <Typography variant="subtitle2" component="span" color="primary">
+                {data.active_cryptocurrencies}
+              </Typography>
             </Typography>
-          </Typography>
-          <Typography variant="subtitle2" component="span">
-            Markets:&nbsp;
-            <Typography variant="subtitle2" component="span" color="primary">
-              {data.markets}
+            <Typography variant="subtitle2" component="span">
+              Markets:&nbsp;
+              <Typography variant="subtitle2" component="span" color="primary">
+                {data.markets}
+              </Typography>
             </Typography>
-          </Typography>
-        </div>
-        <div className={classes.info}>
-          <Typography variant="subtitle2" component="span">
-            Market Cap:&nbsp;
-            <Typography variant="subtitle2" component="span" color="primary">
-              {Format.currency(data.total_market_cap.usd)}
+          </div>
+          <div className={classes.info}>
+            <Typography variant="subtitle2" component="span">
+              Market Cap:&nbsp;
+              <Typography variant="subtitle2" component="span" color="primary">
+                {Format.currency(data.total_market_cap.usd)}
+              </Typography>
             </Typography>
-          </Typography>
-          <Typography variant="subtitle2" component="span">
-            24h Volume:&nbsp;
-            <Typography variant="subtitle2" component="span" color="primary">
-              {Format.currency(data.total_volume.usd)}
+            <Typography variant="subtitle2" component="span">
+              24h Volume:&nbsp;
+              <Typography variant="subtitle2" component="span" color="primary">
+                {Format.currency(data.total_volume.usd)}
+              </Typography>
             </Typography>
-          </Typography>
-          <Typography variant="subtitle2" component="span">
-            Dominance:&nbsp;
-            <Typography variant="subtitle2" component="span" color="primary">
-              BTC {data.market_cap_percentage.btc.toFixed(2)}%
+            <Typography variant="subtitle2" component="span">
+              Dominance:&nbsp;
+              <Typography variant="subtitle2" component="span" color="primary">
+                BTC {data.market_cap_percentage.btc.toFixed(2)}%
+              </Typography>
             </Typography>
-          </Typography>
-          <Typography variant="subtitle2" component="span" color="primary">
-            ETH {data.market_cap_percentage.eth.toFixed(2)}%
-          </Typography>
-        </div>
-      </div>
+            <Typography variant="subtitle2" component="span" color="primary">
+              ETH {data.market_cap_percentage.eth.toFixed(2)}%
+            </Typography>
+          </div>
+        </Toolbar>
+      </AppBar>
     )
   }
 
