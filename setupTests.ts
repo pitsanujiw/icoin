@@ -9,5 +9,7 @@ import { mockResponse } from 'services/test-utils'
 import Globals from 'mock-data/globals.json'
 
 beforeEach(() => {
+  jest.spyOn(require('next/router'), 'useRouter')
+
   jest.spyOn(API, 'getGlobals').mockReturnValueOnce(mockResponse(Globals))
 })

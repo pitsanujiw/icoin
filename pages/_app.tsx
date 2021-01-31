@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import { ThemeProvider, CssBaseline } from '@material-ui/core'
-import { TopBar, Header, LivePrices } from 'components'
+import { TopBar, Header, Search, LivePrices } from 'components'
 import { useEffect } from 'react'
 import Theme from 'styles'
 import Store from 'states'
@@ -22,6 +22,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <LivePrices />
         <TopBar />
         <Header />
+        <Search />
         <Component {...pageProps} />
       </ThemeProvider>
     </Provider>

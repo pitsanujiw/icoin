@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const Route: React.FC<LinkProps> = ({ title, href, ...restProps }) => {
   const router = useRouter()
-  const isRouted = href === router.asPath
+  const isRouted = href === router.route
 
   const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()

@@ -1,17 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import Colors, { white, gray1, gray3, primary, secondary } from 'styles/colors'
+import Colors, { gray1, gray3, primary, secondary } from 'styles/colors'
 
 const Theme = createMuiTheme({
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        body: {
-          backgroundColor: white,
-        },
-      },
-    },
-  },
-
   palette: {
     primary: {
       main: primary,

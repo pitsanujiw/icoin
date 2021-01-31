@@ -36,15 +36,7 @@ Object {
       "minHeight": 56,
     },
   },
-  "overrides": Object {
-    "MuiCssBaseline": Object {
-      "@global": Object {
-        "body": Object {
-          "backgroundColor": "#FFFFFF",
-        },
-      },
-    },
-  },
+  "overrides": Object {},
   "palette": Object {
     "action": Object {
       "activatedOpacity": 0.12,
