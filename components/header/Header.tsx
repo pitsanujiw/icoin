@@ -1,12 +1,14 @@
+import React from 'react'
 import { AppBar, Toolbar } from '@material-ui/core'
 import { ICoinLogo } from 'components/common'
-import React from 'react'
+import { Menu } from 'components/header/Menu'
 
 const Header = () => {
   return (
-    <AppBar position="relative" color="default" elevation={0}>
+    <AppBar position="relative" color="inherit" elevation={0}>
       <Toolbar>
         <ICoinLogo />
+        <Menu />
       </Toolbar>
     </AppBar>
   )
