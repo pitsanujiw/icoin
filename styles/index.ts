@@ -30,7 +30,7 @@ const Theme = createMuiTheme({
 
   typography: {
     fontSize: 13,
-    fontFamily: "'Inter', sans-serif;",
+    fontFamily: "'Roboto', sans-serif;",
     body1: { color: gray1 },
     button: { color: gray1 },
     subtitle2: { color: gray3 },

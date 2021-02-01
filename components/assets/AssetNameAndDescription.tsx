@@ -13,7 +13,7 @@ const useStyles = makeStyles(
       alignItems: 'center',
 
       '& > img': {
-        paddingRight: theme.spacing(),
+        paddingRight: theme.spacing(2),
         height: theme.spacing(3.5),
       },
     },
@@ -35,7 +35,7 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
         src={[CDN.getIcon(symbol.toLowerCase()), CDN.defaultIcon]}
         alt={name}
       />
-      <Typography variant="button">{name}</Typography>
+      <Typography variant="h6">{name}</Typography>
     </div>
   )
 }
