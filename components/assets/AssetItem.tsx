@@ -1,5 +1,5 @@
 import { AssetNameAndDescription } from 'components'
-import { Format, numberFormatter } from 'services'
+import { Format } from 'services'
 import { IAsset } from 'types'
 import { TableRow, TableCell, Typography, makeStyles } from '@material-ui/core'
 
@@ -35,6 +35,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     priceUsd,
     volumeUsd24Hr,
     changePercent24Hr,
+    explorer,
   } = asset
 
   return (
@@ -44,13 +45,35 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
           <Typography variant="button">{rank}.</Typography>
         </TableCell>
         <TableCell>
-          <AssetNameAndDescription symbol={symbol} name={name} />
+          <AssetNameAndDescription
+            symbol={symbol}
+            name={name}
+            explorer={explorer}
+          />
         </TableCell>
-        <TableCell align="right">{Format.currency(marketCapUsd)}</TableCell>
-        <TableCell align="right">{Format.currency(priceUsd)}</TableCell>
-        <TableCell align="right">{numberFormatter.format(supply)}</TableCell>
-        <TableCell align="right">{Format.currency(volumeUsd24Hr)}</TableCell>
-        <TableCell align="right">{Format.percent(changePercent24Hr)}</TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(marketCapUsd)}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">{Format.currency(priceUsd)}</Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(supply)} {symbol}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(volumeUsd24Hr)}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.percent(changePercent24Hr)}
+          </Typography>
+        </TableCell>
         <TableCell align="right">Price Graph</TableCell>
       </TableRow>
       <TableRow className={classes.spacer} />
