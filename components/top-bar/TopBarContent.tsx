@@ -63,11 +63,11 @@ const TopBarContent: React.FC<ITopBarContentProps> = ({ value }) => {
         <Typography variant="subtitle2" component="span">
           Dominance:&nbsp;
           <Typography variant="subtitle2" component="span" color="primary">
-            BTC {data.market_cap_percentage.btc.toFixed(2)}%
+            BTC {Format.percent(data.market_cap_percentage.btc)}
           </Typography>
         </Typography>
         <Typography variant="subtitle2" component="span" color="primary">
-          ETH {data.market_cap_percentage.eth.toFixed(2)}%
+          ETH {Format.percent(data.market_cap_percentage.eth)}
         </Typography>
       </div>
     </div>

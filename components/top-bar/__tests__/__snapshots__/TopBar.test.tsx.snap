@@ -70,16 +70,14 @@ Object {
                   class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
                 >
                   BTC 
-                  62.02
-                  %
+                  62.02%
                 </span>
               </span>
               <span
                 class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
               >
                 ETH 
-                15.17
-                %
+                15.17%
               </span>
             </div>
           </div>
@@ -153,16 +151,14 @@ Object {
                 class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
               >
                 BTC 
-                62.02
-                %
+                62.02%
               </span>
             </span>
             <span
               class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
             >
               ETH 
-              15.17
-              %
+              15.17%
             </span>
           </div>
         </div>

@@ -20,6 +20,14 @@ const Theme = createMuiTheme({
     },
   },
 
+  overrides: {
+    MuiTableCell: {
+      root: {
+        borderBottom: 'none',
+      },
+    },
+  },
+
   typography: {
     fontSize: 13,
     fontFamily: "'Inter', sans-serif;",

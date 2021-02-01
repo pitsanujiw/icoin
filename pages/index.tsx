@@ -1,3 +1,4 @@
+import { Assets } from 'components'
 import Head from 'next/head'
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <Head>
         <title>ICoin</title>
       </Head>
+      <Assets />
     </div>
   )
 }
