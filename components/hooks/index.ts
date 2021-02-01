@@ -1,3 +1,2 @@
-import useLivePrices from './useLivePrices'
-
-export { useLivePrices }
+export * from './useLivePrices'
+export * from './usePriceDirection'

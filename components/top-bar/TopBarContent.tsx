@@ -51,13 +51,13 @@ const TopBarContent: React.FC<ITopBarContentProps> = ({ value }) => {
         <Typography variant="subtitle2" component="span">
           Market Cap:&nbsp;
           <Typography variant="subtitle2" component="span" color="primary">
-            {Format.currency(data.total_market_cap.usd)}
+            {Format.bigNumber(data.total_market_cap.usd)}
           </Typography>
         </Typography>
         <Typography variant="subtitle2" component="span">
           24h Volume:&nbsp;
           <Typography variant="subtitle2" component="span" color="primary">
-            {Format.currency(data.total_volume.usd)}
+            {Format.bigNumber(data.total_volume.usd)}
           </Typography>
         </Typography>
         <Typography variant="subtitle2" component="span">

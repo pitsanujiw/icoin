@@ -1,7 +1,5 @@
-const formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-})
+import { formatCurrency } from '@coingecko/cryptoformat'
+import numeral from 'numeral'
 
 const numberFormatter = new Intl.NumberFormat('en-US')
 
@@ -12,7 +10,9 @@ const percentFormatter = new Intl.NumberFormat('en-US', {
 })
 
 const Format = {
-  currency: (value: number) => formatter.format(value),
+  bigNumber: (value: number) => numeral(value).format('($0.00a)'),
+
+  currency: (value: number) => formatCurrency(value, 'USD', 'en'),
 
   percent: (value: number) => percentFormatter.format(value / 100),
 }
