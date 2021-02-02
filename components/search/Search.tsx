@@ -9,7 +9,7 @@ import {
 import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     container: {
       paddingTop: theme.spacing(4),
       paddingBottom: theme.spacing(4),

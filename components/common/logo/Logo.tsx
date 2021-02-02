@@ -1,7 +1,7 @@
 import { Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     logo: {
       display: 'flex',
       alignItems: 'center',

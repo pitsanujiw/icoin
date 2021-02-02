@@ -7,7 +7,7 @@ interface IAssetNameAndDescriptionProps
   extends Pick<IAsset, 'symbol' | 'name'> {}
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     name: {
       display: 'flex',
       alignItems: 'center',

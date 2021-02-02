@@ -8,7 +8,7 @@ interface ITopBarContentProps {
 }
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     content: {
       display: 'flex',
       justifyContent: 'space-between',

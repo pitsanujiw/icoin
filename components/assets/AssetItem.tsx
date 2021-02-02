@@ -1,7 +1,7 @@
 import {
   AssetNameAndDescription,
   ValueColor,
-  usePriceDirection,
+  usePriceDirection
 } from 'components'
 import { Format, numberFormatter, PriceDirection } from 'services'
 import { DURATION } from 'data'
@@ -11,7 +11,7 @@ import {
   TableCell,
   Typography,
   makeStyles,
-  fade,
+  fade
 } from '@material-ui/core'
 import clsx from 'clsx'
 
@@ -20,39 +20,24 @@ interface IAssetItemProps {
 }
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     asset: {
-      backgroundColor: theme.palette.common.white,
       borderRadius: theme.shape.borderRadius,
       transition: theme.transitions.create(['background-color'], {
-        duration: DURATION,
-      }),
-
-      '& > td:first-child': {
-        borderTopLeftRadius: theme.shape.borderRadius,
-        borderBottomLeftRadius: theme.shape.borderRadius,
-      },
-
-      '& > td:last-child': {
-        borderTopRightRadius: theme.shape.borderRadius,
-        borderBottomRightRadius: theme.shape.borderRadius,
-      },
+        duration: DURATION
+      })
     },
 
     up: {
-      backgroundColor: fade(theme.palette.success.light, 0.1),
+      backgroundColor: fade(theme.palette.success.light, 0.1)
     },
 
     down: {
-      backgroundColor: fade(theme.palette.error.light, 0.1),
-    },
-
-    spacer: {
-      height: theme.spacing(2),
-    },
+      backgroundColor: fade(theme.palette.error.light, 0.1)
+    }
   }),
   {
-    name: 'AssetItem',
+    name: 'AssetItem'
   }
 )
 
@@ -67,51 +52,47 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     rank,
     supply,
     symbol,
-    volumeUsd24Hr,
+    volumeUsd24Hr
   } = asset
   const { price, direction } = usePriceDirection(id, priceUsd)
 
   return (
-    <>
-      <TableRow
-        className={clsx(classes.asset, {
-          [classes.up]: direction === PriceDirection.UP,
-          [classes.down]: direction === PriceDirection.DOWN,
-        })}
-      >
-        <TableCell>
-          <Typography variant="button">{rank}.</Typography>
-        </TableCell>
-        <TableCell>
-          <AssetNameAndDescription symbol={symbol} name={name} />
-        </TableCell>
-        <TableCell align="right">
-          <Typography variant="button">
-            {Format.bigNumber(marketCapUsd)}
-          </Typography>
-        </TableCell>
-        <TableCell align="right">
-          <Typography variant="button">{Format.currency(price)}</Typography>
-        </TableCell>
-        <TableCell align="right">
-          <Typography variant="button">
-            {numberFormatter.format(supply)}
-          </Typography>
-        </TableCell>
-        <TableCell align="right">
-          <Typography variant="button">
-            {Format.bigNumber(volumeUsd24Hr)}
-          </Typography>
-        </TableCell>
-        <TableCell align="right">
-          <ValueColor variant="button" value={changePercent24Hr}>
-            {Format.percent(changePercent24Hr)}
-          </ValueColor>
-        </TableCell>
-        <TableCell align="right">Price Graph</TableCell>
-      </TableRow>
-      <TableRow className={classes.spacer} />
-    </>
+    <TableRow
+      className={clsx(classes.asset, {
+        [classes.up]: direction === PriceDirection.UP,
+        [classes.down]: direction === PriceDirection.DOWN
+      })}
+    >
+      <TableCell>
+        <Typography variant="button">{rank}.</Typography>
+      </TableCell>
+      <TableCell>
+        <AssetNameAndDescription symbol={symbol} name={name} />
+      </TableCell>
+      <TableCell align="right">
+        <Typography variant="button">
+          {Format.bigNumber(marketCapUsd)}
+        </Typography>
+      </TableCell>
+      <TableCell align="right">
+        <Typography variant="button">{Format.currency(price)}</Typography>
+      </TableCell>
+      <TableCell align="right">
+        <Typography variant="button">
+          {numberFormatter.format(supply)}
+        </Typography>
+      </TableCell>
+      <TableCell align="right">
+        <Typography variant="button">
+          {Format.bigNumber(volumeUsd24Hr)}
+        </Typography>
+      </TableCell>
+      <TableCell align="right">
+        <ValueColor variant="button" value={changePercent24Hr}>
+          {Format.percent(changePercent24Hr)}
+        </ValueColor>
+      </TableCell>
+    </TableRow>
   )
 }
 

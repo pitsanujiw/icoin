@@ -6,7 +6,7 @@ interface IValueColorProps extends TypographyProps {
 }
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     up: {
       color: theme.palette.success.light,
     },

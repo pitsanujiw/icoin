@@ -4,7 +4,7 @@ import { TopBarContent } from 'components/top-bar/TopBarContent'
 import { useAsync } from 'react-use'
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     toolBar: {
       overflow: 'auto',
       whiteSpace: 'nowrap',

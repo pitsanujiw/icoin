@@ -1,40 +1,22 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import Colors, { gray1, gray3, primary, secondary } from 'styles/colors'
+import { teal, orange } from '@material-ui/core/colors'
 
 const Theme = createMuiTheme({
   palette: {
-    primary: {
-      main: primary,
-    },
-
-    secondary: {
-      main: secondary,
-    },
-
-    common: Colors,
+    primary: teal,
+    secondary: orange
   },
 
   props: {
     MuiLink: {
-      underline: 'none',
-    },
-  },
-
-  overrides: {
-    MuiTableCell: {
-      root: {
-        borderBottom: 'none',
-      },
-    },
+      underline: 'none'
+    }
   },
 
   typography: {
     fontSize: 13,
-    fontFamily: "'Roboto', sans-serif;",
-    body1: { color: gray1 },
-    button: { color: gray1 },
-    subtitle2: { color: gray3 },
-  },
+    fontFamily: "'Roboto', sans-serif;"
+  }
 })
 
 export default responsiveFontSizes(Theme)

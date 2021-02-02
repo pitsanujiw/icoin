@@ -28,7 +28,7 @@ Object {
               class="MuiTableCell-root MuiTableCell-body"
             >
               <div
-                class="AssetNameAndDescription-name-5"
+                class="AssetNameAndDescription-name-4"
               >
                 <div>
                   <h6
@@ -84,20 +84,12 @@ Object {
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root ValueColor-up-6 MuiTypography-button"
+                class="MuiTypography-root ValueColor-up-5 MuiTypography-button"
               >
                 3.18%
               </span>
             </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              Price Graph
-            </td>
           </tr>
-          <tr
-            class="MuiTableRow-root AssetItem-spacer-4"
-          />
         </tbody>
       </table>
     </div>
@@ -126,7 +118,7 @@ Object {
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="AssetNameAndDescription-name-5"
+              class="AssetNameAndDescription-name-4"
             >
               <div>
                 <h6
@@ -182,20 +174,12 @@ Object {
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root ValueColor-up-6 MuiTypography-button"
+              class="MuiTypography-root ValueColor-up-5 MuiTypography-button"
             >
               3.18%
             </span>
           </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-          >
-            Price Graph
-          </td>
         </tr>
-        <tr
-          class="MuiTableRow-root AssetItem-spacer-4"
-        />
       </tbody>
     </table>
   </div>,
