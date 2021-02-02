@@ -1,5 +1,6 @@
 import {
   Container,
+  TableContainer,
   Table,
   TableHead,
   TableBody,
@@ -18,25 +19,27 @@ const Assets = () => {
 
     return (
       <Container>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>#</TableCell>
-              <TableCell>Name and Description</TableCell>
-              <TableCell align="right">Market Cap</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Circularing Supply</TableCell>
-              <TableCell align="right">Volume</TableCell>
-              <TableCell align="right">Change (24h)</TableCell>
-              <TableCell align="right">Price Graph</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {data.map((asset) => (
-              <AssetItem key={asset.id} asset={asset} />
-            ))}
-          </TableBody>
-        </Table>
+        <TableContainer>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>#</TableCell>
+                <TableCell>Name and Description</TableCell>
+                <TableCell align="right">Market Cap</TableCell>
+                <TableCell align="right">Price</TableCell>
+                <TableCell align="right">Circularing Supply</TableCell>
+                <TableCell align="right">Volume</TableCell>
+                <TableCell align="right">Change (24h)</TableCell>
+                <TableCell align="right">Price Graph</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {data.map((asset) => (
+                <AssetItem key={asset.id} asset={asset} />
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </Container>
     )
   }

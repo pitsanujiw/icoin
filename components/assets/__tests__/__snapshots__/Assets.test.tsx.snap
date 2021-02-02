@@ -8,6 +8,248 @@ Object {
       <div
         class="MuiContainer-root MuiContainer-maxWidthLg"
       >
+        <div
+          class="MuiTableContainer-root"
+        >
+          <table
+            class="MuiTable-root"
+          >
+            <thead
+              class="MuiTableHead-root"
+            >
+              <tr
+                class="MuiTableRow-root MuiTableRow-head"
+              >
+                <th
+                  class="MuiTableCell-root MuiTableCell-head"
+                  scope="col"
+                >
+                  #
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head"
+                  scope="col"
+                >
+                  Name and Description
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Market Cap
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Price
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Circularing Supply
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Volume
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Change (24h)
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Price Graph
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="MuiTableBody-root"
+            >
+              <tr
+                class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    1
+                    .
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="AssetNameAndDescription-name-5"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Bitcoin
+                    </h6>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $647.16b
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $34,761.62
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    18,617,050
+                     
+                    BTC
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $14.57b
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    3.15%
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  Price Graph
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root AssetItem-spacer-4"
+              />
+              <tr
+                class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    2
+                    .
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="AssetNameAndDescription-name-5"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Ethereum
+                    </h6>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $163.02b
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $1,423.75
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    114,503,686.687
+                     
+                    ETH
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    $10.51b
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    7.16%
+                  </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  Price Graph
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root AssetItem-spacer-4"
+              />
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiTableContainer-root"
+      >
         <table
           class="MuiTable-root"
         >
@@ -237,240 +479,6 @@ Object {
           </tbody>
         </table>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MuiContainer-root MuiContainer-maxWidthLg"
-    >
-      <table
-        class="MuiTable-root"
-      >
-        <thead
-          class="MuiTableHead-root"
-        >
-          <tr
-            class="MuiTableRow-root MuiTableRow-head"
-          >
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              #
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
-            >
-              Name and Description
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Market Cap
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Price
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Circularing Supply
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Volume
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Change (24h)
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Price Graph
-            </th>
-          </tr>
-        </thead>
-        <tbody
-          class="MuiTableBody-root"
-        >
-          <tr
-            class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                1
-                .
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <div
-                class="AssetNameAndDescription-name-5"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-h6"
-                >
-                  Bitcoin
-                </h6>
-              </div>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $647.16b
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $34,761.62
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                18,617,050
-                 
-                BTC
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $14.57b
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                3.15%
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              Price Graph
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root AssetItem-spacer-4"
-          />
-          <tr
-            class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                2
-                .
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body"
-            >
-              <div
-                class="AssetNameAndDescription-name-5"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-h6"
-                >
-                  Ethereum
-                </h6>
-              </div>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $163.02b
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $1,423.75
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                114,503,686.687
-                 
-                ETH
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                $10.51b
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-button"
-              >
-                7.16%
-              </span>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              Price Graph
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root AssetItem-spacer-4"
-          />
-        </tbody>
-      </table>
     </div>
   </div>,
   "debug": [Function],
