@@ -30,11 +30,18 @@ Object {
               <div
                 class="AssetNameAndDescription-name-5"
               >
-                <h6
-                  class="MuiTypography-root MuiTypography-h6"
-                >
-                  Bitcoin
-                </h6>
+                <div>
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6"
+                  >
+                    Bitcoin
+                  </h6>
+                  <span
+                    class="MuiTypography-root MuiTypography-caption"
+                  >
+                    BTC
+                  </span>
+                </div>
               </div>
             </td>
             <td
@@ -62,8 +69,6 @@ Object {
                 class="MuiTypography-root MuiTypography-button"
               >
                 18,617,050
-                 
-                BTC
               </span>
             </td>
             <td
@@ -79,7 +84,7 @@ Object {
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root MuiTypography-button"
+                class="MuiTypography-root ValueColor-up-6 MuiTypography-button"
               >
                 3.18%
               </span>
@@ -123,11 +128,18 @@ Object {
             <div
               class="AssetNameAndDescription-name-5"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
-              >
-                Bitcoin
-              </h6>
+              <div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6"
+                >
+                  Bitcoin
+                </h6>
+                <span
+                  class="MuiTypography-root MuiTypography-caption"
+                >
+                  BTC
+                </span>
+              </div>
             </div>
           </td>
           <td
@@ -155,8 +167,6 @@ Object {
               class="MuiTypography-root MuiTypography-button"
             >
               18,617,050
-               
-              BTC
             </span>
           </td>
           <td
@@ -172,7 +182,7 @@ Object {
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root MuiTypography-button"
+              class="MuiTypography-root ValueColor-up-6 MuiTypography-button"
             >
               3.18%
             </span>

@@ -1,5 +1,5 @@
 import { Grid, makeStyles } from '@material-ui/core'
-import { Route } from 'components/common'
+import { Route } from 'components'
 import React from 'react'
 
 const useStyles = makeStyles(

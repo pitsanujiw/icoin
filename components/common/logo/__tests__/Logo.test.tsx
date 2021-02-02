@@ -1,5 +1,5 @@
 import { customRender } from 'services/test-utils'
-import { ICoinLogo } from 'components/common'
+import { ICoinLogo } from 'components'
 
 describe('Logo', () => {
   it('Should render it correctly', async () => {

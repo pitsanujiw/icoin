@@ -1,4 +1,8 @@
-import { AssetNameAndDescription, usePriceDirection } from 'components'
+import {
+  AssetNameAndDescription,
+  ValueColor,
+  usePriceDirection,
+} from 'components'
 import { Format, numberFormatter, PriceDirection } from 'services'
 import { DURATION } from 'data'
 import { IAsset } from 'types'
@@ -91,7 +95,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">
-            {numberFormatter.format(supply)} {symbol}
+            {numberFormatter.format(supply)}
           </Typography>
         </TableCell>
         <TableCell align="right">
@@ -100,9 +104,9 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
           </Typography>
         </TableCell>
         <TableCell align="right">
-          <Typography variant="button">
+          <ValueColor variant="button" value={changePercent24Hr}>
             {Format.percent(changePercent24Hr)}
-          </Typography>
+          </ValueColor>
         </TableCell>
         <TableCell align="right">Price Graph</TableCell>
       </TableRow>

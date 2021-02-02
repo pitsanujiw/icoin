@@ -1,5 +1,5 @@
 import { customRender } from 'services/test-utils'
-import { Route } from 'components/common'
+import { Route } from 'components'
 import { useRouter } from 'next/router'
 
 describe('Route', () => {

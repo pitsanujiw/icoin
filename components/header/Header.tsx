@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppBar, Toolbar } from '@material-ui/core'
-import { ICoinLogo } from 'components/common'
+import { ICoinLogo } from 'components'
 import { Menu } from 'components/header/Menu'
 
 const Header = () => {

@@ -8,11 +8,18 @@ Object {
       <div
         class="AssetNameAndDescription-name-1"
       >
-        <h6
-          class="MuiTypography-root MuiTypography-h6"
-        >
-          Bitcoin
-        </h6>
+        <div>
+          <h6
+            class="MuiTypography-root MuiTypography-h6"
+          >
+            Bitcoin
+          </h6>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
+          >
+            BTC
+          </span>
+        </div>
       </div>
     </div>
   </body>,
@@ -20,11 +27,18 @@ Object {
     <div
       class="AssetNameAndDescription-name-1"
     >
-      <h6
-        class="MuiTypography-root MuiTypography-h6"
-      >
-        Bitcoin
-      </h6>
+      <div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6"
+        >
+          Bitcoin
+        </h6>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
+        >
+          BTC
+        </span>
+      </div>
     </div>
   </div>,
   "debug": [Function],
