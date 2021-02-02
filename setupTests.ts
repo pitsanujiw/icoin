@@ -6,10 +6,12 @@
 import '@testing-library/jest-dom'
 import { API } from 'services'
 import { mockResponse } from 'services/test-utils'
-import Globals from 'mock-data/globals.json'
+import { assets, globals } from 'mock-data'
 
 beforeEach(() => {
   jest.spyOn(require('next/router'), 'useRouter')
 
-  jest.spyOn(API, 'getGlobals').mockReturnValueOnce(mockResponse(Globals))
+  jest.spyOn(API, 'getGlobals').mockReturnValueOnce(mockResponse(globals))
+
+  jest.spyOn(API, 'getAssets').mockReturnValueOnce(mockResponse(assets))
 })

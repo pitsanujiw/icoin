@@ -36,11 +36,11 @@ const useStyles = makeStyles(
     },
 
     up: {
-      backgroundColor: fade(theme.palette.success.light, 0.08),
+      backgroundColor: fade(theme.palette.success.light, 0.1),
     },
 
     down: {
-      backgroundColor: fade(theme.palette.error.light, 0.08),
+      backgroundColor: fade(theme.palette.error.light, 0.1),
     },
 
     spacer: {

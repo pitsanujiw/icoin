@@ -6,7 +6,7 @@ import {
   RenderResult,
 } from 'services/test-utils'
 import { TopBar } from 'components/top-bar/TopBar'
-import Globals from 'mock-data/globals.json'
+import { globals } from 'mock-data'
 
 describe('TopBar', () => {
   it('Should render correctly', async () => {
@@ -17,7 +17,7 @@ describe('TopBar', () => {
     })
 
     expect(API.getGlobals).toHaveBeenCalled()
-    expect(API.getGlobals).toHaveReturnedWith(mockResponse(Globals))
+    expect(API.getGlobals).toHaveReturnedWith(mockResponse(globals))
     expect(renderResult).toMatchSnapshot()
   })
 })
