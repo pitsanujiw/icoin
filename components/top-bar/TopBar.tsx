@@ -4,7 +4,7 @@ import { TopBarContent } from 'components/top-bar/TopBarContent'
 import { useAsync } from 'react-use'
 
 const useStyles = makeStyles(
-  theme => ({
+  () => ({
     toolBar: {
       overflow: 'auto',
       whiteSpace: 'nowrap'
@@ -15,7 +15,7 @@ const useStyles = makeStyles(
   }
 )
 
-const TopBar = () => {
+const TopBar = (): React.ReactElement => {
   const classes = useStyles()
   const { loading, value } = useAsync(API.getGlobals)
 

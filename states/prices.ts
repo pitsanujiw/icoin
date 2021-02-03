@@ -5,7 +5,7 @@ const initialState: ILivePrices = { data: {} }
 
 const prices = createSlice({
   name: 'Prices',
-  initialState: initialState,
+  initialState,
   reducers: {
     updatePrice: (state, action: PayloadAction<Record<string, number>>) => {
       state.data = action.payload

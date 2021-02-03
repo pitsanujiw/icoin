@@ -20,7 +20,7 @@ const useStyles = makeStyles(
   }
 )
 
-const ICoinLogo = () => {
+const ICoinLogo = (): React.ReactElement => {
   const classes = useStyles()
 
   return (

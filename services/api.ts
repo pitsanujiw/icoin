@@ -16,11 +16,10 @@ const API: IAPI = {
     params = {
       limit: 30
     }
-  ) => {
-    return CoinCapAPI.get('/assets', {
+  ) =>
+    CoinCapAPI.get('/assets', {
       params
     })
-  }
 }
 
 export { API }

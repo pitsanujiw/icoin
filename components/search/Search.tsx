@@ -20,7 +20,7 @@ const useStyles = makeStyles(
   }
 )
 
-const Search = () => {
+const Search = (): React.ReactElement => {
   const classes = useStyles()
 
   return (

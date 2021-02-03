@@ -1,7 +1,7 @@
 import { IAsset } from 'types'
 
 export interface IAssetSummaryData extends IAsset {
-  website: string;
+  website: string
 }
 
 export interface IAssetSummary {

@@ -14,7 +14,7 @@ const useStyles = makeStyles(
   }
 )
 
-const Menu = () => {
+const Menu = (): React.ReactElement => {
   const classes = useStyles()
 
   return (

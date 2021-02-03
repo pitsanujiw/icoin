@@ -4,7 +4,7 @@ import { updatePrice } from 'states/prices'
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 
-const useLivePrices = () => {
+const useLivePrices = (): void => {
   const dispatch = useDispatch()
 
   const priceUpdate = throttle((msg: MessageEvent) => {

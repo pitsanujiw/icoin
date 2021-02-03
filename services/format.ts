@@ -10,11 +10,11 @@ const percentFormatter = new Intl.NumberFormat('en-US', {
 })
 
 const Format = {
-  bigNumber: (value: number) => numeral(value).format('($0.00a)'),
+  bigNumber: (value: number): string => numeral(value).format('($0.00a)'),
 
-  currency: (value: number) => formatCurrency(value, 'USD', 'en'),
+  currency: (value: number): string => formatCurrency(value, 'USD', 'en'),
 
-  percent: (value: number) => percentFormatter.format(value / 100)
+  percent: (value: number): string => percentFormatter.format(value / 100)
 }
 
 export { Format, numberFormatter, percentFormatter }

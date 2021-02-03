@@ -7,9 +7,10 @@ import '@testing-library/jest-dom'
 import { API } from 'services'
 import { mockResponse } from 'services/test-utils'
 import { assets, globals } from 'mock-data'
+import * as nextRouter from 'next/router'
 
 beforeEach(() => {
-  jest.spyOn(require('next/router'), 'useRouter')
+  jest.spyOn(nextRouter, 'useRouter')
 
   jest.spyOn(API, 'getGlobals').mockReturnValueOnce(mockResponse(globals))
 

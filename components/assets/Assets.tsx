@@ -25,7 +25,7 @@ const useStyles = makeStyles(
   }
 )
 
-const Assets = () => {
+const Assets = (): React.ReactElement => {
   const classes = useStyles()
   const { loading, value } = useAsync(API.getAssets)
 

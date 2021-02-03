@@ -1,6 +1,6 @@
 import { useLivePrices } from 'components/hooks'
 
-const LivePrices = () => {
+const LivePrices = (): React.ReactElement => {
   useLivePrices()
 
   return <></>
