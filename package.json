@@ -5,6 +5,10 @@
     "name": "Andy D. Ng",
     "url": "https://github.com/andyngdz"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andyngdz/icoin.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -39,7 +43,8 @@
     "react-image": "^4.0.3",
     "react-redux": "^7.2.2",
     "react-use": "^17.0.2",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "use-react-common": "1.0.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",

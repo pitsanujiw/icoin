@@ -18,7 +18,7 @@ const Theme = createMuiTheme({
 
   typography: {
     fontSize: 13,
-    fontFamily: "'Roboto', sans-serif;"
+    fontFamily: "'Inter', sans-serif;"
   }
 })
 

@@ -12,7 +12,7 @@ Object {
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+            class="MuiTableRow-root AssetItem-asset-1"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body"
@@ -102,7 +102,7 @@ Object {
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+          class="MuiTableRow-root AssetItem-asset-1"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"

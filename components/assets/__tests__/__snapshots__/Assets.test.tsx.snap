@@ -68,7 +68,7 @@ Object {
               class="MuiTableBody-root"
             >
               <tr
-                class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
+                class="MuiTableRow-root AssetItem-asset-2"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -147,7 +147,7 @@ Object {
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
+                class="MuiTableRow-root AssetItem-asset-2"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -295,7 +295,7 @@ Object {
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
+              class="MuiTableRow-root AssetItem-asset-2"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"
@@ -374,7 +374,7 @@ Object {
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
+              class="MuiTableRow-root AssetItem-asset-2"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"

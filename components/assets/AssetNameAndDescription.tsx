@@ -1,10 +1,8 @@
-import { CDN } from 'services'
-import { IAsset } from 'types'
-import { Img } from 'react-image'
+import { TSymbol } from 'types'
 import { Typography, makeStyles } from '@material-ui/core'
+import { SymbolIcon } from 'components'
 
-interface IAssetNameAndDescriptionProps
-  extends Pick<IAsset, 'symbol' | 'name'> {}
+type IAssetNameAndDescriptionProps = TSymbol
 
 const useStyles = makeStyles(
   theme => ({
@@ -30,10 +28,7 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
 
   return (
     <div className={classes.name}>
-      <Img
-        src={[CDN.getIcon(symbol.toLowerCase()), CDN.defaultIcon]}
-        alt={name}
-      />
+      <SymbolIcon name={name} symbol={symbol} />
       <div>
         <Typography variant="h6">{name}</Typography>
         <Typography variant="caption">{symbol}</Typography>

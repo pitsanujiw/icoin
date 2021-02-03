@@ -1,3 +1,4 @@
+import { DURATION } from 'data'
 import { throttle } from 'lodash'
 import { updatePrice } from 'states/prices'
 import { useDispatch } from 'react-redux'
@@ -9,7 +10,7 @@ const useLivePrices = () => {
   const priceUpdate = throttle((msg: MessageEvent) => {
     const dataObject = JSON.parse(msg.data)
     dispatch(updatePrice(dataObject))
-  }, 1000)
+  }, DURATION * 2)
 
   const liveUpdate = () => {
     const priceWs = new WebSocket(process.env.NEXT_PUBLIC_COINCAP_WEBSOCKET_ALL)

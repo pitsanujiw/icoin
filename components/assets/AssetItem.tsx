@@ -3,6 +3,7 @@ import {
   ValueColor,
   usePriceDirection
 } from 'components'
+import { useRouter } from 'next/router'
 import { Format, numberFormatter, PriceDirection } from 'services'
 import { DURATION } from 'data'
 import { IAsset } from 'types'
@@ -22,6 +23,7 @@ interface IAssetItemProps {
 const useStyles = makeStyles(
   theme => ({
     asset: {
+      cursor: 'pointer',
       borderRadius: theme.shape.borderRadius,
       transition: theme.transitions.create(['background-color'], {
         duration: DURATION
@@ -43,6 +45,7 @@ const useStyles = makeStyles(
 
 const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
   const classes = useStyles()
+  const router = useRouter()
   const {
     changePercent24Hr,
     id,
@@ -56,8 +59,11 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
   } = asset
   const { price, direction } = usePriceDirection(id, priceUsd)
 
+  const onClick = () => router.push(`/asset/${id}`)
+
   return (
     <TableRow
+      onClick={onClick}
       className={clsx(classes.asset, {
         [classes.up]: direction === PriceDirection.UP,
         [classes.down]: direction === PriceDirection.DOWN
