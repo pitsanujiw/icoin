@@ -6,11 +6,11 @@ const useStyles = makeStyles(
   () => ({
     menu: {
       display: 'flex',
-      justifyContent: 'space-evenly',
-    },
+      justifyContent: 'space-evenly'
+    }
   }),
   {
-    name: 'Menu',
+    name: 'Menu'
   }
 )
 

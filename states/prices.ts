@@ -9,8 +9,8 @@ const prices = createSlice({
   reducers: {
     updatePrice: (state, action: PayloadAction<Record<string, number>>) => {
       state.data = action.payload
-    },
-  },
+    }
+  }
 })
 
 export const { updatePrice } = prices.actions

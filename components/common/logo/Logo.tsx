@@ -4,19 +4,19 @@ const useStyles = makeStyles(
   theme => ({
     logo: {
       display: 'flex',
-      alignItems: 'center',
+      alignItems: 'center'
     },
 
     image: {
-      maxWidth: theme.spacing(6),
+      maxWidth: theme.spacing(5)
     },
 
     title: {
-      paddingLeft: theme.spacing(2),
-    },
+      paddingLeft: theme.spacing(2)
+    }
   }),
   {
-    name: 'ICoinLogo',
+    name: 'ICoinLogo'
   }
 )
 

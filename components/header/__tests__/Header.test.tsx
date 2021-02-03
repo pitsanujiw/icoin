@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 describe('Header', () => {
   beforeEach(() => {
     ;(useRouter as jest.Mock).mockImplementation(() => ({
-      route: '/',
+      route: '/'
     }))
   })
 

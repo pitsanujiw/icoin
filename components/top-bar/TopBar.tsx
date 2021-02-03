@@ -1,5 +1,5 @@
 import { API } from 'services'
-import { makeStyles, AppBar, Grow, Toolbar } from '@material-ui/core'
+import { makeStyles, AppBar, Grow, Divider, Toolbar } from '@material-ui/core'
 import { TopBarContent } from 'components/top-bar/TopBarContent'
 import { useAsync } from 'react-use'
 
@@ -7,11 +7,11 @@ const useStyles = makeStyles(
   theme => ({
     toolBar: {
       overflow: 'auto',
-      whiteSpace: 'nowrap',
-    },
+      whiteSpace: 'nowrap'
+    }
   }),
   {
-    name: 'TopBar',
+    name: 'TopBar'
   }
 )
 
@@ -20,7 +20,7 @@ const TopBar = () => {
   const { loading, value } = useAsync(API.getGlobals)
 
   return (
-    <AppBar position="relative" color="inherit" variant="outlined">
+    <AppBar position="relative" color="inherit" elevation={0}>
       <Toolbar className={classes.toolBar}>
         {!loading && (
           <Grow in>
@@ -28,6 +28,7 @@ const TopBar = () => {
           </Grow>
         )}
       </Toolbar>
+      <Divider />
     </AppBar>
   )
 }

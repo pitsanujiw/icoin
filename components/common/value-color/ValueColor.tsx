@@ -8,15 +8,15 @@ interface IValueColorProps extends TypographyProps {
 const useStyles = makeStyles(
   theme => ({
     up: {
-      color: theme.palette.success.light,
+      color: theme.palette.success.light
     },
 
     down: {
-      color: theme.palette.error.light,
-    },
+      color: theme.palette.error.light
+    }
   }),
   {
-    name: 'ValueColor',
+    name: 'ValueColor'
   }
 )
 
@@ -31,7 +31,7 @@ const ValueColor: React.FC<IValueColorProps> = ({
     <Typography
       className={clsx(className, {
         [classes.up]: value > 0,
-        [classes.down]: value < 0,
+        [classes.down]: value < 0
       })}
       {...restProps}
     />

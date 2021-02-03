@@ -12,18 +12,18 @@ const useStyles = makeStyles(
     content: {
       display: 'flex',
       justifyContent: 'space-between',
-      flex: 1,
+      flex: 1
     },
 
     info: {
       '& > span': {
         paddingRight: theme.spacing(2),
-        fontWeight: theme.typography.button.fontWeight,
-      },
-    },
+        fontWeight: theme.typography.button.fontWeight
+      }
+    }
   }),
   {
-    name: 'TopBarContent',
+    name: 'TopBarContent'
   }
 )
 

@@ -4,7 +4,10 @@ import { teal, orange } from '@material-ui/core/colors'
 const Theme = createMuiTheme({
   palette: {
     primary: teal,
-    secondary: orange
+    secondary: orange,
+    text: {
+      primary: '#333333'
+    }
   },
 
   props: {

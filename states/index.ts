@@ -3,7 +3,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import Prices from 'states/prices'
 
 const reducers = combineReducers({
-  prices: Prices,
+  prices: Prices
 })
 
 const store = createStore(reducers, composeWithDevTools())

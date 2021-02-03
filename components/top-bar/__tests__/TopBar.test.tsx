@@ -3,7 +3,7 @@ import {
   act,
   customRender,
   mockResponse,
-  RenderResult,
+  RenderResult
 } from 'services/test-utils'
 import { TopBar } from 'components/top-bar/TopBar'
 import { globals } from 'mock-data'

@@ -3,21 +3,21 @@ const config = {
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
-    '!**/node_modules/**',
+    '!**/node_modules/**'
   ],
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest'
   },
   transformIgnorePatterns: [
     '/node_modules/',
-    '^.+\\.module\\.(css|sass|scss)$',
+    '^.+\\.module\\.(css|sass|scss)$'
   ],
   moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
   },
-  moduleDirectories: ['node_modules', '<rootDir>'],
+  moduleDirectories: ['node_modules', '<rootDir>']
 }
 
 export default config

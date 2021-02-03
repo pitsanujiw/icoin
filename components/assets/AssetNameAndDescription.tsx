@@ -13,18 +13,18 @@ const useStyles = makeStyles(
       alignItems: 'center',
 
       '& > img': {
-        paddingRight: theme.spacing(2),
-      },
-    },
+        paddingRight: theme.spacing(2)
+      }
+    }
   }),
   {
-    name: 'AssetNameAndDescription',
+    name: 'AssetNameAndDescription'
   }
 )
 
 const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
   symbol,
-  name,
+  name
 }) => {
   const classes = useStyles()
 

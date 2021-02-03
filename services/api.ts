@@ -2,11 +2,11 @@ import axios from 'axios'
 import { IAPI } from 'types/api'
 
 const CoingeckoAPI = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_COINGECKO_API,
+  baseURL: process.env.NEXT_PUBLIC_COINGECKO_API
 })
 
 const CoinCapAPI = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_COINCAP_API,
+  baseURL: process.env.NEXT_PUBLIC_COINCAP_API
 })
 
 const API: IAPI = {
@@ -14,13 +14,13 @@ const API: IAPI = {
 
   getAssets: (
     params = {
-      limit: 30,
+      limit: 30
     }
   ) => {
     return CoinCapAPI.get('/assets', {
-      params,
+      params
     })
-  },
+  }
 }
 
 export { API }

@@ -5,7 +5,7 @@ import { Menu } from 'components'
 describe('Menu', () => {
   beforeEach(() => {
     ;(useRouter as jest.Mock).mockImplementation(() => ({
-      route: '/',
+      route: '/'
     }))
   })
 

@@ -20,7 +20,7 @@ const mockResponse = <T,>(data: T): Promise<AxiosResponse<T>> => {
     data: data,
     statusText: 'success',
     headers: {},
-    config: {},
+    config: {}
   })
 }
 
