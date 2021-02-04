@@ -4,18 +4,15 @@ import { PriceDirection } from 'services'
 import { useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 
-interface IUsePriceDirection {
+interface IuseLivePrice {
   direction: PriceDirection
 
   price: number
 }
 
-const usePriceDirection = (
-  id: string,
-  initPrice: number
-): IUsePriceDirection => {
+const useLivePrice = (id: string, initialPrice: number): IuseLivePrice => {
   const [direction, setDirection] = useState(PriceDirection.VOID)
-  const [price, setPrice] = useState(initPrice)
+  const [price, setPrice] = useState(initialPrice)
   const livePrice = useSelector((store: IRootStore) => store.prices.data[id])
 
   useEffect(() => {
@@ -35,4 +32,4 @@ const usePriceDirection = (
   return { direction, price }
 }
 
-export { usePriceDirection }
+export { useLivePrice }

@@ -1,5 +1,4 @@
 import {
-  Container,
   Typography,
   Button,
   Link,
@@ -10,7 +9,7 @@ import {
 import { Format, numberFormatter } from 'services'
 import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { usePriceDirection } from 'components'
+import { useLivePrice, ContainerWrapper } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 import StarIcon from '@material-ui/icons/Star'
 
@@ -21,8 +20,6 @@ interface IAssetSummaryContent extends ICommonRoutePrams {
 const useStyles = makeStyles(
   theme => ({
     wrapper: {
-      paddingTop: theme.spacing(4),
-      paddingBottom: theme.spacing(4),
       backgroundColor: theme.palette.primary.light
     },
 
@@ -70,11 +67,11 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
     website
   } = summary.asset
   const classes = useStyles()
-  const { price } = usePriceDirection(id, priceUsd)
+  const { price } = useLivePrice(id, priceUsd)
 
   return (
     <div className={classes.wrapper}>
-      <Container className={classes.container}>
+      <ContainerWrapper className={classes.container}>
         <Grid container>
           <Grid className={classes.information} spacing={2} container>
             <Grid item>
@@ -143,7 +140,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
             </Grid>
           </Grid>
         </Grid>
-      </Container>
+      </ContainerWrapper>
     </div>
   )
 }

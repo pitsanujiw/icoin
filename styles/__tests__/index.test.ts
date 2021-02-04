@@ -1,4 +1,4 @@
-import Theme from 'styles'
+import { Theme } from 'styles'
 
 describe('Theme', () => {
   it('Shuold return theme config correctly', () =>

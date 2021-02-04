@@ -1,4 +1,4 @@
-import { AssetSummary } from 'components'
+import { AssetSummary, AssetChart } from 'components'
 import { useRouter } from 'next/router'
 import { isString } from 'lodash'
 
@@ -10,6 +10,7 @@ const Asset: React.FC = () => {
     return (
       <>
         <AssetSummary id={id} />
+        <AssetChart id={id} />
       </>
     )
   }

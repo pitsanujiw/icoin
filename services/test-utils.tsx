@@ -2,9 +2,9 @@ import { AxiosResponse } from 'axios'
 import { Provider } from 'react-redux'
 import { render, RenderResult } from '@testing-library/react'
 import { ThemeProvider } from '@material-ui/core'
+import { Theme } from 'styles'
 import React, { ReactElement } from 'react'
 import Store from 'states'
-import Theme from 'styles'
 
 const Providers = ({ children }) => (
   <Provider store={Store}>

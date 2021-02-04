@@ -1,3 +1,4 @@
+export * from './chart'
 export * from './format'
 export * from './api'
 export * from './cdn'

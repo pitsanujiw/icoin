@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiContainer-root Assets-container-1 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
       >
         <div
           class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
@@ -233,7 +233,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiContainer-root Assets-container-1 MuiContainer-maxWidthLg"
+      class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
     >
       <div
         class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"

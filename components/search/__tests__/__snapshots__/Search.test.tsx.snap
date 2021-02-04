@@ -9,7 +9,7 @@ Object {
         class="MuiPaper-root MuiPaper-elevation0"
       >
         <div
-          class="MuiContainer-root Search-container-1 MuiContainer-maxWidthLg"
+          class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
         >
           <div
             class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
@@ -76,7 +76,7 @@ Object {
       class="MuiPaper-root MuiPaper-elevation0"
     >
       <div
-        class="MuiContainer-root Search-container-1 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
       >
         <div
           class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"

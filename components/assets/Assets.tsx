@@ -1,6 +1,4 @@
 import {
-  Container,
-  makeStyles,
   Paper,
   Table,
   TableBody,
@@ -9,31 +7,18 @@ import {
   TableHead,
   TableRow
 } from '@material-ui/core'
-import { AssetItem } from 'components'
+import { AssetItem, ContainerWrapper } from 'components'
 import { useAsync } from 'react-use'
 import { API } from 'services'
 
-const useStyles = makeStyles(
-  theme => ({
-    container: {
-      paddingTop: theme.spacing(4),
-      paddingBottom: theme.spacing(4)
-    }
-  }),
-  {
-    name: 'Assets'
-  }
-)
-
 const Assets = (): React.ReactElement => {
-  const classes = useStyles()
   const { loading, value } = useAsync(API.getAssets)
 
   if (!loading) {
     const { data } = value.data
 
     return (
-      <Container className={classes.container}>
+      <ContainerWrapper>
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
@@ -54,7 +39,7 @@ const Assets = (): React.ReactElement => {
             </TableBody>
           </Table>
         </TableContainer>
-      </Container>
+      </ContainerWrapper>
     )
   }
 

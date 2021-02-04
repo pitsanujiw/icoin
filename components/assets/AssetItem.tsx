@@ -1,8 +1,4 @@
-import {
-  AssetNameAndDescription,
-  ValueColor,
-  usePriceDirection
-} from 'components'
+import { AssetNameAndDescription, ValueColor, useLivePrice } from 'components'
 import { useRouter } from 'next/router'
 import { Format, numberFormatter, PriceDirection } from 'services'
 import { DURATION } from 'data'
@@ -57,7 +53,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     symbol,
     volumeUsd24Hr
   } = asset
-  const { price, direction } = usePriceDirection(id, priceUsd)
+  const { price, direction } = useLivePrice(id, priceUsd)
 
   const onClick = () => router.push(`/asset/${id}`)
 
