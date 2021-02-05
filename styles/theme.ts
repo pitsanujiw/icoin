@@ -1,10 +1,11 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import { teal } from '@material-ui/core/colors'
+import { blueGrey, orange } from '@material-ui/core/colors'
 
 const Theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
-      primary: teal,
+      primary: blueGrey,
+      secondary: orange,
       text: {
         primary: '#333333'
       }

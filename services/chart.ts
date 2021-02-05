@@ -127,8 +127,8 @@ const Chart = {
     const chartDataStyling = merge(chartData, {
       datasets: [
         {
-          backgroundColor: fade(Theme.palette.primary.main, 0.5),
-          borderColor: Theme.palette.primary.main,
+          backgroundColor: fade(Theme.palette.secondary.main, 0.5),
+          borderColor: Theme.palette.secondary.main,
           borderJoinStyle: 'round',
           borderCapStyle: 'round',
           borderWidth: 4,
