@@ -1,3 +1,5 @@
+export * from './useChartData'
 export * from './useLivePrice'
 export * from './useLivePrices'
+export * from './useTheme'
 export * from './useTime'

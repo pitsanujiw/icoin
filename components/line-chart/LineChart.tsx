@@ -1,7 +1,9 @@
 import { Chart, Format } from 'services'
 import { IAssetHistories, TTime } from 'types'
+import { merge } from 'lodash'
+import { useChartDataSets } from 'components'
 import { useEffect, useRef } from 'react'
-import ChartJS, { ChartTooltipItem } from 'chart.js'
+import ChartJS, { ChartData, ChartTooltipItem } from 'chart.js'
 
 interface ILineChart {
   data: IAssetHistories
@@ -21,6 +23,7 @@ const LineChart: React.FC<ILineChart> = ({
   data
 }): React.ReactElement => {
   let lineChart: ChartJS
+  const chartDataSets = useChartDataSets()
   const canvasRef = useRef<HTMLCanvasElement>()
 
   /**
@@ -40,7 +43,16 @@ const LineChart: React.FC<ILineChart> = ({
    */
   const renderChart = () => {
     const { assetHistories } = data
-    lineChart = Chart.createNewChart(canvasRef.current, time, assetHistories, {
+    /**
+     * @description Create chart data with default styling
+     */
+    const chartData: ChartData = Chart.createChartData(assetHistories)
+    /**
+     * @description Merge the default styling with custom styling
+     */
+    merge(chartData.datasets, chartDataSets)
+
+    lineChart = Chart.createNewChart(canvasRef.current, time, chartData, {
       tooltips: {
         callbacks: {
           label: customTooltipLabel

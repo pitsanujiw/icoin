@@ -1,14 +1,12 @@
 import { ServerStyleSheets } from '@material-ui/core/styles'
-import { Theme } from 'styles'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>
-          <meta name="theme-color" content={Theme.palette.primary.main} />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
@@ -40,3 +38,5 @@ MyDocument.getInitialProps = async ctx => {
     ]
   }
 }
+
+export default MyDocument

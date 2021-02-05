@@ -1,27 +1,32 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import { blueGrey, orange } from '@material-ui/core/colors'
+import { teal, green } from '@material-ui/core/colors'
+import { Theme } from '@material-ui/core'
+import { TThemeMode } from 'types'
 
-const Theme = responsiveFontSizes(
-  createMuiTheme({
-    palette: {
-      primary: blueGrey,
-      secondary: orange,
-      text: {
-        primary: '#333333'
+const ICoinTheme = (mode: TThemeMode): Theme => {
+  const textPrimary = mode === 'dark' ? '#FFFFFF' : '#333333'
+
+  return responsiveFontSizes(
+    createMuiTheme({
+      palette: {
+        primary: teal,
+        secondary: green,
+        text: {
+          primary: textPrimary
+        }
+      },
+
+      props: {
+        MuiLink: {
+          underline: 'none'
+        }
+      },
+
+      typography: {
+        fontFamily: "'Roboto', sans-serif;"
       }
-    },
+    })
+  )
+}
 
-    props: {
-      MuiLink: {
-        underline: 'none'
-      }
-    },
-
-    typography: {
-      fontSize: 13,
-      fontFamily: "'Roboto', sans-serif;"
-    }
-  })
-)
-
-export { Theme }
+export { ICoinTheme }

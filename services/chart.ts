@@ -4,11 +4,9 @@
  */
 
 import { ChartData, ChartOptions, TimeScale } from 'chart.js'
-import { fade } from '@material-ui/core'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
 import { sub } from 'date-fns'
-import { Theme } from 'styles'
 import { TIME_TO_INTERVAL } from 'data'
 import ChartJS from 'chart.js'
 
@@ -119,29 +117,14 @@ const Chart = {
   createNewChart: (
     canvas: HTMLCanvasElement,
     time: TTime,
-    assetHistories: IAssetHistory[],
+    chartData: ChartData,
     options?: ChartOptions
   ): ChartJS => {
     const ctx = canvas.getContext('2d')
-    const chartData = Chart.createChartData(assetHistories)
-    const chartDataStyling = merge(chartData, {
-      datasets: [
-        {
-          backgroundColor: fade(Theme.palette.secondary.main, 0.5),
-          borderColor: Theme.palette.secondary.main,
-          borderJoinStyle: 'round',
-          borderCapStyle: 'round',
-          borderWidth: 4,
-          pointRadius: 0,
-          pointHitRadius: 4,
-          lineTension: 0.4
-        }
-      ]
-    })
 
     return new ChartJS(ctx, {
       type: 'line',
-      data: chartDataStyling,
+      data: chartData,
       options: merge(
         {
           tooltips: {
