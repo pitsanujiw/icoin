@@ -66,31 +66,31 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
       })}
     >
       <TableCell>
-        <Typography variant="button">{rank}.</Typography>
+        <Typography variant="subtitle2">{rank}.</Typography>
       </TableCell>
       <TableCell>
         <AssetNameAndDescription symbol={symbol} name={name} />
       </TableCell>
       <TableCell align="right">
-        <Typography variant="button">
+        <Typography variant="subtitle2">
           {Format.bigNumber(marketCapUsd)}
         </Typography>
       </TableCell>
       <TableCell align="right">
-        <Typography variant="button">{Format.currency(price)}</Typography>
+        <Typography variant="subtitle2">{Format.currency(price)}</Typography>
       </TableCell>
       <TableCell align="right">
-        <Typography variant="button">
+        <Typography variant="subtitle2">
           {numberFormatter.format(supply)}
         </Typography>
       </TableCell>
       <TableCell align="right">
-        <Typography variant="button">
+        <Typography variant="subtitle2">
           {Format.bigNumber(volumeUsd24Hr)}
         </Typography>
       </TableCell>
       <TableCell align="right">
-        <ValueColor variant="button" value={changePercent24Hr}>
+        <ValueColor variant="subtitle2" value={changePercent24Hr}>
           {Format.percent(changePercent24Hr)}
         </ValueColor>
       </TableCell>

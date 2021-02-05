@@ -12,10 +12,10 @@ import ChartJS from 'chart.js'
 
 /**
  * @description
- * We are using Inter font
+ * We are using Roboto font and
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
 
 const Chart = {
   /**
@@ -128,16 +128,7 @@ const Chart = {
       options: merge(
         {
           tooltips: {
-            position: 'nearest',
-            displayColors: false
-          },
-          layout: {
-            padding: {
-              left: 0,
-              right: 0,
-              top: 0,
-              bottom: 0
-            }
+            position: 'nearest'
           },
           legend: {
             display: false
