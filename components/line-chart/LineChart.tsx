@@ -1,7 +1,7 @@
-import { Chart } from 'services'
+import { Chart, Format } from 'services'
 import { IAssetHistories, TTime } from 'types'
 import { useEffect, useRef } from 'react'
-import ChartJS from 'chart.js'
+import ChartJS, { ChartTooltipItem } from 'chart.js'
 
 interface ILineChart {
   data: IAssetHistories
@@ -24,12 +24,29 @@ const LineChart: React.FC<ILineChart> = ({
   const canvasRef = useRef<HTMLCanvasElement>()
 
   /**
+   * Custom label inside the tooltip
+   *
+   * @param tooltipItem Contains tooltip item information
+   *
+   */
+  const customTooltipLabel = (tooltipItem: ChartTooltipItem) => {
+    const label = Format.currency(Number(tooltipItem.value))
+    return label
+  }
+
+  /**
    * @description Start rendering a new chart
    * @return `ChartJS`
    */
   const renderChart = () => {
     const { assetHistories } = data
-    lineChart = Chart.createNewChart(canvasRef.current, time, assetHistories)
+    lineChart = Chart.createNewChart(canvasRef.current, time, assetHistories, {
+      tooltips: {
+        callbacks: {
+          label: customTooltipLabel
+        }
+      }
+    })
   }
 
   useEffect(() => {

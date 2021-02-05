@@ -3,11 +3,12 @@
  * Chart.js contains the useful function to manage a Chart
  */
 
-import { ChartData, TimeScale } from 'chart.js'
+import { ChartData, ChartOptions, TimeScale } from 'chart.js'
+import { fade } from '@material-ui/core'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
-import { Theme } from 'styles'
 import { sub } from 'date-fns'
+import { Theme } from 'styles'
 import { TIME_TO_INTERVAL } from 'data'
 import ChartJS from 'chart.js'
 
@@ -16,7 +17,7 @@ import ChartJS from 'chart.js'
  * We are using Inter font
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
 
 const Chart = {
   /**
@@ -40,36 +41,36 @@ const Chart = {
    *```
    */
   calculateInterval: (id: string, time: TTime): ICalculateInterval => {
-    let start: number
+    let subtractDate: Date
     const end = Date.now()
 
     switch (time) {
       case '1D':
-        start = sub(end, { days: 1 }).valueOf()
+        subtractDate = sub(end, { days: 1 })
         break
       case '1W':
-        start = sub(end, { weeks: 1 }).valueOf()
+        subtractDate = sub(end, { weeks: 1 })
         break
       case '1M':
-        start = sub(end, { months: 1 }).valueOf()
+        subtractDate = sub(end, { months: 1 })
         break
       case '3M':
-        start = sub(end, { months: 3 }).valueOf()
+        subtractDate = sub(end, { months: 3 })
         break
       case '6M':
-        start = sub(end, { months: 6 }).valueOf()
+        subtractDate = sub(end, { months: 6 })
         break
       case '1Y':
       case 'ALL':
-        start = sub(end, { years: 1 }).valueOf()
+        subtractDate = sub(end, { years: 1 })
         break
     }
 
     return {
+      end,
       id,
       interval: TIME_TO_INTERVAL[time],
-      start,
-      end
+      start: subtractDate.valueOf()
     }
   },
 
@@ -91,14 +92,10 @@ const Chart = {
         timeScale.unit = 'day'
         break
       case '1M':
-        timeScale.unit = 'week'
-        break
       case '3M':
         timeScale.unit = 'week'
         break
       case '6M':
-        timeScale.unit = 'month'
-        break
       case '1Y':
       case 'ALL':
         timeScale.unit = 'month'
@@ -115,26 +112,29 @@ const Chart = {
    *
    * @param assetHistories Contains the list history data such as: timestamp, priceUsd, etc...
    *
+   * @param options The chart options, it will be merged with the default options
+   *
    * @returns `ChartJS`
    */
   createNewChart: (
     canvas: HTMLCanvasElement,
     time: TTime,
-    assetHistories: IAssetHistory[]
+    assetHistories: IAssetHistory[],
+    options?: ChartOptions
   ): ChartJS => {
     const ctx = canvas.getContext('2d')
     const chartData = Chart.createChartData(assetHistories)
     const chartDataStyling = merge(chartData, {
       datasets: [
         {
-          backgroundColor: Theme.palette.primary.light,
+          backgroundColor: fade(Theme.palette.primary.main, 0.5),
           borderColor: Theme.palette.primary.main,
           borderJoinStyle: 'round',
           borderCapStyle: 'round',
-          borderWidth: 3,
+          borderWidth: 4,
           pointRadius: 0,
-          pointHitRadius: 10,
-          lineTension: 0.2
+          pointHitRadius: 8,
+          lineTension: 0.4
         }
       ]
     })
@@ -142,42 +142,45 @@ const Chart = {
     return new ChartJS(ctx, {
       type: 'line',
       data: chartDataStyling,
-      options: {
-        tooltips: {
-          position: 'nearest',
-          displayColors: false
-        },
-        layout: {
-          padding: {
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0
+      options: merge(
+        {
+          tooltips: {
+            position: 'nearest',
+            displayColors: false
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [
+              {
+                type: 'time',
+                time: Chart.createTimeScale(time),
+                gridLines: {
+                  display: false
+                }
+              }
+            ],
+            yAxes: [
+              {
+                position: 'right',
+                gridLines: {
+                  drawBorder: false
+                }
+              }
+            ]
           }
         },
-        legend: {
-          display: false
-        },
-        scales: {
-          xAxes: [
-            {
-              type: 'time',
-              time: Chart.createTimeScale(time),
-              gridLines: {
-                drawBorder: false
-              }
-            }
-          ],
-          yAxes: [
-            {
-              position: 'right',
-              gridLines: {
-                drawBorder: false
-              }
-            }
-          ]
-        }
-      }
+        options
+      )
     })
   },
 

@@ -18,7 +18,7 @@ const Theme = responsiveFontSizes(
 
     typography: {
       fontSize: 13,
-      fontFamily: "'Inter', sans-serif;"
+      fontFamily: "'Roboto', sans-serif;"
     }
   })
 )
