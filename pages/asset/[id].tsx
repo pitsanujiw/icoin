@@ -1,9 +1,9 @@
-import { Asset } from 'components'
+import { AssetDetail } from 'components'
 import { useRouter } from 'next/router'
 import { capitalize } from 'lodash'
 import Head from 'next/head'
 
-const AsssetPage = (): React.ReactElement => {
+const Assset = (): React.ReactElement => {
   const router = useRouter()
   const { id } = router.query
 
@@ -12,9 +12,9 @@ const AsssetPage = (): React.ReactElement => {
       <Head>
         <title>{capitalize(id as string)}</title>
       </Head>
-      <Asset />
+      <AssetDetail />
     </>
   )
 }
 
-export default AsssetPage
+export default Assset
