@@ -1,4 +1,5 @@
-import { Typography, makeStyles } from '@material-ui/core'
+import { Typography, Link, makeStyles } from '@material-ui/core'
+import NextLink from 'next/link'
 
 const useStyles = makeStyles(
   theme => ({
@@ -24,12 +25,14 @@ const ICoinLogo = (): React.ReactElement => {
   const classes = useStyles()
 
   return (
-    <div className={classes.logo}>
-      <img src="/logo.svg" alt="Logo" className={classes.image} />
-      <Typography variant="h5" className={classes.title}>
-        iCoin
-      </Typography>
-    </div>
+    <NextLink href="/" passHref>
+      <Link className={classes.logo} underline="none">
+        <img src="/logo.svg" alt="Logo" className={classes.image} />
+        <Typography variant="h5" className={classes.title}>
+          iCoin
+        </Typography>
+      </Link>
+    </NextLink>
   )
 }
 

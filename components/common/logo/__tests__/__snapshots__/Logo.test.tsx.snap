@@ -5,8 +5,9 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="ICoinLogo-logo-1"
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineNone ICoinLogo-logo-1 MuiTypography-colorPrimary"
+        href="/"
       >
         <img
           alt="Logo"
@@ -18,12 +19,13 @@ Object {
         >
           iCoin
         </h5>
-      </div>
+      </a>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="ICoinLogo-logo-1"
+    <a
+      class="MuiTypography-root MuiLink-root MuiLink-underlineNone ICoinLogo-logo-1 MuiTypography-colorPrimary"
+      href="/"
     >
       <img
         alt="Logo"
@@ -35,7 +37,7 @@ Object {
       >
         iCoin
       </h5>
-    </div>
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
