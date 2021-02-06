@@ -1,6 +1,7 @@
 export * from './api.d'
 export * from './asset-summary.d'
 export * from './assets.d'
+export * from './cdn.d'
 export * from './chart.d'
 export * from './common.d'
 export * from './global.d'

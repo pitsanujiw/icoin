@@ -1,16 +1,27 @@
 import { Chart } from 'services'
 import { IAssetHistories, ICommonRoutePrams } from 'types'
 import { makeStyles } from '@material-ui/core'
-import { TimeSelection, ContainerWrapper, LineChart } from 'components'
+import {
+  AssetHighLow,
+  ContainerWrapper,
+  LineChart,
+  TimeSelection
+} from 'components'
 import { useEffect } from 'react'
 import { useLazyQuery, COIN_CHART } from 'apollo'
 import { useTime } from 'components'
 
-const useStyles = makeStyles(theme => ({
-  timeSelection: {
-    paddingTop: theme.spacing(4)
+const useStyles = makeStyles(
+  theme => ({
+    chartSection: {
+      paddingTop: theme.spacing(6),
+      paddingBottom: theme.spacing(4)
+    }
+  }),
+  {
+    name: 'AssetChart'
   }
-}))
+)
 
 const AssetChart: React.FC<ICommonRoutePrams> = ({
   id
@@ -26,10 +37,11 @@ const AssetChart: React.FC<ICommonRoutePrams> = ({
 
   return (
     <ContainerWrapper>
-      <LineChart time={time} data={data} />
-      <section className={classes.timeSelection}>
-        <TimeSelection time={time} onTimeChange={onTimeChange} />
-      </section>
+      <AssetHighLow data={data} />
+      <div className={classes.chartSection}>
+        <LineChart time={time} data={data} />
+      </div>
+      <TimeSelection time={time} onTimeChange={onTimeChange} />
     </ContainerWrapper>
   )
 }

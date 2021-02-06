@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price Should return max price 1`] = `33782.07577413444`;
+
+exports[`Price Should return min price 1`] = `33459.08978145529`;

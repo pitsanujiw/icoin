@@ -13,7 +13,6 @@ const COIN_INFORMATION = gql`
       volumeUsd24Hr
       website
       explorer
-      __typename
     }
   }
 `

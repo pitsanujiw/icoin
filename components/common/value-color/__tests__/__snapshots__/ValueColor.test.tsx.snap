@@ -5,19 +5,19 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <p
+      <span
         class="MuiTypography-root ValueColor-up-1 MuiTypography-body1"
       >
         5.5
-      </p>
+      </span>
     </div>
   </body>,
   "container": <div>
-    <p
+    <span
       class="MuiTypography-root ValueColor-up-1 MuiTypography-body1"
     >
       5.5
-    </p>
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -78,19 +78,19 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <p
+      <span
         class="MuiTypography-root ValueColor-down-4 MuiTypography-body1"
       >
         -2.55
-      </p>
+      </span>
     </div>
   </body>,
   "container": <div>
-    <p
+    <span
       class="MuiTypography-root ValueColor-down-4 MuiTypography-body1"
     >
       -2.55
-    </p>
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

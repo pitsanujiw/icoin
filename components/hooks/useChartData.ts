@@ -11,10 +11,10 @@ const useChartDataSets = (): ChartDataSets[] => {
       borderColor: theme.palette.secondary.main,
       borderJoinStyle: 'round',
       borderCapStyle: 'round',
-      borderWidth: 4,
+      borderWidth: 3,
+      pointHitRadius: 3,
       pointRadius: 0,
-      pointHitRadius: 4,
-      lineTension: 0.4
+      lineTension: 0
     }
   ]
 }

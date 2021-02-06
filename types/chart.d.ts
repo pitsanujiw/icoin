@@ -1,3 +1,5 @@
+import { IAsset } from 'types'
+
 export type TTime = '1D' | '1W' | '1M' | '3M' | '6M' | '1Y' | 'ALL'
 
 export type TInterval = 'm5' | 'm30' | 'h2' | 'h6' | 'h12' | 'd1'
@@ -30,4 +32,6 @@ export interface IAssetHistory {
 
 export interface IAssetHistories {
   assetHistories: Array<IAssetHistory>
+
+  asset: Pick<IAsset, 'name', 'symbol', 'changePercent24Hr'>
 }

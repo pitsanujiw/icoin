@@ -83,11 +83,11 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
+              <span
                 class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
               >
                 3.18%
-              </h6>
+              </span>
             </td>
           </tr>
         </tbody>
@@ -173,11 +173,11 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
+            <span
               class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
             >
               3.18%
-            </h6>
+            </span>
           </td>
         </tr>
       </tbody>

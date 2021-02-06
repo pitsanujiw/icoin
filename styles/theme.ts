@@ -24,10 +24,6 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
         MuiLink: {
           underline: 'none'
         }
-      },
-
-      typography: {
-        fontFamily: "'Inter', sans-serif;"
       }
     })
   )

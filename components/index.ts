@@ -1,5 +1,6 @@
-export * from './asset-detail/AssetDetail'
 export * from './asset-detail/AssetChart'
+export * from './asset-detail/AssetDetail'
+export * from './asset-detail/AssetHighLow'
 export * from './asset-detail/AssetRankBox'
 export * from './asset-detail/AssetSummary'
 export * from './assets/AssetItem'

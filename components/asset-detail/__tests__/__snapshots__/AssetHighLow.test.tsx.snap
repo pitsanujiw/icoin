@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetHighLow Should render it correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+        >
+          <div
+            class="AssetHighLow-iconWrapper-1"
+          />
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-10"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                High
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <span
+                  class="MuiBox-root MuiBox-root-3"
+                >
+                  $33,782.08
+                </span>
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-4"
+                >
+                  Low
+                </div>
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <span
+                  class="MuiBox-root MuiBox-root-5"
+                >
+                  $33,459.09
+                </span>
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-6"
+                >
+                  Average
+                </div>
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <span
+                  class="MuiBox-root MuiBox-root-7"
+                >
+                  $33,620.58
+                </span>
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-8"
+                >
+                  Change
+                </div>
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <span
+                  class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
+                >
+                  <span
+                    class="MuiBox-root MuiBox-root-11"
+                  >
+                    4.95%
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+      >
+        <div
+          class="AssetHighLow-iconWrapper-1"
+        />
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-10"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+            >
+              High
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <span
+                class="MuiBox-root MuiBox-root-3"
+              >
+                $33,782.08
+              </span>
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-4"
+              >
+                Low
+              </div>
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <span
+                class="MuiBox-root MuiBox-root-5"
+              >
+                $33,459.09
+              </span>
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-6"
+              >
+                Average
+              </div>
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <span
+                class="MuiBox-root MuiBox-root-7"
+              >
+                $33,620.58
+              </span>
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-8"
+              >
+                Change
+              </div>
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <span
+                class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
+              >
+                <span
+                  class="MuiBox-root MuiBox-root-11"
+                >
+                  4.95%
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

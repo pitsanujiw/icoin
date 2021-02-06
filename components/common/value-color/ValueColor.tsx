@@ -33,6 +33,7 @@ const ValueColor: React.FC<IValueColorProps> = ({
         [classes.up]: value > 0,
         [classes.down]: value < 0
       })}
+      component="span"
       {...restProps}
     />
   )

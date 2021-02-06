@@ -4,7 +4,7 @@ import SearchIcon from '@material-ui/icons/Search'
 
 const Search = (): React.ReactElement => {
   return (
-    <Paper elevation={0} square>
+    <Paper square>
       <ContainerWrapper>
         <TextField
           placeholder="Search for cryptocurrencies"

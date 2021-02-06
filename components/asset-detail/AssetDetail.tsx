@@ -1,3 +1,4 @@
+import { Paper, Divider } from '@material-ui/core'
 import { AssetSummary, AssetChart } from 'components'
 import { useRouter } from 'next/router'
 import { isString } from 'lodash'
@@ -8,10 +9,11 @@ const AssetDetail: React.FC = () => {
 
   if (isString(id)) {
     return (
-      <>
+      <Paper square>
         <AssetSummary id={id} />
+        <Divider />
         <AssetChart id={id} />
-      </>
+      </Paper>
     )
   }
 
