@@ -1,6 +1,9 @@
-import { Theme } from 'styles'
+import { ICoinTheme } from 'styles'
 
 describe('Theme', () => {
-  it('Shuold return theme config correctly', () =>
-    expect(Theme).toMatchSnapshot())
+  it('Shuold return light theme config correctly', () =>
+    expect(ICoinTheme('light')).toMatchSnapshot())
+
+  it('Shuold return dark theme config correctly', () =>
+    expect(ICoinTheme('dark')).toMatchSnapshot())
 })

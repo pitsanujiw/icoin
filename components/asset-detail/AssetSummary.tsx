@@ -4,6 +4,7 @@ import {
   Link,
   Grid,
   Box,
+  Paper,
   makeStyles
 } from '@material-ui/core'
 import { Format, numberFormatter } from 'services'
@@ -61,75 +62,77 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
   const { price } = useLivePrice(id, priceUsd)
 
   return (
-    <ContainerWrapper>
-      <Grid spacing={2} container>
-        <Grid xs={12} sm={2} item>
-          <AssetRankBox rank={rank} />
-        </Grid>
-        <Grid xs={12} sm={10} item>
-          <Grid container>
-            <Grid className={classes.information} spacing={2} container>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h5" className={classes.firstRow}>
-                  {name} ({symbol})
-                </Typography>
-                <Typography variant="h5">
-                  <Box fontWeight="fontWeightBold">
-                    {Format.currency(price)}
-                  </Box>
-                </Typography>
+    <Paper square>
+      <ContainerWrapper>
+        <Grid spacing={2} container>
+          <Grid xs={12} sm={2} item>
+            <AssetRankBox rank={rank} />
+          </Grid>
+          <Grid xs={12} sm={10} item>
+            <Grid container>
+              <Grid className={classes.information} spacing={2} container>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h5" className={classes.firstRow}>
+                    {name} ({symbol})
+                  </Typography>
+                  <Typography variant="h5">
+                    <Box fontWeight="fontWeightBold">
+                      {Format.currency(price)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h5" className={classes.firstRow}>
+                    Market Cap
+                  </Typography>
+                  <Typography variant="h5">
+                    <Box fontWeight="fontWeightBold">
+                      {Format.bigNumber(marketCapUsd)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h5" className={classes.firstRow}>
+                    Volume (24h)
+                  </Typography>
+                  <Typography variant="h5">
+                    <Box fontWeight="fontWeightBold">
+                      {Format.bigNumber(volumeUsd24Hr)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h5" className={classes.firstRow}>
+                    Supply
+                  </Typography>
+                  <Typography variant="h5">
+                    <Box fontWeight="fontWeightBold">
+                      {numberFormatter.format(supply)}
+                    </Box>
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h5" className={classes.firstRow}>
-                  Market Cap
-                </Typography>
-                <Typography variant="h5">
-                  <Box fontWeight="fontWeightBold">
-                    {Format.bigNumber(marketCapUsd)}
-                  </Box>
-                </Typography>
-              </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h5" className={classes.firstRow}>
-                  Volume (24h)
-                </Typography>
-                <Typography variant="h5">
-                  <Box fontWeight="fontWeightBold">
-                    {Format.bigNumber(volumeUsd24Hr)}
-                  </Box>
-                </Typography>
-              </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h5" className={classes.firstRow}>
-                  Supply
-                </Typography>
-                <Typography variant="h5">
-                  <Box fontWeight="fontWeightBold">
-                    {numberFormatter.format(supply)}
-                  </Box>
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid spacing={2} container>
-              <Grid item>
-                <Link href={explorer} color="inherit" target="_blank">
-                  <Button color="primary" variant="outlined" disableElevation>
-                    Explorer
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href={website} color="inherit" target="_blank">
-                  <Button color="primary" variant="outlined" disableElevation>
-                    Website
-                  </Button>
-                </Link>
+              <Grid spacing={2} container>
+                <Grid item>
+                  <Link href={explorer} color="inherit" target="_blank">
+                    <Button color="primary" variant="outlined" disableElevation>
+                      Explorer
+                    </Button>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href={website} color="inherit" target="_blank">
+                    <Button color="primary" variant="outlined" disableElevation>
+                      Website
+                    </Button>
+                  </Link>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </ContainerWrapper>
+      </ContainerWrapper>
+    </Paper>
   )
 }
 
