@@ -30,6 +30,9 @@ Object {
               <div
                 class="AssetNameAndDescription-name-4"
               >
+                <div
+                  class="AssetNameAndDescription-symbol-5"
+                />
                 <div>
                   <p
                     class="MuiTypography-root MuiTypography-button"
@@ -75,7 +78,7 @@ Object {
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
               >
                 3.18%
               </span>
@@ -120,6 +123,9 @@ Object {
             <div
               class="AssetNameAndDescription-name-4"
             >
+              <div
+                class="AssetNameAndDescription-symbol-5"
+              />
               <div>
                 <p
                   class="MuiTypography-root MuiTypography-button"
@@ -165,7 +171,7 @@ Object {
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
             >
               3.18%
             </span>

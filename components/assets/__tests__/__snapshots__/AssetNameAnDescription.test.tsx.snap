@@ -8,6 +8,9 @@ Object {
       <div
         class="AssetNameAndDescription-name-1"
       >
+        <div
+          class="AssetNameAndDescription-symbol-2"
+        />
         <div>
           <p
             class="MuiTypography-root MuiTypography-button"
@@ -27,6 +30,9 @@ Object {
     <div
       class="AssetNameAndDescription-name-1"
     >
+      <div
+        class="AssetNameAndDescription-symbol-2"
+      />
       <div>
         <p
           class="MuiTypography-root MuiTypography-button"

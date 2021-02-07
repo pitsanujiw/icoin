@@ -86,6 +86,9 @@ Object {
                   <div
                     class="AssetNameAndDescription-name-5"
                   >
+                    <div
+                      class="AssetNameAndDescription-symbol-6"
+                    />
                     <div>
                       <p
                         class="MuiTypography-root MuiTypography-button"
@@ -131,7 +134,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <span
-                    class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
                   >
                     3.15%
                   </span>
@@ -165,6 +168,9 @@ Object {
                   <div
                     class="AssetNameAndDescription-name-5"
                   >
+                    <div
+                      class="AssetNameAndDescription-symbol-6"
+                    />
                     <div>
                       <p
                         class="MuiTypography-root MuiTypography-button"
@@ -210,7 +216,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <span
-                    class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
                   >
                     7.16%
                   </span>
@@ -228,7 +234,7 @@ Object {
             </tbody>
           </table>
           <div
-            class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-8 MuiToolbar-gutters"
+            class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
           >
             <nav
               aria-label="pagination navigation"
@@ -456,6 +462,9 @@ Object {
                 <div
                   class="AssetNameAndDescription-name-5"
                 >
+                  <div
+                    class="AssetNameAndDescription-symbol-6"
+                  />
                   <div>
                     <p
                       class="MuiTypography-root MuiTypography-button"
@@ -501,7 +510,7 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
               >
                 <span
-                  class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
                 >
                   3.15%
                 </span>
@@ -535,6 +544,9 @@ Object {
                 <div
                   class="AssetNameAndDescription-name-5"
                 >
+                  <div
+                    class="AssetNameAndDescription-symbol-6"
+                  />
                   <div>
                     <p
                       class="MuiTypography-root MuiTypography-button"
@@ -580,7 +592,7 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
               >
                 <span
-                  class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
                 >
                   7.16%
                 </span>
@@ -598,7 +610,7 @@ Object {
           </tbody>
         </table>
         <div
-          class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-8 MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
         >
           <nav
             aria-label="pagination navigation"

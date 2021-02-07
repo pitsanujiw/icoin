@@ -8,12 +8,12 @@ const useStyles = makeStyles(
   theme => ({
     name: {
       display: 'flex',
-      alignItems: 'center',
+      alignItems: 'center'
+    },
 
-      '& > img': {
-        paddingRight: theme.spacing(2),
-        width: theme.spacing(6)
-      }
+    symbol: {
+      paddingRight: theme.spacing(2),
+      width: theme.spacing(6)
     }
   }),
   {
@@ -29,7 +29,7 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
 
   return (
     <div className={classes.name}>
-      <SymbolIcon name={name} symbol={symbol} />
+      <SymbolIcon name={name} symbol={symbol} className={classes.symbol} />
       <div>
         <Typography variant="button" component="p">
           {name}
