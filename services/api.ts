@@ -1,5 +1,6 @@
-import axios from 'axios'
+import { PER_PAGE } from 'data'
 import { IAPI } from 'types/api'
+import axios from 'axios'
 
 const CoingeckoAPI = axios.create({
   baseURL: process.env.NEXT_PUBLIC_COINGECKO_API
@@ -14,7 +15,7 @@ const API: IAPI = {
 
   getAssets: (
     params = {
-      limit: 30
+      limit: PER_PAGE
     }
   ) =>
     CoinCapAPI.get('/assets', {

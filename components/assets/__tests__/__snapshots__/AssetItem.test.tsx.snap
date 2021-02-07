@@ -31,11 +31,11 @@ Object {
                 class="AssetNameAndDescription-name-4"
               >
                 <div>
-                  <h6
-                    class="MuiTypography-root MuiTypography-h6"
+                  <p
+                    class="MuiTypography-root MuiTypography-button"
                   >
                     Bitcoin
-                  </h6>
+                  </p>
                   <span
                     class="MuiTypography-root MuiTypography-caption"
                   >
@@ -50,7 +50,7 @@ Object {
               <h6
                 class="MuiTypography-root MuiTypography-subtitle2"
               >
-                $649.53b
+                $649,529,734,589
               </h6>
             </td>
             <td
@@ -68,16 +68,7 @@ Object {
               <h6
                 class="MuiTypography-root MuiTypography-subtitle2"
               >
-                18,617,050
-              </h6>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $14.66b
+                $14,661,390,048
               </h6>
             </td>
             <td
@@ -88,6 +79,15 @@ Object {
               >
                 3.18%
               </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                18,617,050
+              </h6>
             </td>
           </tr>
         </tbody>
@@ -121,11 +121,11 @@ Object {
               class="AssetNameAndDescription-name-4"
             >
               <div>
-                <h6
-                  class="MuiTypography-root MuiTypography-h6"
+                <p
+                  class="MuiTypography-root MuiTypography-button"
                 >
                   Bitcoin
-                </h6>
+                </p>
                 <span
                   class="MuiTypography-root MuiTypography-caption"
                 >
@@ -140,7 +140,7 @@ Object {
             <h6
               class="MuiTypography-root MuiTypography-subtitle2"
             >
-              $649.53b
+              $649,529,734,589
             </h6>
           </td>
           <td
@@ -158,16 +158,7 @@ Object {
             <h6
               class="MuiTypography-root MuiTypography-subtitle2"
             >
-              18,617,050
-            </h6>
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-          >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $14.66b
+              $14,661,390,048
             </h6>
           </td>
           <td
@@ -178,6 +169,15 @@ Object {
             >
               3.18%
             </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              18,617,050
+            </h6>
           </td>
         </tr>
       </tbody>

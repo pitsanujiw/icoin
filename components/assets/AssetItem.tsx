@@ -73,7 +73,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
       </TableCell>
       <TableCell align="right">
         <Typography variant="subtitle2">
-          {Format.bigNumber(marketCapUsd)}
+          {Format.currency(marketCapUsd)}
         </Typography>
       </TableCell>
       <TableCell align="right">
@@ -81,18 +81,18 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
       </TableCell>
       <TableCell align="right">
         <Typography variant="subtitle2">
-          {numberFormatter.format(supply)}
-        </Typography>
-      </TableCell>
-      <TableCell align="right">
-        <Typography variant="subtitle2">
-          {Format.bigNumber(volumeUsd24Hr)}
+          {Format.currency(volumeUsd24Hr)}
         </Typography>
       </TableCell>
       <TableCell align="right">
         <ValueColor variant="subtitle2" value={changePercent24Hr}>
           {Format.percent(changePercent24Hr)}
         </ValueColor>
+      </TableCell>
+      <TableCell align="right">
+        <Typography variant="subtitle2">
+          {numberFormatter.format(supply)}
+        </Typography>
       </TableCell>
     </TableRow>
   )

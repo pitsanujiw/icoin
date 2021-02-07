@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { ILivePrices } from 'types/prices'
+import { ILivePrices } from 'types'
 
 const initialState: ILivePrices = { data: {} }
 

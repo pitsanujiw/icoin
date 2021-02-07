@@ -81,7 +81,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                 </Typography>
                 <Typography variant="h6">
                   <Box fontWeight="fontWeightBold" component="span">
-                    {Format.bigNumber(marketCapUsd)}
+                    {Format.currency(marketCapUsd)}
                   </Box>
                 </Typography>
               </Grid>
@@ -91,7 +91,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                 </Typography>
                 <Typography variant="h6">
                   <Box fontWeight="fontWeightBold" component="span">
-                    {Format.bigNumber(volumeUsd24Hr)}
+                    {Format.currency(volumeUsd24Hr)}
                   </Box>
                 </Typography>
               </Grid>

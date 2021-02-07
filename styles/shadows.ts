@@ -6,9 +6,9 @@
  * @description Change the color from 0, 0, 0 to 130, 130, 130
  */
 
-const shadowKeyUmbraOpacity = 0.2
-const shadowKeyPenumbraOpacity = 0.14
-const shadowAmbientShadowOpacity = 0.12
+const shadowKeyUmbraOpacity = 0.06
+const shadowKeyPenumbraOpacity = 0.04
+const shadowAmbientShadowOpacity = 0.04
 
 const createShadow = (...px: number[]) => {
   return [

@@ -1,5 +1,7 @@
 import { TTime, TInterval } from 'types'
 
+export const PER_PAGE = 50
+
 export const DURATION = 250
 
 export const TIME: Array<TTime> = ['1D', '1W', '1M', '3M', '6M', '1Y', 'ALL']

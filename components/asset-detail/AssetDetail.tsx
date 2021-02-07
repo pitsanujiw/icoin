@@ -11,7 +11,7 @@ const AssetDetail: React.FC = () => {
     return (
       <Paper square>
         <AssetSummary id={id} />
-        <Divider />
+        <Divider light />
         <AssetChart id={id} />
       </Paper>
     )

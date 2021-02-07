@@ -61,7 +61,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               <Typography variant="h6" gutterBottom>
                 High
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <Box fontWeight="fontWeightBold" component="span">
                   {Format.currency(high)}
                 </Box>
@@ -71,7 +71,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               <Typography variant="h6" gutterBottom>
                 <Box>Low</Box>
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <Box fontWeight="fontWeightBold" component="span">
                   {Format.currency(low)}
                 </Box>
@@ -81,7 +81,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               <Typography variant="h6" gutterBottom>
                 <Box>Average</Box>
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <Box fontWeight="fontWeightBold" component="span">
                   {Format.currency(average)}
                 </Box>
@@ -91,7 +91,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               <Typography variant="h6" gutterBottom>
                 <Box>Change</Box>
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 <ValueColor value={changePercent24Hr}>
                   <Box fontWeight="fontWeightBold" component="span">
                     {Format.percent(changePercent24Hr)}

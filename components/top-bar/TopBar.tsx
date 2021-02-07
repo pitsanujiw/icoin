@@ -1,7 +1,8 @@
-import { API } from 'services'
+import { IRootStore } from 'types'
 import { makeStyles, AppBar, Grow, Divider, Toolbar } from '@material-ui/core'
 import { TopBarContent } from 'components/top-bar/TopBarContent'
-import { useAsync } from 'react-use'
+import { useGlobal } from 'components'
+import { useSelector } from 'react-redux'
 
 const useStyles = makeStyles(
   () => ({
@@ -16,15 +17,16 @@ const useStyles = makeStyles(
 )
 
 const TopBar = (): React.ReactElement => {
+  useGlobal()
   const classes = useStyles()
-  const { loading, value } = useAsync(API.getGlobals)
+  const data = useSelector((store: IRootStore) => store.globals.data)
 
   return (
     <AppBar position="relative" color="inherit" elevation={0}>
       <Toolbar className={classes.toolBar}>
-        {!loading && (
+        {data && (
           <Grow in>
-            <TopBarContent value={value} />
+            <TopBarContent data={data} />
           </Grow>
         )}
       </Toolbar>

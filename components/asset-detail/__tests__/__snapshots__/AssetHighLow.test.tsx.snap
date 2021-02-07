@@ -29,15 +29,15 @@ Object {
               >
                 High
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
               >
                 <span
                   class="MuiBox-root MuiBox-root-3"
                 >
                   $33,782.08
                 </span>
-              </p>
+              </h6>
             </div>
             <div
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -51,15 +51,15 @@ Object {
                   Low
                 </div>
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
               >
                 <span
                   class="MuiBox-root MuiBox-root-5"
                 >
                   $33,459.09
                 </span>
-              </p>
+              </h6>
             </div>
             <div
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -73,15 +73,15 @@ Object {
                   Average
                 </div>
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
               >
                 <span
                   class="MuiBox-root MuiBox-root-7"
                 >
                   $33,620.58
                 </span>
-              </p>
+              </h6>
             </div>
             <div
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -95,8 +95,8 @@ Object {
                   Change
                 </div>
               </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
               >
                 <span
                   class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
@@ -107,7 +107,7 @@ Object {
                     4.95%
                   </span>
                 </span>
-              </p>
+              </h6>
             </div>
           </div>
         </div>
@@ -139,15 +139,15 @@ Object {
             >
               High
             </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
             >
               <span
                 class="MuiBox-root MuiBox-root-3"
               >
                 $33,782.08
               </span>
-            </p>
+            </h6>
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -161,15 +161,15 @@ Object {
                 Low
               </div>
             </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
             >
               <span
                 class="MuiBox-root MuiBox-root-5"
               >
                 $33,459.09
               </span>
-            </p>
+            </h6>
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -183,15 +183,15 @@ Object {
                 Average
               </div>
             </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
             >
               <span
                 class="MuiBox-root MuiBox-root-7"
               >
                 $33,620.58
               </span>
-            </p>
+            </h6>
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
@@ -205,8 +205,8 @@ Object {
                 Change
               </div>
             </h6>
-            <p
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
             >
               <span
                 class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
@@ -217,7 +217,7 @@ Object {
                   4.95%
                 </span>
               </span>
-            </p>
+            </h6>
           </div>
         </div>
       </div>

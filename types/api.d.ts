@@ -17,5 +17,7 @@ export interface IAPI {
    *
    * @returns `Promise<AxiosResponse<IAssetResponse>>`
    */
-  getAssets: (params?: IAssetParams) => Promise<AxiosResponse<IAssetResponse>>
+  getAssets: (
+    params: Partial<IAssetParams>
+  ) => Promise<AxiosResponse<IAssetResponse>>
 }

@@ -19,65 +19,62 @@ Object {
               class="TopBarContent-info-3"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle2"
+                class="MuiTypography-root MuiTypography-caption"
               >
                 Cryptocurrencies: 
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
                 >
                   6191
                 </span>
               </span>
               <span
-                class="MuiTypography-root MuiTypography-subtitle2"
+                class="MuiTypography-root MuiTypography-caption"
               >
                 Markets: 
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
                 >
                   564
                 </span>
               </span>
-            </div>
-            <div
-              class="TopBarContent-info-3"
-            >
               <span
-                class="MuiTypography-root MuiTypography-subtitle2"
+                class="MuiTypography-root MuiTypography-caption"
               >
                 Market Cap: 
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
                 >
-                  $1.02t
+                  $1,016,628,962,623
                 </span>
               </span>
               <span
-                class="MuiTypography-root MuiTypography-subtitle2"
+                class="MuiTypography-root MuiTypography-caption"
               >
                 24h Volume: 
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
                 >
-                  $162.86b
+                  $162,857,223,749
                 </span>
               </span>
               <span
-                class="MuiTypography-root MuiTypography-subtitle2"
+                class="MuiTypography-root MuiTypography-caption"
               >
                 Dominance: 
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
                 >
                   BTC 
                   62.02%
                 </span>
-              </span>
-              <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-              >
-                ETH 
-                15.17%
+                   
+                <span
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+                >
+                  ETH 
+                  15.17%
+                </span>
               </span>
             </div>
           </div>
@@ -103,65 +100,62 @@ Object {
             class="TopBarContent-info-3"
           >
             <span
-              class="MuiTypography-root MuiTypography-subtitle2"
+              class="MuiTypography-root MuiTypography-caption"
             >
               Cryptocurrencies: 
               <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
               >
                 6191
               </span>
             </span>
             <span
-              class="MuiTypography-root MuiTypography-subtitle2"
+              class="MuiTypography-root MuiTypography-caption"
             >
               Markets: 
               <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
               >
                 564
               </span>
             </span>
-          </div>
-          <div
-            class="TopBarContent-info-3"
-          >
             <span
-              class="MuiTypography-root MuiTypography-subtitle2"
+              class="MuiTypography-root MuiTypography-caption"
             >
               Market Cap: 
               <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
               >
-                $1.02t
+                $1,016,628,962,623
               </span>
             </span>
             <span
-              class="MuiTypography-root MuiTypography-subtitle2"
+              class="MuiTypography-root MuiTypography-caption"
             >
               24h Volume: 
               <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
               >
-                $162.86b
+                $162,857,223,749
               </span>
             </span>
             <span
-              class="MuiTypography-root MuiTypography-subtitle2"
+              class="MuiTypography-root MuiTypography-caption"
             >
               Dominance: 
               <span
-                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
               >
                 BTC 
                 62.02%
               </span>
-            </span>
-            <span
-              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
-            >
-              ETH 
-              15.17%
+                 
+              <span
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              >
+                ETH 
+                15.17%
+              </span>
             </span>
           </div>
         </div>
