@@ -44,7 +44,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
     const average = (Number(high) + Number(low)) / 2
 
     return (
-      <Grid container>
+      <Grid alignItems="center" container>
         <Grid xs={12} sm={2} item>
           <div className={classes.iconWrapper}>
             <SymbolIcon

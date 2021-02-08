@@ -1,7 +1,7 @@
 import { CDN } from 'services'
 import { Img } from 'react-image'
 import { TIconType, TSymbol } from 'types'
-import { makeStyles } from '@material-ui/core'
+import { Fade, makeStyles } from '@material-ui/core'
 
 interface ISymbolIconProps extends TSymbol {
   className?: string
@@ -32,9 +32,14 @@ const SymbolIcon: React.FC<ISymbolIconProps> = ({
   return (
     <div className={className}>
       <Img
-        src={[CDN.getIcon(symbol.toLowerCase(), type), CDN.defaultIcon]}
         alt={name}
         className={classes.img}
+        src={[CDN.getIcon(symbol.toLowerCase(), type), CDN.defaultIcon]}
+        container={children => (
+          <Fade in>
+            <div>{children}</div>
+          </Fade>
+        )}
       />
     </div>
   )
