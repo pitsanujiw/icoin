@@ -13,7 +13,7 @@ const useStyles = makeStyles(
     pagiation: {
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'space-between'
+      justifyContent: 'center'
     }
   }),
   {
