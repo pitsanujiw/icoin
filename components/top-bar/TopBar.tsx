@@ -30,7 +30,7 @@ const TopBar = (): React.ReactElement => {
           </Grow>
         )}
       </Toolbar>
-      <Divider />
+      <Divider light />
     </AppBar>
   )
 }

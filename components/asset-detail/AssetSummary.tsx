@@ -9,7 +9,12 @@ import {
 import { Format, numberFormatter } from 'services'
 import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { useLivePrice, AssetRankBox, ContainerWrapper } from 'components'
+import {
+  useLivePrice,
+  AssetRankBox,
+  ContainerWrapper,
+  PaperWrapper
+} from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 
 interface IAssetSummaryContent extends ICommonRoutePrams {
@@ -58,73 +63,75 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
 
   return (
     <ContainerWrapper>
-      <Grid spacing={2} container>
-        <Grid xs={12} sm={2} item>
-          <AssetRankBox rank={rank} />
-        </Grid>
-        <Grid xs={12} sm={10} item>
-          <Grid container>
-            <Grid className={classes.information} spacing={2} container>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h6" gutterBottom>
-                  {name} ({symbol})
-                </Typography>
-                <Typography variant="h6">
-                  <Box fontWeight="fontWeightBold" component="span">
-                    {Format.currency(price)}
-                  </Box>
-                </Typography>
+      <PaperWrapper>
+        <Grid spacing={2} container>
+          <Grid xs={12} sm={2} item>
+            <AssetRankBox rank={rank} />
+          </Grid>
+          <Grid xs={12} sm={10} item>
+            <Grid container>
+              <Grid className={classes.information} spacing={2} container>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h6" color="textSecondary" gutterBottom>
+                    {name} ({symbol})
+                  </Typography>
+                  <Typography variant="h6">
+                    <Box fontWeight="fontWeightBold" component="span">
+                      {Format.currency(price)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h6" color="textSecondary" gutterBottom>
+                    Market Cap
+                  </Typography>
+                  <Typography variant="h6">
+                    <Box fontWeight="fontWeightBold" component="span">
+                      {Format.currency(marketCapUsd)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h6" color="textSecondary" gutterBottom>
+                    Volume (24h)
+                  </Typography>
+                  <Typography variant="h6">
+                    <Box fontWeight="fontWeightBold" component="span">
+                      {Format.currency(volumeUsd24Hr)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Grid xs={12} sm={3} item>
+                  <Typography variant="h6" color="textSecondary" gutterBottom>
+                    Supply
+                  </Typography>
+                  <Typography variant="h6">
+                    <Box fontWeight="fontWeightBold" component="span">
+                      {numberFormatter.format(supply)}
+                    </Box>
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h6" gutterBottom>
-                  Market Cap
-                </Typography>
-                <Typography variant="h6">
-                  <Box fontWeight="fontWeightBold" component="span">
-                    {Format.currency(marketCapUsd)}
-                  </Box>
-                </Typography>
-              </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h6" gutterBottom>
-                  Volume (24h)
-                </Typography>
-                <Typography variant="h6">
-                  <Box fontWeight="fontWeightBold" component="span">
-                    {Format.currency(volumeUsd24Hr)}
-                  </Box>
-                </Typography>
-              </Grid>
-              <Grid xs={12} sm={3} item>
-                <Typography variant="h6" gutterBottom>
-                  Supply
-                </Typography>
-                <Typography variant="h6">
-                  <Box fontWeight="fontWeightBold" component="span">
-                    {numberFormatter.format(supply)}
-                  </Box>
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid spacing={2} container>
-              <Grid item>
-                <Link href={explorer} color="inherit" target="_blank">
-                  <Button color="primary" variant="outlined" disableElevation>
-                    Explorer
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href={website} color="inherit" target="_blank">
-                  <Button color="primary" variant="outlined" disableElevation>
-                    Website
-                  </Button>
-                </Link>
+              <Grid spacing={2} container>
+                <Grid item>
+                  <Link href={explorer} color="inherit" target="_blank">
+                    <Button color="primary" variant="outlined" disableElevation>
+                      Explorer
+                    </Button>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href={website} color="inherit" target="_blank">
+                    <Button color="primary" variant="outlined" disableElevation>
+                      Website
+                    </Button>
+                  </Link>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </PaperWrapper>
     </ContainerWrapper>
   )
 }

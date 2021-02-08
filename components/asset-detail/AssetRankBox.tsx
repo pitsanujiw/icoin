@@ -13,7 +13,8 @@ const useStyles = makeStyles(
       height: '100%',
       border: '2px solid',
       padding: `${theme.spacing(2)}px 0`,
-      maxWidth: theme.spacing(16)
+      maxWidth: theme.spacing(16),
+      ...theme.shape
     }
   }),
   {

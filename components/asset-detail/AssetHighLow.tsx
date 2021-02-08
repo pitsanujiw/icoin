@@ -58,7 +58,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
         <Grid xs={12} sm={10} item>
           <Grid container>
             <Grid xs={12} sm={3} item>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" color="textSecondary" gutterBottom>
                 High
               </Typography>
               <Typography variant="h6">
@@ -68,7 +68,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               </Typography>
             </Grid>
             <Grid xs={12} sm={3} item>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" color="textSecondary" gutterBottom>
                 <Box>Low</Box>
               </Typography>
               <Typography variant="h6">
@@ -78,7 +78,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               </Typography>
             </Grid>
             <Grid xs={12} sm={3} item>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" color="textSecondary" gutterBottom>
                 <Box>Average</Box>
               </Typography>
               <Typography variant="h6">
@@ -88,7 +88,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
               </Typography>
             </Grid>
             <Grid xs={12} sm={3} item>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" color="textSecondary" gutterBottom>
                 <Box>Change</Box>
               </Typography>
               <Typography variant="h6">

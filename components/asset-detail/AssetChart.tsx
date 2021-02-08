@@ -5,11 +5,12 @@ import {
   AssetHighLow,
   ContainerWrapper,
   LineChart,
-  TimeSelection
+  PaperWrapper,
+  TimeSelection,
+  useTime
 } from 'components'
 import { useEffect } from 'react'
 import { useLazyQuery, COIN_CHART } from 'apollo'
-import { useTime } from 'components'
 
 const useStyles = makeStyles(
   theme => ({
@@ -37,7 +38,9 @@ const AssetChart: React.FC<ICommonRoutePrams> = ({
 
   return (
     <ContainerWrapper>
-      <AssetHighLow data={data} />
+      <PaperWrapper>
+        <AssetHighLow data={data} />
+      </PaperWrapper>
       <div className={classes.chartSection}>
         <LineChart time={time} data={data} />
       </div>

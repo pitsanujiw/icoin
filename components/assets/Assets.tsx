@@ -18,6 +18,7 @@ import { PER_PAGE } from 'data'
 import { IRootStore, IGlobalData } from 'types'
 import { useAsync } from 'react-use'
 import { useSelector } from 'react-redux'
+import { Render } from 'use-react-common'
 
 type IAssetsTableProps = Pick<IGlobalData, 'active_cryptocurrencies'>
 
@@ -36,8 +37,10 @@ const Assets = (): React.ReactElement => {
 const AssetsTable: React.FC<IAssetsTableProps> = ({
   active_cryptocurrencies
 }): React.ReactElement => {
-  const { page, onChangePage } = usePagination(page => Routes.home.concat(page))
-  const { loading, value } = useAsync(
+  const { page, onChangePage } = usePagination(page =>
+    Routes.home.concat(`?page=${page}`)
+  )
+  const { value } = useAsync(
     () =>
       API.getAssets({
         offset: Paginate.offset(page, PER_PAGE),
@@ -46,8 +49,8 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({
     [page]
   )
 
-  if (!loading) {
-    const { data } = value.data
+  return Render.ensure(assets => {
+    const { data } = assets.data
 
     return (
       <ContainerWrapper>
@@ -78,9 +81,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({
         </TableContainer>
       </ContainerWrapper>
     )
-  }
-
-  return <></>
+  }, value)
 }
 
 export { Assets, AssetsTable }

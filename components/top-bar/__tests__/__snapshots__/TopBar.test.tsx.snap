@@ -80,7 +80,7 @@ Object {
           </div>
         </div>
         <hr
-          class="MuiDivider-root"
+          class="MuiDivider-root MuiDivider-light"
         />
       </header>
     </div>
@@ -161,7 +161,7 @@ Object {
         </div>
       </div>
       <hr
-        class="MuiDivider-root"
+        class="MuiDivider-root MuiDivider-light"
       />
     </header>
   </div>,
