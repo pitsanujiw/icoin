@@ -51,7 +51,7 @@
     "react-redux": "^7.2.2",
     "react-use": "^17.0.2",
     "redux-devtools-extension": "^2.13.8",
-    "use-react-common": "1.0.7"
+    "use-react-common": "1.0.9"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",

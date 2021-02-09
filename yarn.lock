@@ -5902,6 +5902,25 @@ react-use@^17.0.2:
     ts-easing "^0.2.0"
     tslib "^2.1.0"
 
+react-use@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-17.1.0.tgz#a2db05f7cca2f09a6b90b2151cd4c620e9582fe8"
+  integrity sha512-BVVG5FWXYhfkQcGhtSYNx3wPh5bvOZieH2iq1h6/WYTDCScade1JqoM5XRHPkYXfFzAzhb8QlAtt9Suj8yAumA==
+  dependencies:
+    "@xobotyi/scrollbar-width" "^1.9.5"
+    copy-to-clipboard "^3.3.1"
+    fast-deep-equal "^3.1.3"
+    fast-shallow-equal "^1.0.0"
+    js-cookie "^2.2.1"
+    nano-css "^5.3.1"
+    react-universal-interface "^0.6.2"
+    resize-observer-polyfill "^1.5.1"
+    screenfull "^5.1.0"
+    set-harmonic-interval "^1.0.1"
+    throttle-debounce "^3.0.1"
+    ts-easing "^0.2.0"
+    tslib "^2.1.0"
+
 react@17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
@@ -7248,13 +7267,14 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-react-common@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/use-react-common/-/use-react-common-1.0.7.tgz#46b240c091f6d535ff4a5dfe3e2d5b5e99b7745f"
-  integrity sha512-Q9BrK4UI5x+jnUGAWDclSdyJotkhkifqO2B0A2lry/HAr8XJHjWur+cSttFRxNSh/qWPmynYGFWdXXrtmg0IQA==
+use-react-common@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/use-react-common/-/use-react-common-1.0.9.tgz#fd319c9075f78f845c3d210c94aa5c8ac989ab21"
+  integrity sha512-/82HCMysXBG5pCeNVxsnSq8F0Pjb5vZduuMnA9v2F4tTm+ZMiFt7EAyz12ENByyWZLS8mw2UataIb0NkF9EM2Q==
   dependencies:
     immer "^8.0.1"
     lodash "^4.17.20"
+    react-use "^17.1.0"
 
 use-subscription@1.5.1:
   version "1.5.1"
