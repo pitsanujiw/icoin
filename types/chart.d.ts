@@ -33,5 +33,5 @@ export interface IAssetHistory {
 export interface IAssetHistories {
   assetHistories: Array<IAssetHistory>
 
-  asset: Pick<IAsset, 'name', 'symbol', 'changePercent24Hr'>
+  asset: Pick<IAsset, 'name' | 'symbol' | 'changePercent24Hr'>
 }

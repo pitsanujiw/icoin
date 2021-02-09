@@ -23,7 +23,7 @@ const Disclaimer = (): React.ReactElement => {
         <Typography gutterBottom variant="h6">
           IMPORTANT DISCLAIMER
         </Typography>
-        <Typography>
+        <Typography variant="subtitle2">
           All content provided here in our website, hyperlinked sites,
           associated applications, forums, blogs, social media accounts and
           other platforms (“Site”) is for your general information only,

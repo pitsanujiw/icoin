@@ -33,15 +33,13 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
 
   return Render.ensure(readyData => {
     const { asset, assetHistories } = readyData
+    const convertedAssetHistories = Format.toNumber(assetHistories, [
+      'priceUsd'
+    ])
     const { name, symbol, changePercent24Hr } = asset
-    const high = Price.max(assetHistories)
-    const low = Price.min(assetHistories)
-    /**
-     * @description High and low are even Number type
-     * But it's actually a (string) number
-     * So we need to convert by using Number(..) before calculating
-     */
-    const average = (Number(high) + Number(low)) / 2
+    const high = Price.max(convertedAssetHistories)
+    const low = Price.min(convertedAssetHistories)
+    const average = (high + low) / 2
 
     return (
       <Grid alignItems="center" container>

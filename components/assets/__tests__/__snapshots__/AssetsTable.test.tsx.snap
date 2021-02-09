@@ -1,0 +1,746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetsTable Should render assets table correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                role="button"
+                tabindex="0"
+              >
+                #
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Name and Description
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Market Cap
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Price
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Volume
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Change (24h)
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Circularing Supply
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root AssetItem-asset-1"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                1
+                .
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body"
+            >
+              <div
+                class="AssetNameAndDescription-name-4"
+              >
+                <div
+                  class="AssetNameAndDescription-symbol-5"
+                />
+                <div>
+                  <p
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    Bitcoin
+                  </p>
+                  <span
+                    class="MuiTypography-root MuiTypography-caption"
+                  >
+                    BTC
+                  </span>
+                </div>
+              </div>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $647,158,791,754
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $34,761.62
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $14,567,120,537
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <span
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+              >
+                3.15%
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                18,617,050
+              </h6>
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root AssetItem-asset-1"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                2
+                .
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body"
+            >
+              <div
+                class="AssetNameAndDescription-name-4"
+              >
+                <div
+                  class="AssetNameAndDescription-symbol-5"
+                />
+                <div>
+                  <p
+                    class="MuiTypography-root MuiTypography-button"
+                  >
+                    Ethereum
+                  </p>
+                  <span
+                    class="MuiTypography-root MuiTypography-caption"
+                  >
+                    ETH
+                  </span>
+                </div>
+              </div>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $163,024,735,364
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $1,423.75
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                $10,514,268,643
+              </h6>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <span
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+              >
+                7.16%
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2"
+              >
+                114,503,686.687
+              </h6>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+              role="button"
+              tabindex="0"
+            >
+              #
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Name and Description
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Market Cap
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Price
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Volume
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Change (24h)
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Circularing Supply
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root AssetItem-asset-1"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              1
+              .
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="AssetNameAndDescription-name-4"
+            >
+              <div
+                class="AssetNameAndDescription-symbol-5"
+              />
+              <div>
+                <p
+                  class="MuiTypography-root MuiTypography-button"
+                >
+                  Bitcoin
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption"
+                >
+                  BTC
+                </span>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $647,158,791,754
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $34,761.62
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $14,567,120,537
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <span
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+            >
+              3.15%
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              18,617,050
+            </h6>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root AssetItem-asset-1"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              2
+              .
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="AssetNameAndDescription-name-4"
+            >
+              <div
+                class="AssetNameAndDescription-symbol-5"
+              />
+              <div>
+                <p
+                  class="MuiTypography-root MuiTypography-button"
+                >
+                  Ethereum
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption"
+                >
+                  ETH
+                </span>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $163,024,735,364
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $1,423.75
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              $10,514,268,643
+            </h6>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <span
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+            >
+              7.16%
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              114,503,686.687
+            </h6>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

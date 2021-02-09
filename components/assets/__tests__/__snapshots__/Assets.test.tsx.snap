@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Assets Should render assets table correctly 1`] = `
+exports[`Assets Should render assets content correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -24,43 +24,162 @@ Object {
                   class="MuiTableCell-root MuiTableCell-head"
                   scope="col"
                 >
-                  #
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                    role="button"
+                    tabindex="0"
+                  >
+                    #
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head"
                   scope="col"
                 >
-                  Name and Description
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Name and Description
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Market Cap
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Market Cap
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Price
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Price
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Volume
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Volume
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Change (24h)
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Change (24h)
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Circularing Supply
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiTableSortLabel-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Circularing Supply
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                      />
+                    </svg>
+                  </span>
                 </th>
               </tr>
             </thead>
@@ -68,7 +187,7 @@ Object {
               class="MuiTableBody-root"
             >
               <tr
-                class="MuiTableRow-root AssetItem-asset-2"
+                class="MuiTableRow-root AssetItem-asset-3"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -84,10 +203,10 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body"
                 >
                   <div
-                    class="AssetNameAndDescription-name-5"
+                    class="AssetNameAndDescription-name-6"
                   >
                     <div
-                      class="AssetNameAndDescription-symbol-6"
+                      class="AssetNameAndDescription-symbol-7"
                     />
                     <div>
                       <p
@@ -134,7 +253,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <span
-                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
+                    class="MuiTypography-root ValueColor-up-9 MuiTypography-subtitle2"
                   >
                     3.15%
                   </span>
@@ -150,7 +269,7 @@ Object {
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root AssetItem-asset-2"
+                class="MuiTableRow-root AssetItem-asset-3"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -166,10 +285,10 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body"
                 >
                   <div
-                    class="AssetNameAndDescription-name-5"
+                    class="AssetNameAndDescription-name-6"
                   >
                     <div
-                      class="AssetNameAndDescription-symbol-6"
+                      class="AssetNameAndDescription-symbol-7"
                     />
                     <div>
                       <p
@@ -216,7 +335,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <span
-                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
+                    class="MuiTypography-root ValueColor-up-9 MuiTypography-subtitle2"
                   >
                     7.16%
                   </span>
@@ -234,7 +353,7 @@ Object {
             </tbody>
           </table>
           <div
-            class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
+            class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-2 MuiToolbar-gutters"
           >
             <nav
               aria-label="pagination navigation"
@@ -400,43 +519,162 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head"
                 scope="col"
               >
-                #
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                  role="button"
+                  tabindex="0"
+                >
+                  #
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head"
                 scope="col"
               >
-                Name and Description
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Name and Description
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Market Cap
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Market Cap
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Price
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Price
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Volume
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Volume
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Change (24h)
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Change (24h)
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Circularing Supply
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Circularing Supply
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
             </tr>
           </thead>
@@ -444,7 +682,7 @@ Object {
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root AssetItem-asset-2"
+              class="MuiTableRow-root AssetItem-asset-3"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"
@@ -460,10 +698,10 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body"
               >
                 <div
-                  class="AssetNameAndDescription-name-5"
+                  class="AssetNameAndDescription-name-6"
                 >
                   <div
-                    class="AssetNameAndDescription-symbol-6"
+                    class="AssetNameAndDescription-symbol-7"
                   />
                   <div>
                     <p
@@ -510,7 +748,7 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
               >
                 <span
-                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
+                  class="MuiTypography-root ValueColor-up-9 MuiTypography-subtitle2"
                 >
                   3.15%
                 </span>
@@ -526,7 +764,7 @@ Object {
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root AssetItem-asset-2"
+              class="MuiTableRow-root AssetItem-asset-3"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"
@@ -542,10 +780,10 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body"
               >
                 <div
-                  class="AssetNameAndDescription-name-5"
+                  class="AssetNameAndDescription-name-6"
                 >
                   <div
-                    class="AssetNameAndDescription-symbol-6"
+                    class="AssetNameAndDescription-symbol-7"
                   />
                   <div>
                     <p
@@ -592,7 +830,7 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
               >
                 <span
-                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
+                  class="MuiTypography-root ValueColor-up-9 MuiTypography-subtitle2"
                 >
                   7.16%
                 </span>
@@ -610,7 +848,7 @@ Object {
           </tbody>
         </table>
         <div
-          class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-2 MuiToolbar-gutters"
         >
           <nav
             aria-label="pagination navigation"

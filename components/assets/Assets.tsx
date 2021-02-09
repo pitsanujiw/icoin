@@ -1,14 +1,6 @@
+import { Paper, TableContainer } from '@material-ui/core'
 import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow
-} from '@material-ui/core'
-import {
-  AssetItem,
+  AssetsTable,
   ContainerWrapper,
   Pagination,
   usePagination
@@ -20,21 +12,21 @@ import { useAsync } from 'react-use'
 import { useSelector } from 'react-redux'
 import { Render } from 'use-react-common'
 
-type IAssetsTableProps = Pick<IGlobalData, 'active_cryptocurrencies'>
+type IAssetsContentProps = Pick<IGlobalData, 'active_cryptocurrencies'>
 
 const Assets = (): React.ReactElement => {
   const { data } = useSelector((store: IRootStore) => store.globals)
 
   if (data) {
     return (
-      <AssetsTable active_cryptocurrencies={data.active_cryptocurrencies} />
+      <AssetsContent active_cryptocurrencies={data.active_cryptocurrencies} />
     )
   }
 
   return <></>
 }
 
-const AssetsTable: React.FC<IAssetsTableProps> = ({
+const AssetsContent: React.FC<IAssetsContentProps> = ({
   active_cryptocurrencies
 }): React.ReactElement => {
   const { page, onChangePage } = usePagination(page =>
@@ -55,24 +47,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({
     return (
       <ContainerWrapper>
         <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>#</TableCell>
-                <TableCell>Name and Description</TableCell>
-                <TableCell align="right">Market Cap</TableCell>
-                <TableCell align="right">Price</TableCell>
-                <TableCell align="right">Volume</TableCell>
-                <TableCell align="right">Change (24h)</TableCell>
-                <TableCell align="right">Circularing Supply</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data.map(asset => (
-                <AssetItem key={asset.id} asset={asset} />
-              ))}
-            </TableBody>
-          </Table>
+          <AssetsTable data={data} />
           <Pagination
             page={page}
             count={Paginate.count(active_cryptocurrencies, PER_PAGE)}
@@ -84,4 +59,4 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({
   }, value)
 }
 
-export { Assets, AssetsTable }
+export { Assets, AssetsContent }

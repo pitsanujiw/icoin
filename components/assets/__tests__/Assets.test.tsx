@@ -1,5 +1,5 @@
 import { act, customRender, RenderResult } from 'services/test-utils'
-import { AssetsTable } from 'components'
+import { AssetsContent } from 'components'
 import { useRouter } from 'next/router'
 
 describe('Assets', () => {
@@ -12,12 +12,12 @@ describe('Assets', () => {
     }))
   })
 
-  it('Should render assets table correctly', async () => {
+  it('Should render assets content correctly', async () => {
     let renderResult: RenderResult
 
     await act(async () => {
       renderResult = customRender(
-        <AssetsTable active_cryptocurrencies={6000} />
+        <AssetsContent active_cryptocurrencies={6000} />
       )
     })
 
