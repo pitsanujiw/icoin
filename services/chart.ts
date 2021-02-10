@@ -4,6 +4,7 @@
  */
 
 import { ChartData, ChartOptions, TimeScale } from 'chart.js'
+import { gray1 } from 'styles'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
 import { sub } from 'date-fns'
@@ -16,7 +17,7 @@ import ChartJS from 'chart.js'
  * Set it here for the ChartJS as well
  */
 ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
-ChartJS.defaults.global.defaultColor = '#333333'
+ChartJS.defaults.global.defaultColor = gray1
 
 const Chart = {
   /**

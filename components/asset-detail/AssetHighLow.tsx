@@ -45,12 +45,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
       <Grid alignItems="center" container>
         <Grid xs={12} sm={2} item>
           <div className={classes.iconWrapper}>
-            <SymbolIcon
-              type="black"
-              name={name}
-              symbol={symbol}
-              className={classes.icon}
-            />
+            <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
           </div>
         </Grid>
         <Grid xs={12} sm={10} item>

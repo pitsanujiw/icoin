@@ -26,6 +26,7 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
           dark: secondaryDark,
           contrastText: white
         },
+        success: teal,
         text: {
           primary: textPrimary
         }

@@ -115,16 +115,12 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
               <Grid spacing={2} container>
                 <Grid item>
                   <Link href={explorer} color="inherit" target="_blank">
-                    <Button variant="contained" color="primary">
-                      Explorer
-                    </Button>
+                    <Button variant="outlined">Explorer</Button>
                   </Link>
                 </Grid>
                 <Grid item>
                   <Link href={website} color="inherit" target="_blank">
-                    <Button variant="contained" color="primary">
-                      Website
-                    </Button>
+                    <Button variant="outlined">Website</Button>
                   </Link>
                 </Grid>
               </Grid>
