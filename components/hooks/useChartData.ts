@@ -7,8 +7,8 @@ const useChartDataSets = (): ChartDataSets[] => {
 
   return [
     {
-      backgroundColor: fade(theme.palette.secondary.main, 0.5),
-      borderColor: theme.palette.secondary.main,
+      backgroundColor: fade(theme.palette.success.light, 0.75),
+      borderColor: theme.palette.success.light,
       borderJoinStyle: 'round',
       borderCapStyle: 'round',
       borderWidth: 3,

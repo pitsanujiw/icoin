@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorInherit MuiPaper-elevation0"
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorSecondary MuiPaper-elevation0"
       >
         <div
           class="MuiToolbar-root MuiToolbar-regular TopBar-toolBar-1 MuiToolbar-gutters"
@@ -87,7 +87,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorInherit MuiPaper-elevation0"
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorSecondary MuiPaper-elevation0"
     >
       <div
         class="MuiToolbar-root MuiToolbar-regular TopBar-toolBar-1 MuiToolbar-gutters"

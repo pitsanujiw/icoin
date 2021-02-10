@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3 MuiPaper-rounded"
+        class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation6 MuiPaper-rounded"
       >
         Hello, World!
       </div>
@@ -14,7 +14,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3 MuiPaper-rounded"
+      class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation6 MuiPaper-rounded"
     >
       Hello, World!
     </div>

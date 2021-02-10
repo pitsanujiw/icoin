@@ -9,7 +9,7 @@ Object {
         class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
       >
         <div
-          class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation3 MuiPaper-rounded"
+          class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation6 MuiPaper-rounded"
         >
           <div
             class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-2 MuiToolbar-gutters"
@@ -609,7 +609,7 @@ Object {
       class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
     >
       <div
-        class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation3 MuiPaper-rounded"
+        class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation6 MuiPaper-rounded"
       >
         <div
           class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-2 MuiToolbar-gutters"

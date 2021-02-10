@@ -22,7 +22,7 @@ const TopBar = (): React.ReactElement => {
   const data = useSelector((store: IRootStore) => store.globals.data)
 
   return (
-    <AppBar position="relative" color="inherit" elevation={0}>
+    <AppBar position="relative" color="secondary" elevation={0}>
       <Toolbar className={classes.toolBar}>
         {data && (
           <Grow in>

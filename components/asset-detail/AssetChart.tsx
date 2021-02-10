@@ -40,11 +40,11 @@ const AssetChart: React.FC<ICommonRouteParams> = ({
     <ContainerWrapper>
       <PaperWrapper>
         <AssetHighLow data={data} />
+        <div className={classes.chartSection}>
+          <LineChart time={time} data={data} />
+        </div>
+        <TimeSelection time={time} onTimeChange={onTimeChange} />
       </PaperWrapper>
-      <div className={classes.chartSection}>
-        <LineChart time={time} data={data} />
-      </div>
-      <TimeSelection time={time} onTimeChange={onTimeChange} />
     </ContainerWrapper>
   )
 }

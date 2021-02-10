@@ -1,4 +1,4 @@
-import { Chip, Grid } from '@material-ui/core'
+import { ButtonGroup, Button } from '@material-ui/core'
 import { TIME } from 'data'
 import { ITime } from 'types'
 
@@ -7,24 +7,22 @@ const TimeSelection: React.FC<ITime> = ({
   onTimeChange
 }): React.ReactElement => {
   return (
-    <Grid spacing={1} container>
+    <ButtonGroup>
       {TIME.map(value => {
         const isSelected = value === time
 
         return (
-          <Grid key={value} item>
-            <Chip
-              color={isSelected ? 'secondary' : 'default'}
-              variant="outlined"
-              onClick={() => onTimeChange(value)}
-              label={value}
-              key={value}
-              clickable
-            />
-          </Grid>
+          <Button
+            variant={isSelected ? 'contained' : 'outlined'}
+            color={isSelected ? 'primary' : 'default'}
+            key={value}
+            onClick={() => onTimeChange(value)}
+          >
+            {value}
+          </Button>
         )
       })}
-    </Grid>
+    </ButtonGroup>
   )
 }
 

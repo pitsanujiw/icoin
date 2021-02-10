@@ -5,8 +5,8 @@ import clsx from 'clsx'
 const useStyles = makeStyles(
   theme => ({
     container: {
-      paddingTop: theme.spacing(5),
-      paddingBottom: theme.spacing(5)
+      paddingTop: theme.spacing(4),
+      paddingBottom: theme.spacing(4)
     }
   }),
   {
