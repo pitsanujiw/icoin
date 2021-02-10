@@ -17,12 +17,8 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                1
-                .
-              </h6>
+              1
+              .
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body"
@@ -50,35 +46,24 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $649,529,734,589
-              </h6>
+              $649,529,734,589
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $34,888.97
-              </h6>
+              $34,888.97
+               
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $14,661,390,048
-              </h6>
+              $14,661,390,048
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
               >
                 3.18%
               </span>
@@ -86,11 +71,7 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                18,617,050
-              </h6>
+              18,617,050
             </td>
           </tr>
         </tbody>
@@ -110,12 +91,8 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              1
-              .
-            </h6>
+            1
+            .
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body"
@@ -143,35 +120,24 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $649,529,734,589
-            </h6>
+            $649,529,734,589
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $34,888.97
-            </h6>
+            $34,888.97
+             
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $14,661,390,048
-            </h6>
+            $14,661,390,048
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
             >
               3.18%
             </span>
@@ -179,11 +145,7 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              18,617,050
-            </h6>
+            18,617,050
           </td>
         </tr>
       </tbody>

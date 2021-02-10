@@ -12,10 +12,10 @@ import ChartJS from 'chart.js'
 
 /**
  * @description
- * We are using Inter font
+ * We are using Roboto font
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
 ChartJS.defaults.global.defaultColor = '#333333'
 
 const Chart = {
@@ -31,7 +31,7 @@ const Chart = {
    * @example
    * ```
    *    const { time, onTimeChange } = useTime()
-   *     const [getIntervals, { data }] = useLazyQuery<IAssetHistories>(COIN_CHART)
+   *     const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
    *
    *     useEffect(() => {
    *       const interval = Chart.calculateInterval(id, time)

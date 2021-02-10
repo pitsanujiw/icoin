@@ -15,8 +15,7 @@ const useStyles = makeStyles(
 
     info: {
       '& > span': {
-        paddingRight: theme.spacing(2),
-        fontWeight: theme.typography.button.fontWeight
+        paddingRight: theme.spacing(2)
       }
     }
   }),

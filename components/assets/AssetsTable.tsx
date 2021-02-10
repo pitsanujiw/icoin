@@ -32,7 +32,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
               active={sorts.rank.active}
               onClick={() => sortBy('rank')}
             >
-              #
+              Rank
             </TableSortLabel>
           </TableCell>
           <TableCell>

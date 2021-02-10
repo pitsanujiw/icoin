@@ -30,7 +30,7 @@ export interface IAssetHistory {
   timestamp: number
 }
 
-export interface IAssetHistories {
+export interface IAssetHistory {
   assetHistories: Array<IAssetHistory>
 
   asset: Pick<IAsset, 'name' | 'symbol' | 'changePercent24Hr'>

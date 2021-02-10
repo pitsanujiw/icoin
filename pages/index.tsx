@@ -1,7 +1,7 @@
 import { Assets } from 'components'
 import Head from 'next/head'
 
-const Home = (): React.ReactElement => (
+const HomePage = (): React.ReactElement => (
   <>
     <Head>
       <title>ICoin</title>
@@ -10,4 +10,4 @@ const Home = (): React.ReactElement => (
   </>
 )
 
-export default Home
+export default HomePage

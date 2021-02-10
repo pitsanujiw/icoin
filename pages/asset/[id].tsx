@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { capitalize } from 'lodash'
 import Head from 'next/head'
 
-const Assset = (): React.ReactElement => {
+const AsssetPage = (): React.ReactElement => {
   const router = useRouter()
   const { id } = router.query
 
@@ -17,4 +17,4 @@ const Assset = (): React.ReactElement => {
   )
 }
 
-export default Assset
+export default AsssetPage

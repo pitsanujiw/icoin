@@ -24,7 +24,7 @@ Object {
                 role="button"
                 tabindex="0"
               >
-                #
+                Rank
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -186,12 +186,8 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                1
-                .
-              </h6>
+              1
+              .
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body"
@@ -219,35 +215,24 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $647,158,791,754
-              </h6>
+              $647,158,791,754
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $34,761.62
-              </h6>
+              $34,761.62
+               
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $14,567,120,537
-              </h6>
+              $14,567,120,537
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
               >
                 3.15%
               </span>
@@ -255,11 +240,7 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                18,617,050
-              </h6>
+              18,617,050
             </td>
           </tr>
           <tr
@@ -268,12 +249,8 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                2
-                .
-              </h6>
+              2
+              .
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body"
@@ -301,35 +278,24 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $163,024,735,364
-              </h6>
+              $163,024,735,364
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $1,423.75
-              </h6>
+              $1,423.75
+               
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                $10,514,268,643
-              </h6>
+              $10,514,268,643
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
               <span
-                class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+                class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
               >
                 7.16%
               </span>
@@ -337,11 +303,7 @@ Object {
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
             >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                114,503,686.687
-              </h6>
+              114,503,686.687
             </td>
           </tr>
         </tbody>
@@ -368,7 +330,7 @@ Object {
               role="button"
               tabindex="0"
             >
-              #
+              Rank
               <svg
                 aria-hidden="true"
                 class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -530,12 +492,8 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              1
-              .
-            </h6>
+            1
+            .
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body"
@@ -563,35 +521,24 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $647,158,791,754
-            </h6>
+            $647,158,791,754
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $34,761.62
-            </h6>
+            $34,761.62
+             
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $14,567,120,537
-            </h6>
+            $14,567,120,537
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
             >
               3.15%
             </span>
@@ -599,11 +546,7 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              18,617,050
-            </h6>
+            18,617,050
           </td>
         </tr>
         <tr
@@ -612,12 +555,8 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              2
-              .
-            </h6>
+            2
+            .
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body"
@@ -645,35 +584,24 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $163,024,735,364
-            </h6>
+            $163,024,735,364
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $1,423.75
-            </h6>
+            $1,423.75
+             
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              $10,514,268,643
-            </h6>
+            $10,514,268,643
           </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
             <span
-              class="MuiTypography-root ValueColor-up-7 MuiTypography-subtitle2"
+              class="MuiTypography-root ValueColor-up-7 MuiTypography-body2"
             >
               7.16%
             </span>
@@ -681,11 +609,7 @@ Object {
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
           >
-            <h6
-              class="MuiTypography-root MuiTypography-subtitle2"
-            >
-              114,503,686.687
-            </h6>
+            114,503,686.687
           </td>
         </tr>
       </tbody>

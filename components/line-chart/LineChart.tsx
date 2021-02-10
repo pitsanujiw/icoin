@@ -1,12 +1,12 @@
 import { Chart, Format } from 'services'
-import { IAssetHistories, TTime } from 'types'
+import { IAssetHistory, TTime } from 'types'
 import { merge, first, find } from 'lodash'
 import { useChartDataSets } from 'components'
 import { useEffect, useRef } from 'react'
 import ChartJS, { ChartData, ChartTooltipItem } from 'chart.js'
 
 interface ILineChart {
-  data: IAssetHistories
+  data: IAssetHistory
 
   time: TTime
 }

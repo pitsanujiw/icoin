@@ -47,6 +47,11 @@ const AssetsContent: React.FC<IAssetsContentProps> = ({
     return (
       <ContainerWrapper>
         <TableContainer component={Paper}>
+          <Pagination
+            page={page}
+            count={Paginate.count(active_cryptocurrencies, PER_PAGE)}
+            onChangePage={onChangePage}
+          />
           <AssetsTable data={data} />
           <Pagination
             page={page}

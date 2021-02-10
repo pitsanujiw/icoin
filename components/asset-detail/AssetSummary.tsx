@@ -7,7 +7,7 @@ import {
   makeStyles
 } from '@material-ui/core'
 import { Format, numberFormatter } from 'services'
-import { ICommonRoutePrams, IAssetSummary } from 'types'
+import { ICommonRouteParams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
 import {
   useLivePrice,
@@ -17,7 +17,7 @@ import {
 } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 
-interface IAssetSummaryContent extends ICommonRoutePrams {
+interface IAssetSummaryContent extends ICommonRouteParams {
   summary: IAssetSummary
 }
 
@@ -32,7 +32,7 @@ const useStyles = makeStyles(
   }
 )
 
-const AssetSummary: React.FC<ICommonRoutePrams> = ({ id }) => {
+const AssetSummary: React.FC<ICommonRouteParams> = ({ id }) => {
   const { data } = useQuery<IAssetSummary>(COIN_INFORMATION, {
     variables: { id }
   })

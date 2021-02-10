@@ -1,15 +1,9 @@
 import { AssetNameAndDescription, ValueColor, useLivePrice } from 'components'
-import { useRouter } from 'next/router'
-import { Format, numberFormatter, PriceDirection } from 'services'
 import { DURATION } from 'data'
+import { Format, numberFormatter, PriceDirection } from 'services'
 import { IAsset } from 'types'
-import {
-  TableRow,
-  TableCell,
-  Typography,
-  makeStyles,
-  fade
-} from '@material-ui/core'
+import { TableRow, TableCell, makeStyles, fade } from '@material-ui/core'
+import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 interface IAssetItemProps {
@@ -65,35 +59,19 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
         [classes.down]: direction === PriceDirection.DOWN
       })}
     >
-      <TableCell>
-        <Typography variant="subtitle2">{rank}.</Typography>
-      </TableCell>
+      <TableCell>{rank}.</TableCell>
       <TableCell>
         <AssetNameAndDescription symbol={symbol} name={name} />
       </TableCell>
+      <TableCell align="right">{Format.currency(marketCapUsd)}</TableCell>
+      <TableCell align="right">{Format.currency(price)} </TableCell>
+      <TableCell align="right">{Format.currency(volumeUsd24Hr)}</TableCell>
       <TableCell align="right">
-        <Typography variant="subtitle2">
-          {Format.currency(marketCapUsd)}
-        </Typography>
-      </TableCell>
-      <TableCell align="right">
-        <Typography variant="subtitle2">{Format.currency(price)}</Typography>
-      </TableCell>
-      <TableCell align="right">
-        <Typography variant="subtitle2">
-          {Format.currency(volumeUsd24Hr)}
-        </Typography>
-      </TableCell>
-      <TableCell align="right">
-        <ValueColor variant="subtitle2" value={changePercent24Hr}>
+        <ValueColor variant="body2" value={changePercent24Hr}>
           {Format.percent(changePercent24Hr)}
         </ValueColor>
       </TableCell>
-      <TableCell align="right">
-        <Typography variant="subtitle2">
-          {numberFormatter.format(supply)}
-        </Typography>
-      </TableCell>
+      <TableCell align="right">{numberFormatter.format(supply)}</TableCell>
     </TableRow>
   )
 }

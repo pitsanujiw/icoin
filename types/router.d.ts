@@ -1,3 +1,3 @@
-export interface ICommonRoutePrams {
+export interface ICommonRouteParams {
   id: string
 }

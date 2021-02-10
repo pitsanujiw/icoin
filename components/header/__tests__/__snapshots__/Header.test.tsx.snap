@@ -47,12 +47,12 @@ Object {
                 </a>
                 <a
                   class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-                  href="/trading-volume"
+                  href="/exchanges"
                 >
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    Trading Volume
+                    Exchanges
                   </h6>
                 </a>
                 <a
@@ -115,12 +115,12 @@ Object {
               </a>
               <a
                 class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-                href="/trading-volume"
+                href="/exchanges"
               >
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  Trading Volume
+                  Exchanges
                 </h6>
               </a>
               <a

@@ -6,42 +6,42 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root Disclaimer-disclaimer-1 PaperWrapper-paper-2 MuiPaper-elevation3"
+        class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3"
       >
         <div
-          class="MuiContainer-root ContainerWrapper-container-3 MuiContainer-maxWidthLg"
+          class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
         >
           <h6
             class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
           >
             IMPORTANT DISCLAIMER
           </h6>
-          <h6
-            class="MuiTypography-root MuiTypography-subtitle2"
+          <p
+            class="MuiTypography-root MuiTypography-body2"
           >
             All content provided here in our website, hyperlinked sites, associated applications, forums, blogs, social media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in relation to our content, including but not limited to accuracy and updatedness. No part of the content that we provide constitutes financial advice, legal advice or any other form of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content before relying on them. Trading is a highly risky activity that can lead to major losses, please therefore consult your financial advisor before making any decision. No content on our Site is meant to be a solicitation or offer.
-          </h6>
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root Disclaimer-disclaimer-1 PaperWrapper-paper-2 MuiPaper-elevation3"
+      class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3"
     >
       <div
-        class="MuiContainer-root ContainerWrapper-container-3 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
       >
         <h6
           class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
         >
           IMPORTANT DISCLAIMER
         </h6>
-        <h6
-          class="MuiTypography-root MuiTypography-subtitle2"
+        <p
+          class="MuiTypography-root MuiTypography-body2"
         >
           All content provided here in our website, hyperlinked sites, associated applications, forums, blogs, social media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in relation to our content, including but not limited to accuracy and updatedness. No part of the content that we provide constitutes financial advice, legal advice or any other form of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content before relying on them. Trading is a highly risky activity that can lead to major losses, please therefore consult your financial advisor before making any decision. No content on our Site is meant to be a solicitation or offer.
-        </h6>
+        </p>
       </div>
     </div>
   </div>,

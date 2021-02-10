@@ -1,12 +1,12 @@
 import { Grid, Typography, Box, makeStyles } from '@material-ui/core'
-import { IAssetHistories } from 'types'
+import { IAssetHistory } from 'types'
 import { Price, Format } from 'services'
 import { Render } from 'use-react-common'
 import { SymbolIcon } from 'components'
 import { ValueColor } from 'components/common/value-color/ValueColor'
 
 interface IAssetHighLowProps {
-  data: IAssetHistories
+  data: IAssetHistory
 }
 
 const useStyles = makeStyles(

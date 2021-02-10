@@ -1,6 +1,6 @@
 const Routes = {
   home: '/',
-  tradingVolume: '/trading-volume',
+  exchanges: '/exchanges',
   trending: '/trending'
 }
 
