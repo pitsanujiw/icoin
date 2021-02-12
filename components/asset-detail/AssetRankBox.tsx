@@ -1,20 +1,12 @@
 import { IAsset } from 'types'
-import { Typography, makeStyles } from '@material-ui/core'
+import { Typography, Box, makeStyles } from '@material-ui/core'
 
 type TAssetRankBoxProps = Pick<IAsset, 'rank'>
 
 const useStyles = makeStyles(
   theme => ({
     rank: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100%',
-      border: '2px solid',
-      padding: `${theme.spacing(2)}px 0`,
-      maxWidth: theme.spacing(16),
-      ...theme.shape
+      maxWidth: theme.spacing(16)
     }
   }),
   {
@@ -27,8 +19,12 @@ const AssetRankBox: React.FC<TAssetRankBoxProps> = ({ rank }) => {
 
   return (
     <div className={classes.rank}>
-      <Typography variant="h5">Rank</Typography>
-      <Typography variant="h3">{rank}</Typography>
+      <Typography variant="h4">
+        <Box fontWeight="fontWeightBold">Rank</Box>
+      </Typography>
+      <Typography variant="h3">
+        <Box fontWeight="fontWeightBold">{rank}</Box>
+      </Typography>
     </div>
   )
 }

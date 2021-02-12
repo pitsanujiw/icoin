@@ -1,11 +1,10 @@
 import { Chart } from 'services'
 import { IAssetHistory, ICommonRouteParams } from 'types'
-import { makeStyles } from '@material-ui/core'
+import { Paper, makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
   ContainerWrapper,
   LineChart,
-  PaperWrapper,
   TimeSelection,
   useTime
 } from 'components'
@@ -15,8 +14,19 @@ import { useLazyQuery, COIN_CHART } from 'apollo'
 const useStyles = makeStyles(
   theme => ({
     chartSection: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(4)
+      display: 'flex'
+    },
+
+    chartWrapper: {
+      flex: 1,
+      paddingTop: theme.spacing(3),
+      paddingBottom: theme.spacing(3)
+    },
+
+    timeSelection: {
+      paddingTop: theme.spacing(3),
+      paddingLeft: theme.spacing(3),
+      paddingRight: theme.spacing(3)
     }
   }),
   {
@@ -38,13 +48,15 @@ const AssetChart: React.FC<ICommonRouteParams> = ({
 
   return (
     <ContainerWrapper>
-      <PaperWrapper>
+      <div className={classes.chartSection}>
         <AssetHighLow data={data} />
-        <div className={classes.chartSection}>
+        <Paper className={classes.chartWrapper}>
           <LineChart time={time} data={data} />
-        </div>
-        <TimeSelection time={time} onTimeChange={onTimeChange} />
-      </PaperWrapper>
+          <div className={classes.timeSelection}>
+            <TimeSelection time={time} onTimeChange={onTimeChange} />
+          </div>
+        </Paper>
+      </div>
     </ContainerWrapper>
   )
 }

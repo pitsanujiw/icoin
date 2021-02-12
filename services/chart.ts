@@ -142,6 +142,9 @@ const Chart = {
                 time: Chart.createTimeScale(time),
                 gridLines: {
                   display: false
+                },
+                ticks: {
+                  display: false
                 }
               }
             ],
@@ -149,7 +152,10 @@ const Chart = {
               {
                 position: 'right',
                 gridLines: {
-                  drawBorder: false
+                  display: false
+                },
+                ticks: {
+                  mirror: true
                 }
               }
             ]

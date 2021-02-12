@@ -76,7 +76,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                     {name} ({symbol})
                   </Typography>
                   <Typography variant="h6">
-                    <Box fontWeight="fontWeightBold" component="span">
+                    <Box fontWeight={600} component="span">
                       {Format.currency(price)}
                     </Box>
                   </Typography>
@@ -86,7 +86,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                     Market Cap
                   </Typography>
                   <Typography variant="h6">
-                    <Box fontWeight="fontWeightBold" component="span">
+                    <Box fontWeight={600} component="span">
                       {Format.currency(marketCapUsd)}
                     </Box>
                   </Typography>
@@ -96,7 +96,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                     Volume (24h)
                   </Typography>
                   <Typography variant="h6">
-                    <Box fontWeight="fontWeightBold" component="span">
+                    <Box fontWeight={600} component="span">
                       {Format.currency(volumeUsd24Hr)}
                     </Box>
                   </Typography>
@@ -106,7 +106,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
                     Supply
                   </Typography>
                   <Typography variant="h6">
-                    <Box fontWeight="fontWeightBold" component="span">
+                    <Box fontWeight={600} component="span">
                       {numberFormatter.format(supply)}
                     </Box>
                   </Typography>

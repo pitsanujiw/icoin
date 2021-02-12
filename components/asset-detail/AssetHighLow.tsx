@@ -1,9 +1,17 @@
-import { Grid, Typography, Box, makeStyles } from '@material-ui/core'
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemSecondaryAction,
+  ListItemText,
+  Typography,
+  Paper,
+  makeStyles
+} from '@material-ui/core'
 import { IAssetHistory } from 'types'
 import { Price, Format } from 'services'
 import { Render } from 'use-react-common'
-import { SymbolIcon } from 'components'
-import { ValueColor } from 'components/common/value-color/ValueColor'
+import { SymbolIcon, ValueColor } from 'components'
 
 interface IAssetHighLowProps {
   data: IAssetHistory
@@ -11,14 +19,14 @@ interface IAssetHighLowProps {
 
 const useStyles = makeStyles(
   theme => ({
-    iconWrapper: {
-      maxWidth: theme.spacing(16),
-      display: 'flex',
-      justifyContent: 'center'
+    hightLow: {
+      flex: 1,
+      maxWidth: theme.spacing(40),
+      marginRight: theme.spacing(5)
     },
 
     icon: {
-      width: theme.spacing(8)
+      width: theme.spacing(6)
     }
   }),
   {
@@ -42,59 +50,74 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
     const average = (high + low) / 2
 
     return (
-      <Grid alignItems="center" container>
-        <Grid xs={12} sm={2} item>
-          <div className={classes.iconWrapper}>
-            <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
-          </div>
-        </Grid>
-        <Grid xs={12} sm={10} item>
-          <Grid container>
-            <Grid xs={12} sm={3} item>
-              <Typography variant="h6" color="textSecondary" gutterBottom>
+      <Paper className={classes.hightLow}>
+        <List>
+          <ListItem>
+            <SymbolIcon
+              type="black"
+              name={name}
+              symbol={symbol}
+              className={classes.icon}
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText>
+              <Typography variant="h6" component="span" color="textSecondary">
                 High
               </Typography>
-              <Typography variant="h6">
-                <Box fontWeight="fontWeightBold" component="span">
+            </ListItemText>
+            <ListItemSecondaryAction>
+              <Typography variant="h6" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(high)}
                 </Box>
               </Typography>
-            </Grid>
-            <Grid xs={12} sm={3} item>
-              <Typography variant="h6" color="textSecondary" gutterBottom>
-                <Box>Low</Box>
+            </ListItemSecondaryAction>
+          </ListItem>
+          <ListItem>
+            <ListItemText>
+              <Typography variant="h6" component="span" color="textSecondary">
+                Low
               </Typography>
-              <Typography variant="h6">
-                <Box fontWeight="fontWeightBold" component="span">
+            </ListItemText>
+            <ListItemSecondaryAction>
+              <Typography variant="h6" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(low)}
                 </Box>
               </Typography>
-            </Grid>
-            <Grid xs={12} sm={3} item>
-              <Typography variant="h6" color="textSecondary" gutterBottom>
-                <Box>Average</Box>
+            </ListItemSecondaryAction>
+          </ListItem>
+          <ListItem>
+            <ListItemText>
+              <Typography variant="h6" component="span" color="textSecondary">
+                Average
               </Typography>
-              <Typography variant="h6">
-                <Box fontWeight="fontWeightBold" component="span">
+            </ListItemText>
+            <ListItemSecondaryAction>
+              <Typography variant="h6" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(average)}
                 </Box>
               </Typography>
-            </Grid>
-            <Grid xs={12} sm={3} item>
-              <Typography variant="h6" color="textSecondary" gutterBottom>
-                <Box>Change</Box>
+            </ListItemSecondaryAction>
+          </ListItem>
+          <ListItem>
+            <ListItemText>
+              <Typography variant="h6" component="span" color="textSecondary">
+                Change
               </Typography>
-              <Typography variant="h6">
-                <ValueColor value={changePercent24Hr}>
-                  <Box fontWeight="fontWeightBold" component="span">
-                    {Format.percent(changePercent24Hr)}
-                  </Box>
-                </ValueColor>
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+            </ListItemText>
+            <ListItemSecondaryAction>
+              <ValueColor value={changePercent24Hr}>
+                <Box fontWeight="fontWeightMedium" component="span">
+                  {Format.percent(changePercent24Hr)}
+                </Box>
+              </ValueColor>
+            </ListItemSecondaryAction>
+          </ListItem>
+        </List>
+      </Paper>
     )
   }, data)
 }

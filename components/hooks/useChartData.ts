@@ -7,14 +7,15 @@ const useChartDataSets = (): ChartDataSets[] => {
 
   return [
     {
+      fill: 'none',
       backgroundColor: fade(theme.palette.success.light, 0.75),
       borderColor: theme.palette.success.light,
-      borderJoinStyle: 'round',
       borderCapStyle: 'round',
+      borderJoinStyle: 'round',
       borderWidth: 3,
+      lineTension: 0,
       pointHitRadius: 3,
-      pointRadius: 0,
-      lineTension: 0
+      pointRadius: 0
     }
   ]
 }
