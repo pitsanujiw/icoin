@@ -21,11 +21,11 @@ const useStyles = makeStyles(
     },
 
     up: {
-      backgroundColor: fade(theme.palette.success.light, 0.1)
+      backgroundColor: fade(theme.palette.success.main, 0.2)
     },
 
     down: {
-      backgroundColor: fade(theme.palette.error.light, 0.1)
+      backgroundColor: fade(theme.palette.error.main, 0.2)
     }
   }),
   {

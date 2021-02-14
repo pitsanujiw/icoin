@@ -1,5 +1,5 @@
-import { Chart } from 'services'
-import { IAssetHistory, ICommonRouteParams } from 'types'
+import { Format, Chart } from 'services'
+import { IAssetHistories, ICommonRouteParams } from 'types'
 import { Paper, Divider, makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
@@ -9,7 +9,6 @@ import {
   TimeSelection,
   useTime
 } from 'components'
-import { get } from 'lodash'
 import { useEffect, useState } from 'react'
 import { useLazyQuery, COIN_CHART } from 'apollo'
 
@@ -48,9 +47,9 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
 }): React.ReactElement => {
   const classes = useStyles()
   const { time, onTimeChange } = useTime()
-  const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
-  const [hightLowData, setHighLowData] = useState<IAssetHistory>()
-  const isPositive = get(hightLowData, 'asset.changePercent24Hr') > 0
+  const [getIntervals, { data }] = useLazyQuery<IAssetHistories>(COIN_CHART)
+  const [histories, setHistories] = useState<IAssetHistories>()
+  const isPositive = Format.toNumber(histories, 'asset.changePercent24Hr') > 0
 
   useEffect(() => {
     const interval = Chart.calculateInterval(id, time)
@@ -59,7 +58,7 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
 
   useEffect(() => {
     if (data) {
-      setHighLowData(data)
+      setHistories(data)
     }
   }, [data])
 
@@ -67,12 +66,12 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
     <ContainerWrapper>
       <div className={classes.section}>
         <Paper className={classes.information}>
-          <AssetHighLow data={hightLowData} />
+          <AssetHighLow data={histories} />
           <Divider light />
           <AssetSummary id={id} />
         </Paper>
         <Paper className={classes.wrapper}>
-          <LineChart isPositive={isPositive} time={time} data={data} />
+          <LineChart isPositive={isPositive} time={time} data={histories} />
           <div className={classes.timeSelection}>
             <TimeSelection time={time} onTimeChange={onTimeChange} />
           </div>

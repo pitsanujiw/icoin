@@ -2,12 +2,19 @@
   "env": {
     "jest": true
   },
+
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/@typescript-eslint"
   ],
+
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"]
+
+  "plugins": ["@typescript-eslint"],
+
+  "rules": {
+    "@typescript-eslint/ban-types": 0
+  }
 }

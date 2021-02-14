@@ -1,12 +1,12 @@
 import { Chart, Format } from 'services'
-import { IAssetHistory, TTime } from 'types'
+import { IAssetHistories, TTime } from 'types'
 import { merge, first, find } from 'lodash'
 import { useChartDataSets } from 'components'
 import { useEffect, useRef } from 'react'
 import ChartJS, { ChartData, ChartTooltipItem } from 'chart.js'
 
 interface ILineChart {
-  data: IAssetHistory
+  data: IAssetHistories
 
   time: TTime
 
@@ -35,7 +35,7 @@ const LineChart: React.FC<ILineChart> = ({
    *
    */
   const customTooltipLabel = (tooltipItem: ChartTooltipItem) => {
-    const label = Format.currency(Number(tooltipItem.value))
+    const label = Format.currency(Format.toNumber(tooltipItem, 'value'))
     return label
   }
 

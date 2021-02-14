@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceDirection Should return correct price direction 1`] = `
+Object {
+  "0": "UP",
+  "1": "DOWN",
+  "2": "VOID",
+  "DOWN": 1,
+  "UP": 0,
+  "VOID": 2,
+}
+`;

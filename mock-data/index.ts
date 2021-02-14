@@ -1,6 +1,6 @@
-import asset from 'mock-data/asset.json'
-import globals from 'mock-data/globals.json'
-import assets from 'mock-data/assets.json'
-import histories from 'mock-data/histories.json'
-
-export { asset, assets, histories, globals }
+export * from './assetsString'
+export * from './asset'
+export * from './globals'
+export * from './historyString'
+export * from './histories'
+export * from './assets'

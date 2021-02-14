@@ -7,13 +7,13 @@ import {
   Typography,
   makeStyles
 } from '@material-ui/core'
-import { IAssetHistory } from 'types'
+import { IAssetHistories } from 'types'
 import { Price, Format } from 'services'
 import { Render } from 'use-react-common'
 import { SymbolIcon, ValueColor } from 'components'
 
 interface IAssetHighLowProps {
-  data: IAssetHistory
+  data: IAssetHistories
 }
 
 const useStyles = makeStyles(
@@ -34,7 +34,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
 
   return Render.ensure(readyData => {
     const { asset, assetHistories } = readyData
-    const convertedAssetHistories = Format.toNumber(assetHistories, [
+    const convertedAssetHistories = Format.toNumbers(assetHistories, [
       'priceUsd'
     ])
     const { name, symbol, changePercent24Hr } = asset
