@@ -13,10 +13,10 @@ import ChartJS from 'chart.js'
 
 /**
  * @description
- * We are using Inter font
+ * We are using Roboto font
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
 ChartJS.defaults.global.defaultColor = gray1
 
 const Chart = {
@@ -129,12 +129,16 @@ const Chart = {
       data: chartData,
       options: merge<ChartOptions, ChartOptions>(
         {
+          responsive: true,
+
           tooltips: {
             position: 'nearest'
           },
+
           legend: {
             display: false
           },
+
           scales: {
             xAxes: [
               {
@@ -148,6 +152,7 @@ const Chart = {
                 }
               }
             ],
+
             yAxes: [
               {
                 position: 'right',

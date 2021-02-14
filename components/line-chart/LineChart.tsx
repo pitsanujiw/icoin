@@ -9,6 +9,8 @@ interface ILineChart {
   data: IAssetHistory
 
   time: TTime
+
+  isPositive: boolean
 }
 
 /**
@@ -19,10 +21,11 @@ interface ILineChart {
  * @param time A time is selected from TimeSelection, It's used for detecting time scale on the chart
  */
 const LineChart: React.FC<ILineChart> = ({
-  time,
-  data
+  data,
+  isPositive,
+  time
 }): React.ReactElement => {
-  const chartDataSets = useChartDataSets()
+  const chartDataSets = useChartDataSets(isPositive)
   const canvasRef = useRef<HTMLCanvasElement>()
 
   /**

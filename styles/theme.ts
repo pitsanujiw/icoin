@@ -8,7 +8,7 @@ import {
   secondaryDark,
   white
 } from 'styles'
-import { teal } from '@material-ui/core/colors'
+import { teal, red } from '@material-ui/core/colors'
 import { Shadows } from '@material-ui/core/styles/shadows'
 import { Theme } from '@material-ui/core'
 import { TThemeMode } from 'types'
@@ -27,6 +27,7 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
           contrastText: white
         },
         success: teal,
+        error: red,
         text: {
           primary: textPrimary
         }
@@ -53,7 +54,7 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
       },
 
       typography: {
-        fontFamily: "'Inter', sans-serif;"
+        fontFamily: "'Roboto', sans-serif;"
       }
     })
   )

@@ -1,6 +1,6 @@
-import { INode } from 'types'
-import { Tooltip, makeStyles } from '@material-ui/core'
 import { formatDistance } from 'date-fns'
+import { INode } from 'types'
+import { Tooltip, IconButton, makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
 type TExchangeStatusProps = Pick<INode, 'updatedAt'>
@@ -42,12 +42,14 @@ const ExchangeStatus: React.FC<Partial<TExchangeStatusProps>> = ({
 
   return (
     <Tooltip title={getTooltipTitle()} placement="right">
-      <div
-        className={clsx(classes.status, {
-          [classes.available]: !!updatedAt,
-          [classes.notAvailable]: !updatedAt
-        })}
-      />
+      <IconButton size="small">
+        <div
+          className={clsx(classes.status, {
+            [classes.available]: !!updatedAt,
+            [classes.notAvailable]: !updatedAt
+          })}
+        />
+      </IconButton>
     </Tooltip>
   )
 }

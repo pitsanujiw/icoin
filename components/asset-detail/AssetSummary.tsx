@@ -1,36 +1,24 @@
 import {
   Typography,
-  Button,
   Link,
-  Grid,
   Box,
-  makeStyles
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  Divider,
+  IconButton
 } from '@material-ui/core'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import { Format, numberFormatter } from 'services'
 import { ICommonRouteParams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import {
-  useLivePrice,
-  AssetRankBox,
-  ContainerWrapper,
-  PaperWrapper
-} from 'components'
+import { useLivePrice } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 
 interface IAssetSummaryContent extends ICommonRouteParams {
   summary: IAssetSummary
 }
-
-const useStyles = makeStyles(
-  theme => ({
-    information: {
-      paddingBottom: theme.spacing(3)
-    }
-  }),
-  {
-    name: 'AssetSummary'
-  }
-)
 
 const AssetSummary: React.FC<ICommonRouteParams> = ({ id }) => {
   const { data } = useQuery<IAssetSummary>(COIN_INFORMATION, {
@@ -58,77 +46,114 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
     volumeUsd24Hr,
     website
   } = summary.asset
-  const classes = useStyles()
   const { price } = useLivePrice(id, priceUsd)
 
   return (
-    <ContainerWrapper>
-      <PaperWrapper>
-        <Grid spacing={2} container>
-          <Grid xs={12} sm={2} item>
-            <AssetRankBox rank={rank} />
-          </Grid>
-          <Grid xs={12} sm={10} item>
-            <Grid container>
-              <Grid className={classes.information} spacing={2} container>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    {name} ({symbol})
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(price)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Market Cap
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(marketCapUsd)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Volume (24h)
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(volumeUsd24Hr)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Supply
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {numberFormatter.format(supply)}
-                    </Box>
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid spacing={2} container>
-                <Grid item>
-                  <Link href={explorer} color="inherit" target="_blank">
-                    <Button variant="outlined">Explorer</Button>
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href={website} color="inherit" target="_blank">
-                    <Button variant="outlined">Website</Button>
-                  </Link>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </PaperWrapper>
-    </ContainerWrapper>
+    <section>
+      <List>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Rank
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {rank}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              {name} ({symbol})
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.currency(price)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Market Cap
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.bigNumber(marketCapUsd)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Volume (24h)
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.bigNumber(volumeUsd24Hr)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Supply
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {numberFormatter.format(supply)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+      </List>
+      <Divider light />
+      <List>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Explorer
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Link href={explorer} color="inherit" target="_blank">
+              <IconButton>
+                <ArrowForwardIcon />
+              </IconButton>
+            </Link>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Website
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Link href={website} color="inherit" target="_blank">
+              <IconButton>
+                <ArrowForwardIcon />
+              </IconButton>
+            </Link>
+          </ListItemSecondaryAction>
+        </ListItem>
+      </List>
+    </section>
   )
 }
 

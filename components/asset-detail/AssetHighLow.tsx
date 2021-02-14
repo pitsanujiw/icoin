@@ -5,7 +5,6 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   Typography,
-  Paper,
   makeStyles
 } from '@material-ui/core'
 import { IAssetHistory } from 'types'
@@ -19,12 +18,6 @@ interface IAssetHighLowProps {
 
 const useStyles = makeStyles(
   theme => ({
-    hightLow: {
-      flex: 1,
-      maxWidth: theme.spacing(40),
-      marginRight: theme.spacing(5)
-    },
-
     icon: {
       width: theme.spacing(6)
     }
@@ -50,74 +43,67 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
     const average = (high + low) / 2
 
     return (
-      <Paper className={classes.hightLow}>
-        <List>
-          <ListItem>
-            <SymbolIcon
-              type="black"
-              name={name}
-              symbol={symbol}
-              className={classes.icon}
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              <Typography variant="h6" component="span" color="textSecondary">
-                High
-              </Typography>
-            </ListItemText>
-            <ListItemSecondaryAction>
-              <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightMedium" component="span">
-                  {Format.currency(high)}
-                </Box>
-              </Typography>
-            </ListItemSecondaryAction>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              <Typography variant="h6" component="span" color="textSecondary">
-                Low
-              </Typography>
-            </ListItemText>
-            <ListItemSecondaryAction>
-              <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightMedium" component="span">
-                  {Format.currency(low)}
-                </Box>
-              </Typography>
-            </ListItemSecondaryAction>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              <Typography variant="h6" component="span" color="textSecondary">
-                Average
-              </Typography>
-            </ListItemText>
-            <ListItemSecondaryAction>
-              <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightMedium" component="span">
-                  {Format.currency(average)}
-                </Box>
-              </Typography>
-            </ListItemSecondaryAction>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              <Typography variant="h6" component="span" color="textSecondary">
-                Change
-              </Typography>
-            </ListItemText>
-            <ListItemSecondaryAction>
-              <ValueColor value={changePercent24Hr}>
-                <Box fontWeight="fontWeightMedium" component="span">
-                  {Format.percent(changePercent24Hr)}
-                </Box>
-              </ValueColor>
-            </ListItemSecondaryAction>
-          </ListItem>
-        </List>
-      </Paper>
+      <List>
+        <ListItem>
+          <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              High
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.currency(high)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Low
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.currency(low)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Average
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.currency(average)}
+              </Box>
+            </Typography>
+          </ListItemSecondaryAction>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              Change
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <ValueColor value={changePercent24Hr} variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {Format.percent(changePercent24Hr)}
+              </Box>
+            </ValueColor>
+          </ListItemSecondaryAction>
+        </ListItem>
+      </List>
     )
   }, data)
 }

@@ -35,12 +35,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               1W
             </div>
@@ -58,12 +58,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               1M
             </div>
@@ -81,12 +81,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               3M
             </div>
@@ -104,12 +104,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               6M
             </div>
@@ -127,12 +127,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               1Y
             </div>
@@ -150,12 +150,12 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
             >
               ALL
             </div>
@@ -203,12 +203,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             1W
           </div>
@@ -226,12 +226,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             1M
           </div>
@@ -249,12 +249,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             3M
           </div>
@@ -272,12 +272,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             6M
           </div>
@@ -295,12 +295,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             1Y
           </div>
@@ -318,12 +318,12 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
           <div
-            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiChip-avatarColorSecondary MuiAvatar-colorDefault"
+            class="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
           >
             ALL
           </div>

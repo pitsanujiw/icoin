@@ -1,6 +1,6 @@
 import { Chip, Grid, Avatar } from '@material-ui/core'
-import { TIME } from 'data'
 import { ITime, TTime } from 'types'
+import { TIME } from 'data'
 
 const TimeSelection: React.FC<ITime> = ({
   time,
@@ -34,7 +34,7 @@ const TimeSelection: React.FC<ITime> = ({
           <Grid key={value} item>
             <Chip
               variant="outlined"
-              color={isSelected ? 'primary' : 'secondary'}
+              color={isSelected ? 'primary' : 'default'}
               onClick={() => onTimeChange(value)}
               avatar={<Avatar>{value}</Avatar>}
               label={getLabel(value)}

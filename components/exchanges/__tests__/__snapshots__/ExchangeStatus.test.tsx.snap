@@ -5,17 +5,43 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="ExchangeStatus-status-4 ExchangeStatus-available-5"
-        title="2 days ago"
-      />
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+        tabindex="0"
+        title="4 days ago"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <div
+            class="ExchangeStatus-status-4 ExchangeStatus-available-5"
+          />
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="ExchangeStatus-status-4 ExchangeStatus-available-5"
-      title="2 days ago"
-    />
+    <button
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+      tabindex="0"
+      title="4 days ago"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <div
+          class="ExchangeStatus-status-4 ExchangeStatus-available-5"
+        />
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -76,17 +102,43 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="ExchangeStatus-status-1 ExchangeStatus-notAvailable-3"
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+        tabindex="0"
         title="Not available"
-      />
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <div
+            class="ExchangeStatus-status-1 ExchangeStatus-notAvailable-3"
+          />
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="ExchangeStatus-status-1 ExchangeStatus-notAvailable-3"
+    <button
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+      tabindex="0"
       title="Not available"
-    />
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <div
+          class="ExchangeStatus-status-1 ExchangeStatus-notAvailable-3"
+        />
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
