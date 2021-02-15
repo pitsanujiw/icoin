@@ -4,8 +4,7 @@ import {
   ListItem,
   ListItemSecondaryAction,
   ListItemText,
-  Typography,
-  makeStyles
+  Typography
 } from '@material-ui/core'
 import { IAssetHistories } from 'types'
 import { Price, Format } from 'services'
@@ -16,22 +15,9 @@ interface IAssetHighLowProps {
   data: IAssetHistories
 }
 
-const useStyles = makeStyles(
-  theme => ({
-    icon: {
-      width: theme.spacing(6)
-    }
-  }),
-  {
-    name: 'AssetHighLow'
-  }
-)
-
 const AssetHighLow: React.FC<IAssetHighLowProps> = ({
   data
 }): React.ReactElement => {
-  const classes = useStyles()
-
   return Render.ensure(readyData => {
     const { asset, assetHistories } = readyData
     const convertedAssetHistories = Format.toNumbers(assetHistories, [
@@ -45,7 +31,14 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
     return (
       <List>
         <ListItem>
-          <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
+          <ListItemText>
+            <Typography color="textSecondary" variant="subtitle2">
+              {name} ({symbol})
+            </Typography>
+          </ListItemText>
+          <ListItemSecondaryAction>
+            <SymbolIcon name={name} symbol={symbol} />
+          </ListItemSecondaryAction>
         </ListItem>
         <ListItem>
           <ListItemText>

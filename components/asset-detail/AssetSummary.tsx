@@ -38,11 +38,9 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
   const {
     explorer,
     marketCapUsd,
-    name,
     priceUsd,
     rank,
     supply,
-    symbol,
     volumeUsd24Hr,
     website
   } = summary.asset
@@ -68,7 +66,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         <ListItem>
           <ListItemText>
             <Typography color="textSecondary" variant="subtitle2">
-              {name} ({symbol})
+              Price
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>

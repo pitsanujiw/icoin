@@ -9,11 +9,29 @@ Object {
         class="MuiList-root MuiList-padding"
       >
         <li
-          class="MuiListItem-root MuiListItem-gutters"
+          class="MuiListItem-container"
         >
           <div
-            class="AssetHighLow-icon-1"
-          />
+            class="MuiListItem-root MuiListItem-gutters MuiListItem-secondaryAction"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
+              >
+                Bitcoin
+                 (
+                BTC
+                )
+              </h6>
+            </div>
+          </div>
+          <div
+            class="MuiListItemSecondaryAction-root"
+          >
+            <div />
+          </div>
         </li>
         <li
           class="MuiListItem-container"
@@ -38,7 +56,7 @@ Object {
               class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
-                class="MuiBox-root MuiBox-root-3"
+                class="MuiBox-root MuiBox-root-2"
               >
                 $33,782.08
               </span>
@@ -68,7 +86,7 @@ Object {
               class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
-                class="MuiBox-root MuiBox-root-4"
+                class="MuiBox-root MuiBox-root-3"
               >
                 $33,459.09
               </span>
@@ -98,7 +116,7 @@ Object {
               class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
-                class="MuiBox-root MuiBox-root-5"
+                class="MuiBox-root MuiBox-root-4"
               >
                 $33,620.58
               </span>
@@ -125,10 +143,10 @@ Object {
             class="MuiListItemSecondaryAction-root"
           >
             <span
-              class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+              class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
             >
               <span
-                class="MuiBox-root MuiBox-root-8"
+                class="MuiBox-root MuiBox-root-7"
               >
                 4.95%
               </span>
@@ -143,11 +161,29 @@ Object {
       class="MuiList-root MuiList-padding"
     >
       <li
-        class="MuiListItem-root MuiListItem-gutters"
+        class="MuiListItem-container"
       >
         <div
-          class="AssetHighLow-icon-1"
-        />
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-secondaryAction"
+        >
+          <div
+            class="MuiListItemText-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
+            >
+              Bitcoin
+               (
+              BTC
+              )
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiListItemSecondaryAction-root"
+        >
+          <div />
+        </div>
       </li>
       <li
         class="MuiListItem-container"
@@ -172,7 +208,7 @@ Object {
             class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
-              class="MuiBox-root MuiBox-root-3"
+              class="MuiBox-root MuiBox-root-2"
             >
               $33,782.08
             </span>
@@ -202,7 +238,7 @@ Object {
             class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
-              class="MuiBox-root MuiBox-root-4"
+              class="MuiBox-root MuiBox-root-3"
             >
               $33,459.09
             </span>
@@ -232,7 +268,7 @@ Object {
             class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
-              class="MuiBox-root MuiBox-root-5"
+              class="MuiBox-root MuiBox-root-4"
             >
               $33,620.58
             </span>
@@ -259,10 +295,10 @@ Object {
           class="MuiListItemSecondaryAction-root"
         >
           <span
-            class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
+            class="MuiTypography-root ValueColor-up-5 MuiTypography-subtitle2"
           >
             <span
-              class="MuiBox-root MuiBox-root-8"
+              class="MuiBox-root MuiBox-root-7"
             >
               4.95%
             </span>
