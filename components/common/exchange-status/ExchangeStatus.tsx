@@ -1,5 +1,6 @@
-import { formatDistance } from 'date-fns'
+import { formatDistance, parseISO } from 'date-fns'
 import { INode } from 'types'
+import { isNumber, isString } from 'lodash'
 import { Tooltip, IconButton, makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
@@ -33,8 +34,13 @@ const ExchangeStatus: React.FC<Partial<TExchangeStatusProps>> = ({
   const classes = useStyles()
 
   const getTooltipTitle = () => {
-    if (updatedAt) {
+    if (isNumber(updatedAt)) {
       return formatDistance(updatedAt, Date.now(), { addSuffix: true })
+    }
+
+    if (isString(updatedAt)) {
+      const date = parseISO(updatedAt)
+      return formatDistance(date, Date.now(), { addSuffix: true })
     }
 
     return 'Not available'

@@ -8,7 +8,7 @@ Object {
       <button
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
         tabindex="0"
-        title="4 days ago"
+        title="about 1 hour ago"
         type="button"
       >
         <span
@@ -28,7 +28,7 @@ Object {
     <button
       class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
       tabindex="0"
-      title="4 days ago"
+      title="about 1 hour ago"
       type="button"
     >
       <span

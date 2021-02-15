@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import { Exchanges } from 'components'
+import Head from 'next/head'
 
 const ExchangesPage = (): React.ReactElement => {
   return (

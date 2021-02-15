@@ -96,7 +96,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         <ListItem>
           <ListItemText>
             <Typography color="textSecondary" variant="subtitle2">
-              Volume (24h)
+              Volume (24H)
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>

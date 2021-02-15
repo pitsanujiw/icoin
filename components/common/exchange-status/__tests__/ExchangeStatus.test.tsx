@@ -9,7 +9,7 @@ describe('ExchangeStatus', () => {
 
   it('Should render it correctly with time', async () => {
     const renderResult = customRender(
-      <ExchangeStatus updatedAt={1612945633330} />
+      <ExchangeStatus updatedAt="2021-02-15T07:46:08.842Z" />
     )
     expect(renderResult).toMatchSnapshot()
   })

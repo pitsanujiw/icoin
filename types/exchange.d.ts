@@ -1,5 +1,13 @@
 import { IPageInfo } from 'types'
 
+export interface IBaseNode {
+  id: string
+
+  updatedAt: number | string
+
+  volumeUsd24Hr: number
+}
+
 export interface IExchangeParams {
   direction: string
 
@@ -8,9 +16,11 @@ export interface IExchangeParams {
   sort: string
 }
 
-export interface INode {
-  id: string
+export interface IExchangeAssetParams extends IExchangeParams {
+  assetId: string
+}
 
+export interface INode extends IBaseNode {
   name: string
 
   percentTotalVolume: number
@@ -22,22 +32,36 @@ export interface INode {
   topPairQuoteSymbol: string
 
   tradingPairs: number
-
-  updatedAt: number
-
-  volumeUsd24Hr: number
 }
 
-export interface IEdgeNode {
-  node: INode
+export interface IAssetNode extends IBaseNode {
+  baseSymbol: string
+
+  exchangeId: string
+
+  exchangeName: string
+
+  percentVolume: number
+
+  priceUsd: number
+
+  quoteSymbol: string
 }
 
-export interface IExchanges {
-  edges: Array<IEdgeNode>
+export interface IEdgeNode<T> {
+  node: T
+}
+
+export interface IExchanges<T> {
+  edges: Array<T>
 
   pageInfo: IPageInfo
 }
 
 export interface IExchangeResponse {
-  exchanges: IExchanges
+  exchanges: IExchanges<IEdgeNode<INode>>
+}
+
+export interface IExchangeAssetResponse {
+  assetMarkets: IExchanges<IEdgeNode<IAssetNode>>
 }

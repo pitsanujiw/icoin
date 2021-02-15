@@ -5,6 +5,7 @@ import {
   AssetHighLow,
   AssetSummary,
   ContainerWrapper,
+  ExchangesAsset,
   LineChart,
   TimeSelection,
   useTime
@@ -16,6 +17,10 @@ const useStyles = makeStyles(
   theme => ({
     section: {
       display: 'flex'
+    },
+
+    exchanges: {
+      paddingTop: theme.spacing(6)
     },
 
     information: {
@@ -76,6 +81,9 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
             <TimeSelection time={time} onTimeChange={onTimeChange} />
           </div>
         </Paper>
+      </div>
+      <div className={classes.exchanges}>
+        <ExchangesAsset assetId={id} />
       </div>
     </ContainerWrapper>
   )
