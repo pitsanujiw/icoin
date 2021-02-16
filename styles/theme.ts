@@ -50,6 +50,12 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
           root: {
             borderBottom: `1px solid ${divider}`
           }
+        },
+
+        MuiCircularProgress: {
+          indeterminate: {
+            animationDuration: '0.5s'
+          }
         }
       },
 

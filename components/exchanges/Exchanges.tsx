@@ -1,9 +1,15 @@
-import { ContainerWrapper, ExchangeContent } from 'components'
+import {
+  ContainerWrapper,
+  ExchangeContent,
+  LoadMore,
+  useLoadMore
+} from 'components'
 import { EXCHANGE, useQuery } from 'apollo'
 import { IExchangeResponse, IExchangeParams } from 'types'
 import { Render, useSort } from 'use-react-common'
 
 const Exchanges: React.FC = () => {
+  const { count, onLoad } = useLoadMore(20)
   const { current, sorts, onSort } = useSort(
     [
       'rank',
@@ -19,22 +25,27 @@ const Exchanges: React.FC = () => {
     }
   )
 
-  const { data } = useQuery<IExchangeResponse, IExchangeParams>(EXCHANGE, {
-    variables: {
-      first: 20,
-      sort: current.field,
-      direction: current.direction
+  const { data, loading } = useQuery<IExchangeResponse, IExchangeParams>(
+    EXCHANGE,
+    {
+      variables: {
+        first: count,
+        sort: current.field,
+        direction: current.direction
+      }
     }
-  })
+  )
 
   return Render.ensure(readyData => {
+    const { exchanges } = readyData
+    const {
+      pageInfo: { hasNextPage }
+    } = exchanges
+
     return (
       <ContainerWrapper>
-        <ExchangeContent
-          exchanges={readyData.exchanges}
-          sorts={sorts}
-          onSort={onSort}
-        />
+        <ExchangeContent exchanges={exchanges} sorts={sorts} onSort={onSort} />
+        {hasNextPage && <LoadMore loading={loading} onLoad={onLoad} />}
       </ContainerWrapper>
     )
   }, data)

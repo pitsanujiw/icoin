@@ -37,6 +37,11 @@ Object {
     },
   },
   "overrides": Object {
+    "MuiCircularProgress": Object {
+      "indeterminate": Object {
+        "animationDuration": "0.5s",
+      },
+    },
     "MuiTableCell": Object {
       "root": Object {
         "borderBottom": "1px solid #EFF2F5",
@@ -424,6 +429,11 @@ Object {
     },
   },
   "overrides": Object {
+    "MuiCircularProgress": Object {
+      "indeterminate": Object {
+        "animationDuration": "0.5s",
+      },
+    },
     "MuiTableCell": Object {
       "root": Object {
         "borderBottom": "1px solid #EFF2F5",

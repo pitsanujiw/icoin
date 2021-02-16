@@ -1,5 +1,6 @@
 import { EXCHANGE_ASSET, useQuery } from 'apollo'
-import { ExchangeAssetContent } from 'components'
+import { ExchangeAssetContent, LoadMore, useLoadMore } from 'components'
+import { IExchangeAssetResponse } from 'types'
 import { Render, useSort } from 'use-react-common'
 
 interface IExchangesAssetProps {
@@ -7,6 +8,7 @@ interface IExchangesAssetProps {
 }
 
 const ExchangesAsset: React.FC<IExchangesAssetProps> = ({ assetId }) => {
+  const { count, onLoad } = useLoadMore(20)
   const { current, sorts, onSort } = useSort(
     ['exchangeName', 'priceUsd', 'volumeUsd24Hr', 'percentVolume', 'updatedAt'],
     {
@@ -14,23 +16,30 @@ const ExchangesAsset: React.FC<IExchangesAssetProps> = ({ assetId }) => {
       direction: 'DESC'
     }
   )
-
-  const { data } = useQuery(EXCHANGE_ASSET, {
+  const { data, loading } = useQuery<IExchangeAssetResponse>(EXCHANGE_ASSET, {
     variables: {
       assetId,
-      first: 20,
+      first: count,
       direction: current.direction,
       sort: current.field
     }
   })
 
   return Render.ensure(readyData => {
+    const { assetMarkets } = readyData
+    const {
+      pageInfo: { hasNextPage }
+    } = assetMarkets
+
     return (
-      <ExchangeAssetContent
-        assetMarkets={readyData.assetMarkets}
-        sorts={sorts}
-        onSort={onSort}
-      />
+      <>
+        <ExchangeAssetContent
+          assetMarkets={assetMarkets}
+          sorts={sorts}
+          onSort={onSort}
+        />
+        {hasNextPage && <LoadMore loading={loading} onLoad={onLoad} />}
+      </>
     )
   }, data)
 }
