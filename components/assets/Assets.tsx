@@ -8,9 +8,8 @@ import {
 import { API, Paginate, Routes } from 'services'
 import { PER_PAGE } from 'data'
 import { IRootStore, IGlobalData } from 'types'
-import { useAsync } from 'react-use'
 import { useSelector } from 'react-redux'
-import { Render } from 'use-react-common'
+import { Render, useAsync } from 'use-react-common'
 
 type IAssetsContentProps = Pick<IGlobalData, 'active_cryptocurrencies'>
 

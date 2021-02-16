@@ -9,14 +9,14 @@ import {
 } from '@material-ui/core'
 import { AssetItem } from 'components'
 import { IAsset } from 'types'
-import { useSort } from 'use-react-common'
+import { useDataSort } from 'use-react-common'
 
 interface IAssetsTableProps {
   data: Array<IAsset>
 }
 
 const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
-  const { loading, sortedData, sorts, sortBy } = useSort(data, 'rank')
+  const { loading, sortedData, sorts, onSort } = useDataSort(data, 'rank')
 
   if (loading) {
     return <LinearProgress />
@@ -30,7 +30,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.rank.direction}
               active={sorts.rank.active}
-              onClick={() => sortBy('rank')}
+              onClick={() => onSort('rank')}
             >
               Rank
             </TableSortLabel>
@@ -39,7 +39,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.name.direction}
               active={sorts.name.active}
-              onClick={() => sortBy('name')}
+              onClick={() => onSort('name')}
             >
               Name and Description
             </TableSortLabel>
@@ -48,7 +48,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.marketCapUsd.direction}
               active={sorts.marketCapUsd.active}
-              onClick={() => sortBy('marketCapUsd')}
+              onClick={() => onSort('marketCapUsd')}
             >
               Market Cap
             </TableSortLabel>
@@ -57,7 +57,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.priceUsd.direction}
               active={sorts.priceUsd.active}
-              onClick={() => sortBy('priceUsd')}
+              onClick={() => onSort('priceUsd')}
             >
               Price
             </TableSortLabel>
@@ -66,7 +66,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.volumeUsd24Hr.direction}
               active={sorts.volumeUsd24Hr.active}
-              onClick={() => sortBy('volumeUsd24Hr')}
+              onClick={() => onSort('volumeUsd24Hr')}
             >
               Volume
             </TableSortLabel>
@@ -75,7 +75,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.changePercent24Hr.direction}
               active={sorts.changePercent24Hr.active}
-              onClick={() => sortBy('changePercent24Hr')}
+              onClick={() => onSort('changePercent24Hr')}
             >
               Change (24h)
             </TableSortLabel>
@@ -84,7 +84,7 @@ const AssetsTable: React.FC<IAssetsTableProps> = ({ data }) => {
             <TableSortLabel
               direction={sorts.supply.direction}
               active={sorts.supply.active}
-              onClick={() => sortBy('supply')}
+              onClick={() => onSort('supply')}
             >
               Circularing Supply
             </TableSortLabel>

@@ -1,6 +1,6 @@
 import { API } from 'services'
 import { updateGlobal } from 'states/globals'
-import { useAsync } from 'react-use'
+import { useAsync } from 'use-react-common'
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 

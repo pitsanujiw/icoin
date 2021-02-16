@@ -38,10 +38,12 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@reduxjs/toolkit": "^1.5.0",
+    "@testing-library/react-hooks": "^5.0.3",
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "date-fns": "^2.16.1",
     "graphql": "^15.5.0",
+    "immer": "^8.0.1",
     "lodash": "^4.17.20",
     "next": "10.0.6",
     "numeral": "^2.0.6",
@@ -49,9 +51,8 @@
     "react-dom": "17.0.1",
     "react-image": "^4.0.3",
     "react-redux": "^7.2.2",
-    "react-use": "^17.0.2",
     "redux-devtools-extension": "^2.13.8",
-    "use-react-common": "1.0.9"
+    "use-react-common": "^1.1.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",
@@ -82,6 +83,6 @@
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.5"
   }
 }
