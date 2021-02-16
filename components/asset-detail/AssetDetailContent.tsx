@@ -1,6 +1,6 @@
 import { Format, Chart } from 'services'
 import { IAssetHistories, ICommonRouteParams } from 'types'
-import { Paper, Divider, makeStyles } from '@material-ui/core'
+import { Grid, Paper, Divider, makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
   AssetSummary,
@@ -15,24 +15,16 @@ import { useLazyQuery, COIN_CHART } from 'apollo'
 
 const useStyles = makeStyles(
   theme => ({
-    section: {
-      display: 'flex'
-    },
-
     exchanges: {
       paddingTop: theme.spacing(6)
     },
 
-    information: {
-      minWidth: theme.spacing(35),
-      marginRight: theme.spacing(3)
-    },
-
     wrapper: {
+      flex: 1,
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      flex: 1,
+      height: '100%',
       paddingTop: theme.spacing(3),
       paddingBottom: theme.spacing(3)
     },
@@ -69,19 +61,23 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
 
   return (
     <ContainerWrapper>
-      <div className={classes.section}>
-        <Paper className={classes.information}>
-          <AssetHighLow data={histories} />
-          <Divider light />
-          <AssetSummary id={id} />
-        </Paper>
-        <Paper className={classes.wrapper}>
-          <LineChart isPositive={isPositive} time={time} data={histories} />
-          <div className={classes.timeSelection}>
-            <TimeSelection time={time} onTimeChange={onTimeChange} />
-          </div>
-        </Paper>
-      </div>
+      <Grid spacing={3} container>
+        <Grid xs={12} sm={4} lg={3} item>
+          <Paper>
+            <AssetHighLow data={histories} />
+            <Divider light />
+            <AssetSummary id={id} />
+          </Paper>
+        </Grid>
+        <Grid xs={12} sm={8} lg={9} item>
+          <Paper className={classes.wrapper}>
+            <LineChart isPositive={isPositive} time={time} data={histories} />
+            <div className={classes.timeSelection}>
+              <TimeSelection time={time} onTimeChange={onTimeChange} />
+            </div>
+          </Paper>
+        </Grid>
+      </Grid>
       <div className={classes.exchanges}>
         <ExchangesAsset assetId={id} />
       </div>

@@ -3,6 +3,7 @@ import { IAssetHistories, TTime } from 'types'
 import { merge, first, find } from 'lodash'
 import { useChartDataSets } from 'components'
 import { useEffect, useRef } from 'react'
+import { useWindowSize } from 'use-react-common'
 import ChartJS, { ChartData, ChartTooltipItem } from 'chart.js'
 
 interface ILineChart {
@@ -25,6 +26,8 @@ const LineChart: React.FC<ILineChart> = ({
   isPositive,
   time
 }): React.ReactElement => {
+  const size = useWindowSize()
+  const instance: ChartJS = find(ChartJS.instances)
   const chartDataSets = useChartDataSets(isPositive)
   const canvasRef = useRef<HTMLCanvasElement>()
 
@@ -44,7 +47,6 @@ const LineChart: React.FC<ILineChart> = ({
    * @return `ChartJS`
    */
   const renderChart = () => {
-    const instance: ChartJS = find(ChartJS.instances)
     const { assetHistories } = data
     /**
      * @description Create chart data with default styling
@@ -81,6 +83,13 @@ const LineChart: React.FC<ILineChart> = ({
   }, [data])
 
   /**
+   * @description This useEffect to resize the chart when the size of the window was changed
+   */
+  useEffect(() => {
+    if (instance) instance.resize()
+  }, [size])
+
+  /**
    * @description This useEffect for cleaning up the chart instances
    */
   useEffect(() => {
@@ -89,7 +98,9 @@ const LineChart: React.FC<ILineChart> = ({
      * After unmounting the component, we need to destroy the chart as well
      * For saving some resource and improve performance
      */
-    return () => find(ChartJS.instances).destroy()
+    return () => {
+      if (instance) instance.destroy()
+    }
   }, [])
 
   return <canvas id="icoin-chart" ref={canvasRef} />
