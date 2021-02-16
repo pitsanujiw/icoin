@@ -1,7 +1,7 @@
-import { ILivePrices, IGlobal } from 'types'
+import { ILivePrices, IGlobalData } from 'types'
 
 export interface IRootStore {
   prices: ILivePrices
 
-  globals: IGlobal
+  globalData: IGlobalData
 }

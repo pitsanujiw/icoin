@@ -12,61 +12,54 @@ Object {
           class="TopBarContent-info-2"
         >
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
-            Cryptocurrencies: 
+            Assets: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
-              6191
+              1658
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Markets: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
-              564
+              6734
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Market Cap: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
-              $1,016,628,962,623
+              $1,482,969,770,164
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             24h Volume: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
-              $162,857,223,749
+              $88,640,281,239
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Dominance: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               BTC 
-              62.02%
-            </span>
-               
-            <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
-            >
-              ETH 
-              15.17%
+              61.57%
             </span>
           </span>
         </div>
@@ -81,61 +74,54 @@ Object {
         class="TopBarContent-info-2"
       >
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
-          Cryptocurrencies: 
+          Assets: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
-            6191
+            1658
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Markets: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
-            564
+            6734
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Market Cap: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
-            $1,016,628,962,623
+            $1,482,969,770,164
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           24h Volume: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
-            $162,857,223,749
+            $88,640,281,239
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Dominance: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             BTC 
-            62.02%
-          </span>
-             
-          <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
-          >
-            ETH 
-            15.17%
+            61.57%
           </span>
         </span>
       </div>

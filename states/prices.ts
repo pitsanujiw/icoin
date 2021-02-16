@@ -3,7 +3,7 @@ import { ILivePrices } from 'types'
 
 const initialState: ILivePrices = { data: {} }
 
-const prices = createSlice({
+const Prices = createSlice({
   name: 'Prices',
   initialState,
   reducers: {
@@ -13,5 +13,5 @@ const prices = createSlice({
   }
 })
 
-export const { updatePrice } = prices.actions
-export default prices.reducer
+export const { updatePrice } = Prices.actions
+export default Prices.reducer

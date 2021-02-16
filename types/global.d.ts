@@ -1,25 +1,19 @@
-export interface IGlobalData {
-  active_cryptocurrencies: number
+import { IAsset } from 'types'
 
-  upcoming_icos: number
+export interface IMarketTotal {
+  assets: number
 
-  ongoing_icos: number
+  exchangeVolumeUsd24Hr: number
 
-  ended_icos: number
+  exchanges: number
+
+  marketCapUsd: number
 
   markets: number
-
-  total_market_cap: Record<string, number>
-
-  total_volume: Record<string, number>
-
-  market_cap_percentage: Record<string, number>
-
-  market_cap_change_percentage_24h_usd: number
-
-  updated_at: number
 }
 
-export interface IGlobal {
-  data: IGlobalData
+export interface IGlobalData {
+  asset?: Pick<IAsset, 'marketCapUsd' | 'priceUsd' | 'volumeUsd24Hr'>
+
+  marketTotal?: IMarketTotal
 }

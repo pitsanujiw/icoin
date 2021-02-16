@@ -1,16 +1,16 @@
-import { API } from 'services'
-import { updateGlobal } from 'states/globals'
-import { useAsync } from 'use-react-common'
+import { IGlobalData } from 'types'
+import { updateGlobal } from 'states/global'
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
+import { useQuery, GLOBALS } from 'apollo'
 
 const useGlobal = (): void => {
   const dispatch = useDispatch()
-  const { loading, value } = useAsync(API.getGlobals)
+  const { loading, data } = useQuery<IGlobalData>(GLOBALS)
 
   useEffect(() => {
     if (!loading) {
-      dispatch(updateGlobal(value.data.data))
+      dispatch(updateGlobal(data))
     }
   }, [loading])
 }

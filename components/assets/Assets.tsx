@@ -7,26 +7,24 @@ import {
 } from 'components'
 import { API, Paginate, Routes } from 'services'
 import { PER_PAGE } from 'data'
-import { IRootStore, IGlobalData } from 'types'
+import { IRootStore, IMarketTotal } from 'types'
 import { useSelector } from 'react-redux'
 import { Render, useAsync } from 'use-react-common'
 
-type IAssetsContentProps = Pick<IGlobalData, 'active_cryptocurrencies'>
+type IAssetsContentProps = Pick<IMarketTotal, 'assets'>
 
 const Assets = (): React.ReactElement => {
-  const { data } = useSelector((store: IRootStore) => store.globals)
+  const globalData = useSelector((store: IRootStore) => store.globalData)
 
-  if (data) {
-    return (
-      <AssetsContent active_cryptocurrencies={data.active_cryptocurrencies} />
-    )
-  }
+  return Render.ensure(readyMarketTotal => {
+    const { assets } = readyMarketTotal
 
-  return <></>
+    return <AssetsContent assets={assets} />
+  }, globalData.marketTotal)
 }
 
 const AssetsContent: React.FC<IAssetsContentProps> = ({
-  active_cryptocurrencies
+  assets
 }): React.ReactElement => {
   const { page, onChangePage } = usePagination(page =>
     Routes.home.concat(`?page=${page}`)
@@ -40,21 +38,21 @@ const AssetsContent: React.FC<IAssetsContentProps> = ({
     [page]
   )
 
-  return Render.ensure(assets => {
-    const { data } = assets.data
+  return Render.ensure(({ data: assetData }) => {
+    const { data } = assetData
 
     return (
       <ContainerWrapper>
         <TableContainer component={Paper}>
           <Pagination
             page={page}
-            count={Paginate.count(active_cryptocurrencies, PER_PAGE)}
+            count={Paginate.count(assets, PER_PAGE)}
             onChangePage={onChangePage}
           />
           <AssetsTable data={data} />
           <Pagination
             page={page}
-            count={Paginate.count(active_cryptocurrencies, PER_PAGE)}
+            count={Paginate.count(assets, PER_PAGE)}
             onChangePage={onChangePage}
           />
         </TableContainer>

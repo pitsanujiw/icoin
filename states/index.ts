@@ -1,11 +1,11 @@
 import { createStore, combineReducers } from '@reduxjs/toolkit'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import Prices from 'states/prices'
-import Globals from 'states/globals'
+import GlobalData from 'states/global'
 
 const reducers = combineReducers({
   prices: Prices,
-  globals: Globals
+  globalData: GlobalData
 })
 
 const store = createStore(reducers, composeWithDevTools())
