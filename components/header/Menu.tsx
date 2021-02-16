@@ -24,7 +24,7 @@ const Menu = (): React.ReactElement => {
         <div className={classes.menu}>
           <Route href={Routes.home} title="Market Cap" />
           <Route href={Routes.exchanges} title="Exchanges" />
-          <Route href={Routes.trending} title="Trending" />
+          <Route href={Routes.charts} title="Charts" />
         </div>
       </Grid>
     </Grid>

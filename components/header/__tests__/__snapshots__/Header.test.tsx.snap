@@ -57,12 +57,12 @@ Object {
                 </a>
                 <a
                   class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-                  href="/trending"
+                  href="/charts"
                 >
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    Trending
+                    Charts
                   </h6>
                 </a>
               </div>
@@ -125,12 +125,12 @@ Object {
               </a>
               <a
                 class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-                href="/trending"
+                href="/charts"
               >
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  Trending
+                  Charts
                 </h6>
               </a>
             </div>

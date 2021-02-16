@@ -15,7 +15,7 @@ const config = {
     '^.+\\.module\\.(css|sass|scss)$'
   ],
   moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
+    '^.+\\.module\\.(css|sass|scss)$': '<rootDir>/node_modules/css-loader'
   },
   moduleDirectories: ['node_modules', '<rootDir>']
 }
