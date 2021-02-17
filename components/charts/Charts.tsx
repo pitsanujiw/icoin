@@ -33,7 +33,7 @@ const Charts = (): React.ReactElement => {
   const classes = useStyles()
   const theme = useTheme()
 
-  useEffect(() => {
+  const createCharts = () => {
     new TradingView.widget({
       container_id: 'charts',
       symbol: 'BINANCE:BTCUSD',
@@ -46,6 +46,17 @@ const Charts = (): React.ReactElement => {
       allow_symbol_change: true,
       autosize: true
     })
+  }
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://s3.tradingview.com/tv.js'
+    script.async = true
+    script.onload = createCharts
+
+    document.body.appendChild(script)
+
+    return () => document.body.removeChild(script)
   }, [])
 
   return (
