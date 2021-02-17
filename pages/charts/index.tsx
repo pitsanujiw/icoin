@@ -6,7 +6,7 @@ const ChartsPage = (): React.ReactElement => {
     <>
       <Head>
         <title>Cryptocurrency Charts Real-time</title>
-        <script src="https://s3.tradingview.com/tv.js"></script>
+        <script src="https://s3.tradingview.com/tv.js" async></script>
       </Head>
       <Charts />
     </>
