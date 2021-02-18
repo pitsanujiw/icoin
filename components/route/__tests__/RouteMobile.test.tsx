@@ -1,8 +1,8 @@
 import { customRender } from 'services/test-utils'
-import { Route } from 'components'
+import { RouteMobile } from 'components'
 import { useRouter } from 'next/router'
 
-describe('Route', () => {
+describe('RouteMobile', () => {
   beforeEach(() => {
     ;(useRouter as jest.Mock).mockImplementation(() => ({
       route: '/'
@@ -10,7 +10,9 @@ describe('Route', () => {
   })
 
   it('Should render it correctly', async () => {
-    const renderResult = customRender(<Route href="/" title="Home" />)
+    const renderResult = customRender(
+      <RouteMobile href="/" title="Home" onAfterPushing={jest.fn()} />
+    )
     expect(renderResult).toMatchSnapshot()
   })
 })

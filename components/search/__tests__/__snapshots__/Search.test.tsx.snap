@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root MuiPaper-elevation6"
+        class="MuiPaper-root Search-search-1 MuiPaper-elevation6"
       >
         <div
-          class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
+          class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
         >
           <div
             class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
@@ -53,11 +53,11 @@ Object {
               </div>
               <fieldset
                 aria-hidden="true"
-                class="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
+                class="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
                 style="padding-left: 8px;"
               >
                 <legend
-                  class="PrivateNotchedOutline-legend-3"
+                  class="PrivateNotchedOutline-legend-4"
                   style="width: 0.01px;"
                 >
                   <span>
@@ -73,10 +73,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root MuiPaper-elevation6"
+      class="MuiPaper-root Search-search-1 MuiPaper-elevation6"
     >
       <div
-        class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
       >
         <div
           class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
@@ -120,11 +120,11 @@ Object {
             </div>
             <fieldset
               aria-hidden="true"
-              class="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
+              class="PrivateNotchedOutline-root-3 MuiOutlinedInput-notchedOutline"
               style="padding-left: 8px;"
             >
               <legend
-                class="PrivateNotchedOutline-legend-3"
+                class="PrivateNotchedOutline-legend-4"
                 style="width: 0.01px;"
               >
                 <span>

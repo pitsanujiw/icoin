@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Route Should render it correctly 1`] = `
+exports[`RouteDesktop Should render it correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -9,11 +9,24 @@ Object {
         class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
         href="/"
       >
-        <h6
-          class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeLarge MuiButton-sizeLarge"
+          tabindex="0"
+          type="button"
         >
-          Home
-        </h6>
+          <span
+            class="MuiButton-label"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
+            >
+              Home
+            </h6>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </a>
     </div>
   </body>,
@@ -22,11 +35,24 @@ Object {
       class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
       href="/"
     >
-      <h6
-        class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorPrimary"
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeLarge MuiButton-sizeLarge"
+        tabindex="0"
+        type="button"
       >
-        Home
-      </h6>
+        <span
+          class="MuiButton-label"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2"
+          >
+            Home
+          </h6>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
     </a>
   </div>,
   "debug": [Function],

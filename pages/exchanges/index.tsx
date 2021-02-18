@@ -5,7 +5,7 @@ const ExchangesPage = (): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>Exchanges</title>
+        <title>Exchanges | ICoin | Cryptocurrency Market Data</title>
       </Head>
       <Exchanges />
     </>

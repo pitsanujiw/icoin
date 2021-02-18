@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 const useStyles = makeStyles(
   () => ({
-    toolBar: {
+    toolbar: {
       overflow: 'auto',
       whiteSpace: 'nowrap'
     }
@@ -23,7 +23,7 @@ const TopBar = (): React.ReactElement => {
 
   return (
     <AppBar position="relative" color="secondary" elevation={0}>
-      <Toolbar className={classes.toolBar}>
+      <Toolbar className={classes.toolbar}>
         <TopBarContent globalData={globalData} />
       </Toolbar>
       <Divider light />

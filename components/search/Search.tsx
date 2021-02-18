@@ -1,10 +1,30 @@
-import { Paper, TextField, InputAdornment, IconButton } from '@material-ui/core'
+import {
+  Paper,
+  TextField,
+  InputAdornment,
+  IconButton,
+  makeStyles
+} from '@material-ui/core'
 import { ContainerWrapper } from 'components'
 import SearchIcon from '@material-ui/icons/Search'
 
+const useStyles = makeStyles(
+  theme => ({
+    search: {
+      paddingTop: theme.spacing(5),
+      paddingBottom: theme.spacing(5)
+    }
+  }),
+  {
+    name: 'Search'
+  }
+)
+
 const Search = (): React.ReactElement => {
+  const classes = useStyles()
+
   return (
-    <Paper square>
+    <Paper className={classes.search} square>
       <ContainerWrapper>
         <TextField
           placeholder="Search for cryptocurrencies"
