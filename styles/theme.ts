@@ -1,6 +1,6 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
 import { divider, gray1, ICoinShadows, white } from 'styles'
-import { teal, grey, red } from '@material-ui/core/colors'
+import { teal, red } from '@material-ui/core/colors'
 import { Shadows } from '@material-ui/core/styles/shadows'
 import { Theme } from '@material-ui/core'
 import { TThemeMode } from 'types'
@@ -11,8 +11,16 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
   return responsiveFontSizes(
     createMuiTheme({
       palette: {
-        primary: teal,
-        secondary: grey,
+        primary: {
+          main: '#26A69A',
+          dark: '#00766C',
+          light: '#64D8CB'
+        },
+        secondary: {
+          main: '#38302E',
+          dark: '#130703',
+          light: '#625957'
+        },
         success: teal,
         error: red,
         text: {
