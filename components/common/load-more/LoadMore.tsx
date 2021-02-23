@@ -1,14 +1,9 @@
-import {
-  Toolbar,
-  IconButton,
-  CircularProgress,
-  makeStyles
-} from '@material-ui/core'
+import { ICommonProps } from 'types'
+import { IconLoading } from 'components'
+import { Toolbar, IconButton, makeStyles } from '@material-ui/core'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
 
-interface ILoadMoreProps {
-  loading: boolean
-
+interface ILoadMoreProps extends ICommonProps {
   onLoad: () => void
 }
 
@@ -37,7 +32,9 @@ const LoadMore: React.FC<ILoadMoreProps> = ({
   return (
     <Toolbar className={classes.loadMore}>
       <IconButton onClick={onClickInternal}>
-        {loading ? <CircularProgress size="1rem" /> : <ArrowDownwardIcon />}
+        <IconLoading loading={loading}>
+          <ArrowDownwardIcon />
+        </IconLoading>
       </IconButton>
     </Toolbar>
   )

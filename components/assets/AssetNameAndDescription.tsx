@@ -12,8 +12,8 @@ const useStyles = makeStyles(
     },
 
     icon: {
-      paddingRight: theme.spacing(2),
-      width: theme.spacing(7)
+      width: theme.spacing(6),
+      paddingRight: theme.spacing(2)
     }
   }),
   {

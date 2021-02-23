@@ -1,8 +1,6 @@
-import React from 'react'
 import { ISearchResponse } from 'types'
 import {
   ListItem,
-  ListItemAvatar,
   ListItemText,
   Typography,
   makeStyles
@@ -12,7 +10,8 @@ import { SymbolIcon } from 'components'
 const useStyles = makeStyles(
   theme => ({
     icon: {
-      maxWidth: theme.spacing(5)
+      maxWidth: theme.spacing(4),
+      marginRight: theme.spacing(2)
     }
   }),
   {
@@ -24,29 +23,51 @@ const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
   assets
 }) => {
   const classes = useStyles()
+  const { edges } = assets
 
-  return (
-    <React.Fragment>
-      {assets.edges.map(({ node }) => {
-        const { id, name, symbol } = node
+  if (edges.length > 0) {
+    return (
+      <>
+        {edges.map(({ node }) => {
+          const { id, name, symbol } = node
 
-        return (
-          <ListItem key={id}>
-            <ListItemAvatar>
+          return (
+            <ListItem key={id}>
               <SymbolIcon
                 name={name}
                 symbol={symbol}
                 className={classes.icon}
               />
-            </ListItemAvatar>
-            <ListItemText
-              primary={<Typography variant="button">{name}</Typography>}
-              secondary={symbol}
-            />
-          </ListItem>
-        )
-      })}
-    </React.Fragment>
+              <ListItemText
+                primary={
+                  <Typography variant="button" component="p">
+                    {name}
+                  </Typography>
+                }
+                secondary={<Typography variant="caption">{symbol}</Typography>}
+              />
+            </ListItem>
+          )
+        })}
+      </>
+    )
+  }
+
+  return (
+    <ListItem>
+      <ListItemText
+        primary={
+          <Typography variant="subtitle2">
+            Your search did not match any documents.
+          </Typography>
+        }
+        secondary={
+          <Typography variant="caption" color="textSecondary">
+            Make sure that all words are spelled correctly
+          </Typography>
+        }
+      />
+    </ListItem>
   )
 }
 

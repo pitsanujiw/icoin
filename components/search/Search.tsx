@@ -1,5 +1,4 @@
 import {
-  CircularProgress,
   ClickAwayListener,
   Fade,
   IconButton,
@@ -10,7 +9,7 @@ import {
   fade,
   makeStyles
 } from '@material-ui/core'
-import { ContainerWrapper, SearchAssetResults } from 'components'
+import { ContainerWrapper, IconLoading, SearchAssetResults } from 'components'
 import { DURATION } from 'data'
 import { ISearchResponse } from 'types'
 import { SEARCH, useLazyQuery } from 'apollo'
@@ -77,11 +76,9 @@ const Search = (): React.ReactElement => {
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton>
-                        {loading ? (
-                          <CircularProgress size="1rem" />
-                        ) : (
+                        <IconLoading loading={loading}>
                           <SearchIcon />
-                        )}
+                        </IconLoading>
                       </IconButton>
                     </InputAdornment>
                   )
