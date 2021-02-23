@@ -11,7 +11,7 @@ const AsssetPage = (): React.ReactElement => {
     <>
       <Head>
         <title>
-          {capitalize(id as string)} | ICoin - Cryptocurrency Market Data
+          {capitalize(id as string)} - ICoin / Cryptocurrency Market Data
         </title>
       </Head>
       <AssetDetail />

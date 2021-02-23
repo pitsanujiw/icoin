@@ -1,10 +1,10 @@
 import { formatDistance, parseISO } from 'date-fns'
-import { INode } from 'types'
+import { IExchangeNode } from 'types'
 import { isNumber, isString } from 'lodash'
 import { Tooltip, IconButton, makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
-type TExchangeStatusProps = Pick<INode, 'updatedAt'>
+type TExchangeStatusProps = Pick<IExchangeNode, 'updatedAt'>
 
 const useStyles = makeStyles(
   theme => ({

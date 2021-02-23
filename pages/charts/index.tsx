@@ -5,7 +5,7 @@ const ChartsPage = (): React.ReactElement => {
   return (
     <>
       <Head>
-        <title>Charts | ICoin - Cryptocurrency Market Data</title>
+        <title>Charts - ICoin / Cryptocurrency Market Data</title>
       </Head>
       <Charts />
     </>

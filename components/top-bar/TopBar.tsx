@@ -22,7 +22,7 @@ const TopBar = (): React.ReactElement => {
   const globalData = useSelector((store: IRootStore) => store.globalData)
 
   return (
-    <AppBar position="relative" color="secondary" elevation={0}>
+    <AppBar position="relative" elevation={0}>
       <Toolbar className={classes.toolbar}>
         <TopBarContent globalData={globalData} />
       </Toolbar>

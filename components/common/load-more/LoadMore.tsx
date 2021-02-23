@@ -37,11 +37,7 @@ const LoadMore: React.FC<ILoadMoreProps> = ({
   return (
     <Toolbar className={classes.loadMore}>
       <IconButton onClick={onClickInternal}>
-        {loading ? (
-          <CircularProgress size="1rem" disableShrink />
-        ) : (
-          <ArrowDownwardIcon />
-        )}
+        {loading ? <CircularProgress size="1rem" /> : <ArrowDownwardIcon />}
       </IconButton>
     </Toolbar>
   )

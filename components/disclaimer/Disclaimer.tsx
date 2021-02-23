@@ -6,7 +6,7 @@ const Disclaimer = (): React.ReactElement => {
   return (
     <PaperWrapper square>
       <ContainerWrapper>
-        <Typography gutterBottom variant="h6">
+        <Typography gutterBottom variant="button">
           IMPORTANT DISCLAIMER
         </Typography>
         <Typography variant="body2">

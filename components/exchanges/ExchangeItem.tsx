@@ -1,10 +1,10 @@
 import { ExchangeStatus } from 'components'
 import { Format } from 'services'
-import { INode } from 'types'
+import { IExchangeNode } from 'types'
 import { TableRow, TableCell } from '@material-ui/core'
 
 interface IExchangeItemProps {
-  node: INode
+  node: IExchangeNode
 }
 
 const ExchangeItem: React.FC<IExchangeItemProps> = ({ node }) => {

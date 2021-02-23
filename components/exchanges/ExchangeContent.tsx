@@ -1,5 +1,5 @@
 import { ExchangeItem } from 'components'
-import { IExchanges, IEdgeNode, INode } from 'types'
+import { IExchanges, IEdgeNode, IExchangeNode } from 'types'
 import { IUseSort, Render } from 'use-react-common'
 import { Sort } from 'services'
 import {
@@ -14,7 +14,7 @@ import {
 } from '@material-ui/core'
 
 interface IExchangeContentProps extends Omit<IUseSort, 'current'> {
-  exchanges: IExchanges<IEdgeNode<INode>>
+  exchanges: IExchanges<IEdgeNode<IExchangeNode>>
 }
 
 const ExchangeContent: React.FC<IExchangeContentProps> = ({

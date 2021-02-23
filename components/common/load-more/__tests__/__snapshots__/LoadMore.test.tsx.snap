@@ -143,7 +143,7 @@ Object {
                 viewBox="22 22 44 44"
               >
                 <circle
-                  class="MuiCircularProgress-circle MuiCircularProgress-circleDisableShrink MuiCircularProgress-circleIndeterminate"
+                  class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
                   cx="44"
                   cy="44"
                   fill="none"
@@ -182,7 +182,7 @@ Object {
               viewBox="22 22 44 44"
             >
               <circle
-                class="MuiCircularProgress-circle MuiCircularProgress-circleDisableShrink MuiCircularProgress-circleIndeterminate"
+                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
                 cx="44"
                 cy="44"
                 fill="none"

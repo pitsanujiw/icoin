@@ -37,32 +37,32 @@ const TopBarContent: React.FC<ITopBarContentProps> = ({ globalData }) => {
       <div className={classes.content}>
         <div className={classes.info}>
           <Typography variant="overline" component="span">
-            Assets:&nbsp;
-            <Typography variant="overline" component="span" color="primary">
+            Assets&nbsp;
+            <Typography variant="overline" component="span" color="secondary">
               {assets}
             </Typography>
           </Typography>
           <Typography variant="overline" component="span">
-            Markets:&nbsp;
-            <Typography variant="overline" component="span" color="primary">
+            Markets&nbsp;
+            <Typography variant="overline" component="span" color="secondary">
               {markets}
             </Typography>
           </Typography>
           <Typography variant="overline" component="span">
-            Market Cap:&nbsp;
-            <Typography variant="overline" component="span" color="primary">
+            Market Cap&nbsp;
+            <Typography variant="overline" component="span" color="secondary">
               {Format.currency(marketCap)}
             </Typography>
           </Typography>
           <Typography variant="overline" component="span">
-            24h Volume:&nbsp;
-            <Typography variant="overline" component="span" color="primary">
+            24h Volume&nbsp;
+            <Typography variant="overline" component="span" color="secondary">
               {Format.currency(exchangeVolumeUsd24Hr)}
             </Typography>
           </Typography>
           <Typography variant="overline" component="span">
-            Dominance:&nbsp;
-            <Typography variant="overline" component="span" color="primary">
+            Dominance&nbsp;
+            <Typography variant="overline" component="span" color="secondary">
               BTC {Format.percent((bitcoinCap * 100) / marketCap)}
             </Typography>
           </Typography>

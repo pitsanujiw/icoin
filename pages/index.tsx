@@ -4,7 +4,7 @@ import Head from 'next/head'
 const HomePage = (): React.ReactElement => (
   <>
     <Head>
-      <title>ICoin - Cryptocurrency Market Data</title>
+      <title>ICoin / Cryptocurrency Market Data</title>
     </Head>
     <Assets />
   </>

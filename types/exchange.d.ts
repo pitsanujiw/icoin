@@ -1,4 +1,4 @@
-import { IPageInfo } from 'types'
+import { IEdgeNode, IPageInfo } from 'types'
 
 export interface IBaseNode {
   id: string
@@ -20,7 +20,7 @@ export interface IExchangeAssetParams extends IExchangeParams {
   assetId: string
 }
 
-export interface INode extends IBaseNode {
+export interface IExchangeNode extends IBaseNode {
   name: string
 
   percentTotalVolume: number
@@ -48,10 +48,6 @@ export interface IAssetNode extends IBaseNode {
   quoteSymbol: string
 }
 
-export interface IEdgeNode<T> {
-  node: T
-}
-
 export interface IExchanges<T> {
   edges: Array<T>
 
@@ -59,7 +55,7 @@ export interface IExchanges<T> {
 }
 
 export interface IExchangeResponse {
-  exchanges: IExchanges<IEdgeNode<INode>>
+  exchanges: IExchanges<IEdgeNode<IExchangeNode>>
 }
 
 export interface IExchangeAssetResponse {
