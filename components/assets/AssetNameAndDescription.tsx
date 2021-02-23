@@ -11,9 +11,9 @@ const useStyles = makeStyles(
       alignItems: 'center'
     },
 
-    symbol: {
+    icon: {
       paddingRight: theme.spacing(2),
-      width: theme.spacing(6)
+      width: theme.spacing(7)
     }
   }),
   {
@@ -29,7 +29,7 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
 
   return (
     <div className={classes.name}>
-      <SymbolIcon name={name} symbol={symbol} className={classes.symbol} />
+      <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
       <div>
         <Typography variant="button" component="p">
           {name}

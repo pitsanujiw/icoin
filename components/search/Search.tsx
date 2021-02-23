@@ -1,15 +1,16 @@
 import {
+  CircularProgress,
+  ClickAwayListener,
+  Fade,
+  IconButton,
+  InputAdornment,
+  List,
   Paper,
   TextField,
-  InputAdornment,
-  IconButton,
-  ClickAwayListener,
-  CircularProgress,
-  Fade,
   fade,
   makeStyles
 } from '@material-ui/core'
-import { ContainerWrapper } from 'components'
+import { ContainerWrapper, SearchAssetResults } from 'components'
 import { DURATION } from 'data'
 import { ISearchResponse } from 'types'
 import { SEARCH, useLazyQuery } from 'apollo'
@@ -24,8 +25,14 @@ const useStyles = makeStyles(
       paddingBottom: theme.spacing(5)
     },
 
-    input: {
-      zIndex: 1102
+    wrapper: {
+      zIndex: 1102,
+      position: 'relative'
+    },
+
+    result: {
+      position: 'absolute',
+      width: '100%'
     },
 
     overlay: {
@@ -46,7 +53,8 @@ const useStyles = makeStyles(
 const Search = (): React.ReactElement => {
   const classes = useStyles()
   const [touch, setTouch] = useState(false)
-  const [getSearches, { loading }] = useLazyQuery<ISearchResponse>(SEARCH)
+  const [getSearches, { data, loading }] = useLazyQuery<ISearchResponse>(SEARCH)
+  const isShowResult = touch && data
 
   const onChange = throttle((event: ChangeEvent<HTMLInputElement>) => {
     const search = event.target.value
@@ -61,27 +69,33 @@ const Search = (): React.ReactElement => {
       <Paper className={classes.search} square>
         <ContainerWrapper>
           <ClickAwayListener onClickAway={() => setTouch(false)}>
-            <TextField
-              placeholder="Search for cryptocurrencies"
-              variant="outlined"
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton>
-                      {loading ? (
-                        <CircularProgress size="1rem" />
-                      ) : (
-                        <SearchIcon />
-                      )}
-                    </IconButton>
-                  </InputAdornment>
-                )
-              }}
-              onClick={() => setTouch(true)}
-              onChange={onChange}
-              className={classes.input}
-              fullWidth
-            />
+            <section className={classes.wrapper}>
+              <TextField
+                placeholder="Search for cryptocurrencies"
+                variant="outlined"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton>
+                        {loading ? (
+                          <CircularProgress size="1rem" />
+                        ) : (
+                          <SearchIcon />
+                        )}
+                      </IconButton>
+                    </InputAdornment>
+                  )
+                }}
+                onClick={() => setTouch(true)}
+                onChange={onChange}
+                fullWidth
+              />
+              {isShowResult && (
+                <List className={classes.result} component={Paper}>
+                  <SearchAssetResults assets={data.assets} />
+                </List>
+              )}
+            </section>
           </ClickAwayListener>
         </ContainerWrapper>
       </Paper>

@@ -196,7 +196,7 @@ Object {
                 class="AssetNameAndDescription-name-4"
               >
                 <div
-                  class="AssetNameAndDescription-symbol-5"
+                  class="AssetNameAndDescription-icon-5"
                 />
                 <div>
                   <p
@@ -259,7 +259,7 @@ Object {
                 class="AssetNameAndDescription-name-4"
               >
                 <div
-                  class="AssetNameAndDescription-symbol-5"
+                  class="AssetNameAndDescription-icon-5"
                 />
                 <div>
                   <p
@@ -502,7 +502,7 @@ Object {
               class="AssetNameAndDescription-name-4"
             >
               <div
-                class="AssetNameAndDescription-symbol-5"
+                class="AssetNameAndDescription-icon-5"
               />
               <div>
                 <p
@@ -565,7 +565,7 @@ Object {
               class="AssetNameAndDescription-name-4"
             >
               <div
-                class="AssetNameAndDescription-symbol-5"
+                class="AssetNameAndDescription-icon-5"
               />
               <div>
                 <p
