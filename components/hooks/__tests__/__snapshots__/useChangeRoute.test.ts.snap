@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useChangeRoute Should return onAssetDetails correctly 1`] = `"/assets/btc"`;
+
+exports[`useChangeRoute Should return onPush correctly 1`] = `"/exchanges"`;

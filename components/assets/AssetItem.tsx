@@ -1,9 +1,13 @@
-import { AssetNameAndDescription, ValueColor, useLivePrice } from 'components'
+import {
+  AssetNameAndDescription,
+  ValueColor,
+  useChangeRoute,
+  useLivePrice
+} from 'components'
 import { DURATION } from 'data'
-import { Format, numberFormatter, PriceDirection } from 'services'
 import { IAsset } from 'types'
+import { Format, numberFormatter, PriceDirection } from 'services'
 import { TableRow, TableCell, makeStyles, fade } from '@material-ui/core'
-import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 interface IAssetItemProps {
@@ -35,7 +39,6 @@ const useStyles = makeStyles(
 
 const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
   const classes = useStyles()
-  const router = useRouter()
   const {
     changePercent24Hr,
     id,
@@ -47,13 +50,12 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     symbol,
     volumeUsd24Hr
   } = asset
+  const { onAssetDetails } = useChangeRoute()
   const { price, direction } = useLivePrice(id, priceUsd)
-
-  const onClick = () => router.push(`/asset/${id}`)
 
   return (
     <TableRow
-      onClick={onClick}
+      onClick={() => onAssetDetails(id)}
       className={clsx(classes.asset, {
         [classes.up]: direction === PriceDirection.UP,
         [classes.down]: direction === PriceDirection.DOWN

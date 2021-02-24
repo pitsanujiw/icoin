@@ -5,14 +5,23 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom'
 import { API } from 'services'
-import { mockResponse } from 'services/test-utils'
 import { assets } from 'mock-data'
-import * as nextRouter from 'next/router'
+import { mockResponse } from 'services/test-utils'
 
-beforeEach(() => {
-  Date.now = jest.fn().mockReturnValue(1613378624457)
+Date.now = jest.fn().mockReturnValue(1613378624457)
 
-  jest.spyOn(nextRouter, 'useRouter')
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: {
+        page: 2
+      },
+      asPath: '',
+      push: jest.fn((href: string) => Promise.resolve(href))
+    }
+  }
+}))
 
-  jest.spyOn(API, 'getAssets').mockReturnValueOnce(mockResponse(assets))
-})
+jest.spyOn(API, 'getAssets').mockReturnValueOnce(mockResponse(assets))

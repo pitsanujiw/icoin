@@ -104,8 +104,11 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <li
-        class="MuiListItem-root MuiListItem-gutters"
+      <div
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+        role="button"
+        tabindex="0"
       >
         <div
           class="SearchAssetResults-icon-1"
@@ -124,9 +127,15 @@ Object {
             BTC
           </span>
         </div>
-      </li>
-      <li
-        class="MuiListItem-root MuiListItem-gutters"
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+        role="button"
+        tabindex="0"
       >
         <div
           class="SearchAssetResults-icon-1"
@@ -145,9 +154,15 @@ Object {
             BNB
           </span>
         </div>
-      </li>
-      <li
-        class="MuiListItem-root MuiListItem-gutters"
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+        role="button"
+        tabindex="0"
       >
         <div
           class="SearchAssetResults-icon-1"
@@ -166,9 +181,15 @@ Object {
             BCH
           </span>
         </div>
-      </li>
-      <li
-        class="MuiListItem-root MuiListItem-gutters"
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+        role="button"
+        tabindex="0"
       >
         <div
           class="SearchAssetResults-icon-1"
@@ -187,9 +208,15 @@ Object {
             BSV
           </span>
         </div>
-      </li>
-      <li
-        class="MuiListItem-root MuiListItem-gutters"
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
+      <div
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+        role="button"
+        tabindex="0"
       >
         <div
           class="SearchAssetResults-icon-1"
@@ -208,12 +235,18 @@ Object {
             BUSD
           </span>
         </div>
-      </li>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <li
-      class="MuiListItem-root MuiListItem-gutters"
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
     >
       <div
         class="SearchAssetResults-icon-1"
@@ -232,9 +265,15 @@ Object {
           BTC
         </span>
       </div>
-    </li>
-    <li
-      class="MuiListItem-root MuiListItem-gutters"
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
     >
       <div
         class="SearchAssetResults-icon-1"
@@ -253,9 +292,15 @@ Object {
           BNB
         </span>
       </div>
-    </li>
-    <li
-      class="MuiListItem-root MuiListItem-gutters"
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
     >
       <div
         class="SearchAssetResults-icon-1"
@@ -274,9 +319,15 @@ Object {
           BCH
         </span>
       </div>
-    </li>
-    <li
-      class="MuiListItem-root MuiListItem-gutters"
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
     >
       <div
         class="SearchAssetResults-icon-1"
@@ -295,9 +346,15 @@ Object {
           BSV
         </span>
       </div>
-    </li>
-    <li
-      class="MuiListItem-root MuiListItem-gutters"
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
     >
       <div
         class="SearchAssetResults-icon-1"
@@ -316,7 +373,10 @@ Object {
           BUSD
         </span>
       </div>
-    </li>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

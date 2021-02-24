@@ -7,6 +7,10 @@ import {
 } from '@material-ui/core'
 import { SymbolIcon } from 'components'
 
+interface ISearchAssetResultsProps extends Pick<ISearchResponse, 'assets'> {
+  onClick: FunctionStringCallback
+}
+
 const useStyles = makeStyles(
   theme => ({
     icon: {
@@ -19,8 +23,9 @@ const useStyles = makeStyles(
   }
 )
 
-const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
-  assets
+const SearchAssetResults: React.FC<ISearchAssetResultsProps> = ({
+  assets,
+  onClick
 }) => {
   const classes = useStyles()
   const { edges } = assets
@@ -32,7 +37,7 @@ const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
           const { id, name, symbol } = node
 
           return (
-            <ListItem key={id}>
+            <ListItem onClick={() => onClick(id)} key={id} button>
               <SymbolIcon
                 name={name}
                 symbol={symbol}

@@ -9,7 +9,12 @@ import {
   fade,
   makeStyles
 } from '@material-ui/core'
-import { ContainerWrapper, IconLoading, SearchAssetResults } from 'components'
+import {
+  ContainerWrapper,
+  IconLoading,
+  SearchAssetResults,
+  useChangeRoute
+} from 'components'
 import { DURATION } from 'data'
 import { ISearchResponse } from 'types'
 import { SEARCH, useLazyQuery } from 'apollo'
@@ -51,6 +56,7 @@ const useStyles = makeStyles(
 
 const Search = (): React.ReactElement => {
   const classes = useStyles()
+  const { onAssetDetails } = useChangeRoute()
   const [touch, setTouch] = useState(false)
   const [getSearches, { data, loading }] = useLazyQuery<ISearchResponse>(SEARCH)
   const isShowResult = touch && data
@@ -62,6 +68,11 @@ const Search = (): React.ReactElement => {
       variables: { search }
     })
   }, DURATION * 4)
+
+  const onClick = (id: string) => {
+    setTouch(false)
+    onAssetDetails(id)
+  }
 
   return (
     <section>
@@ -89,7 +100,7 @@ const Search = (): React.ReactElement => {
               />
               {isShowResult && (
                 <List className={classes.result} component={Paper}>
-                  <SearchAssetResults assets={data.assets} />
+                  <SearchAssetResults assets={data.assets} onClick={onClick} />
                 </List>
               )}
             </section>

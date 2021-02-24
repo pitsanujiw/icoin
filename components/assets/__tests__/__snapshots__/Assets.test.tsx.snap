@@ -45,6 +45,92 @@ Object {
                 </li>
                 <li>
                   <button
+                    aria-label="Go to page 1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    1
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-current="true"
+                    aria-label="page 2"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                    tabindex="0"
+                    type="button"
+                  >
+                    2
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 3"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    3
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 4"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    4
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 5"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    5
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <div
+                    class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
+                  >
+                    …
+                  </div>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 32"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    32
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
                     aria-label="Go to next page"
                     class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                     tabindex="0"
@@ -405,6 +491,92 @@ Object {
                 </li>
                 <li>
                   <button
+                    aria-label="Go to page 1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    1
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-current="true"
+                    aria-label="page 2"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                    tabindex="0"
+                    type="button"
+                  >
+                    2
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 3"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    3
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 4"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    4
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 5"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    5
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <div
+                    class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
+                  >
+                    …
+                  </div>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 32"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    32
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
                     aria-label="Go to next page"
                     class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                     tabindex="0"
@@ -466,6 +638,92 @@ Object {
                       d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
                     />
                   </svg>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 1"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  1
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-current="true"
+                  aria-label="page 2"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                  tabindex="0"
+                  type="button"
+                >
+                  2
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 3"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  3
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 4"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  4
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 5"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  5
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <div
+                  class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
+                >
+                  …
+                </div>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 32"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  32
                   <span
                     class="MuiTouchRipple-root"
                   />
@@ -826,6 +1084,92 @@ Object {
                       d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
                     />
                   </svg>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 1"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  1
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-current="true"
+                  aria-label="page 2"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                  tabindex="0"
+                  type="button"
+                >
+                  2
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 3"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  3
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 4"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  4
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 5"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  5
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <div
+                  class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
+                >
+                  …
+                </div>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 32"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
+                  type="button"
+                >
+                  32
                   <span
                     class="MuiTouchRipple-root"
                   />
