@@ -8,6 +8,7 @@ import {
   Search,
   LivePrices,
   Disclaimer,
+  RouteLoading,
   useTheme
 } from 'components'
 import { useEffect } from 'react'
@@ -28,13 +29,15 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <Provider store={Store}>
       <ApolloProvider client={apolloClient}>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <LivePrices />
-          <TopBar />
-          <Header />
-          <Search />
-          <Component {...pageProps} />
-          <Disclaimer />
+          <RouteLoading>
+            <CssBaseline />
+            <LivePrices />
+            <TopBar />
+            <Header />
+            <Search />
+            <Component {...pageProps} />
+            <Disclaimer />
+          </RouteLoading>
         </ThemeProvider>
       </ApolloProvider>
     </Provider>
