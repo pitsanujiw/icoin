@@ -8,6 +8,7 @@ import {
   Search,
   LivePrices,
   Disclaimer,
+  Footer,
   RouteLoading,
   useTheme
 } from 'components'
@@ -37,6 +38,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
             <Search />
             <Component {...pageProps} />
             <Disclaimer />
+            <Footer />
           </RouteLoading>
         </ThemeProvider>
       </ApolloProvider>
