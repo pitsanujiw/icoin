@@ -6,7 +6,7 @@
 import { ChartData, ChartOptions, TimeScale } from 'chart.js'
 import { gray1 } from 'styles'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
-import { merge } from 'lodash'
+import { find, merge } from 'lodash'
 import { sub } from 'date-fns'
 import { TIME_TO_INTERVAL } from 'data'
 import ChartJS from 'chart.js'
@@ -193,7 +193,19 @@ const Chart = {
     }
 
     return chartData
-  }
+  },
+
+  /**
+   * @description Get current chart instance
+   *
+   * @returns ChartJS
+   */
+  instance: find(ChartJS.instances),
+
+  /**
+   * @description Get chart instances
+   */
+  instances: ChartJS.instances
 }
 
 export { Chart }

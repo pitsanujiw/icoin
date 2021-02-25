@@ -1,6 +1,6 @@
 import { Chart, Format } from 'services'
 import { IAssetHistories, TTime } from 'types'
-import { merge, first, find } from 'lodash'
+import { merge, first } from 'lodash'
 import { useChartDataSets } from 'components'
 import { useEffect, useRef } from 'react'
 import { useWindowSize } from 'use-react-common'
@@ -26,10 +26,10 @@ const LineChart: React.FC<ILineChart> = ({
   isPositive,
   time
 }): React.ReactElement => {
-  const size = useWindowSize()
-  const instance: ChartJS = find(ChartJS.instances)
-  const chartDataSets = useChartDataSets(isPositive)
   const canvasRef = useRef<HTMLCanvasElement>()
+  const chartDataSets = useChartDataSets(isPositive)
+  const instance: ChartJS = Chart.instance
+  const size = useWindowSize()
 
   /**
    * Custom label inside the tooltip
@@ -99,7 +99,9 @@ const LineChart: React.FC<ILineChart> = ({
      * For saving some resource and improve performance
      */
     return () => {
-      if (instance) instance.destroy()
+      for (const index in Chart.instances) {
+        ChartJS.instances[index].destroy()
+      }
     }
   }, [])
 
