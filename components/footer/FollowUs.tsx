@@ -12,22 +12,22 @@ const FollowUs: React.FC = (): React.ReactElement => {
       </Grid>
       <Grid spacing={1} justify="flex-end" container>
         <Grid item>
-          <IconButton size="small">
+          <IconButton>
             <FacebookIcon />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton size="small">
+          <IconButton>
             <TwitterIcon />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton size="small">
+          <IconButton>
             <InstagramIcon />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton size="small">
+          <IconButton>
             <YouTubeIcon />
           </IconButton>
         </Grid>

@@ -1,5 +1,9 @@
 import { TTime, TInterval } from 'types'
 
+export const DEVELOPER_IN = 'https://www.linkedin.com/in/andy-d-ng-7a283a65/'
+
+export const GITHUB = 'https://github.com/andyngdz/icoin'
+
 export const PER_PAGE = 50
 
 export const DURATION = 250

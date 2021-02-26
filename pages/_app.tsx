@@ -1,7 +1,7 @@
 import { ApolloProvider, apolloClient } from 'apollo'
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { ThemeProvider, CssBaseline } from '@material-ui/core'
+import { Divider, ThemeProvider, CssBaseline } from '@material-ui/core'
 import {
   TopBar,
   Header,
@@ -9,6 +9,7 @@ import {
   LivePrices,
   Disclaimer,
   Footer,
+  FooterBottom,
   RouteLoading,
   useTheme
 } from 'components'
@@ -38,7 +39,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
             <Search />
             <Component {...pageProps} />
             <Disclaimer />
+            <Divider light />
             <Footer />
+            <FooterBottom />
           </RouteLoading>
         </ThemeProvider>
       </ApolloProvider>
