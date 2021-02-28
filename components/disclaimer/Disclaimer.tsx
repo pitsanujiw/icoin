@@ -1,10 +1,10 @@
-import { ContainerWrapper, PaperWrapper } from 'components'
-import { Typography } from '@material-ui/core'
+import { ContainerWrapper } from 'components'
+import { Typography, Paper } from '@material-ui/core'
 import React from 'react'
 
 const Disclaimer = (): React.ReactElement => {
   return (
-    <PaperWrapper square>
+    <Paper square>
       <ContainerWrapper>
         <Typography gutterBottom variant="button">
           IMPORTANT DISCLAIMER
@@ -26,7 +26,7 @@ const Disclaimer = (): React.ReactElement => {
           solicitation or offer.
         </Typography>
       </ContainerWrapper>
-    </PaperWrapper>
+    </Paper>
   )
 }
 

@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation6"
+        class="MuiPaper-root MuiPaper-elevation6"
       >
         <div
-          class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
+          class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
@@ -312,10 +312,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation6"
+      class="MuiPaper-root MuiPaper-elevation6"
     >
       <div
-        class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
       >
         <div
           class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"

@@ -1,10 +1,10 @@
-import { ContainerWrapper, PaperWrapper, FollowUs } from 'components'
-import { Grid, Typography, Link } from '@material-ui/core'
+import { ContainerWrapper, FollowUs } from 'components'
+import { Paper, Grid, Typography, Link } from '@material-ui/core'
 import NextLink from 'next/link'
 
 const Footer = (): React.ReactElement => {
   return (
-    <PaperWrapper square>
+    <Paper square>
       <ContainerWrapper>
         <Grid spacing={3} direction="row" container>
           <Grid xs={12} sm={8} item>
@@ -92,7 +92,7 @@ const Footer = (): React.ReactElement => {
           </Grid>
         </Grid>
       </ContainerWrapper>
-    </PaperWrapper>
+    </Paper>
   )
 }
 
