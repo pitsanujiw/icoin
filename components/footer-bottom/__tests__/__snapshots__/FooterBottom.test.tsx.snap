@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary MuiPaper-elevation0"
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary FooterBottom-appBar-1 MuiPaper-elevation0"
       >
         <div
-          class="MuiContainer-root MuiContainer-disableGutters MuiContainer-maxWidthLg"
+          class="MuiContainer-root MuiContainer-maxWidthLg"
         >
           <div
-            class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-1 MuiToolbar-gutters"
+            class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-2"
           >
             <section>
               <span
@@ -88,13 +88,13 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary MuiPaper-elevation0"
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorPrimary FooterBottom-appBar-1 MuiPaper-elevation0"
     >
       <div
-        class="MuiContainer-root MuiContainer-disableGutters MuiContainer-maxWidthLg"
+        class="MuiContainer-root MuiContainer-maxWidthLg"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-1 MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-2"
         >
           <section>
             <span

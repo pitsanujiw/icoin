@@ -7,9 +7,9 @@ const Footer = (): React.ReactElement => {
     <PaperWrapper square>
       <ContainerWrapper>
         <Grid spacing={3} direction="row" container>
-          <Grid xs={8} item>
-            <Grid direction="row" container>
-              <Grid xs={4} item>
+          <Grid xs={12} sm={8} item>
+            <Grid direction="row" spacing={3} container>
+              <Grid xs={12} sm={4} item>
                 <Grid spacing={1} direction="column" container>
                   <Grid item>
                     <Typography variant="button">ICoin</Typography>
@@ -51,7 +51,7 @@ const Footer = (): React.ReactElement => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid xs={4} item>
+              <Grid xs={12} sm={4} item>
                 <Grid spacing={1} direction="column" container>
                   <Grid item>
                     <Typography variant="button">Legals</Typography>
@@ -74,7 +74,7 @@ const Footer = (): React.ReactElement => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid xs={4} item>
+              <Grid xs={12} sm={4} item>
                 <Grid spacing={1} direction="column" container>
                   <Grid item>
                     <Typography variant="button">DISCLAIMER</Typography>
@@ -87,7 +87,7 @@ const Footer = (): React.ReactElement => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid xs={4} item>
+          <Grid xs={12} sm={4} item>
             <FollowUs />
           </Grid>
         </Grid>

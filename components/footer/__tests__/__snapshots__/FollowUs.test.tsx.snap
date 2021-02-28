@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-flex-end"
+        class="MuiGrid-root MuiGrid-container"
       >
         <div
           class="MuiGrid-root MuiGrid-item"
@@ -18,7 +18,7 @@ Object {
           </span>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-justify-xs-flex-end"
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
         >
           <div
             class="MuiGrid-root MuiGrid-item"
@@ -134,7 +134,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-flex-end"
+      class="MuiGrid-root MuiGrid-container"
     >
       <div
         class="MuiGrid-root MuiGrid-item"
@@ -146,7 +146,7 @@ Object {
         </span>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-justify-xs-flex-end"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
       >
         <div
           class="MuiGrid-root MuiGrid-item"

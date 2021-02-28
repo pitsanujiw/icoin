@@ -12,7 +12,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
 const useStyles = makeStyles(
-  () => ({
+  theme => ({
+    appBar: {
+      padding: `0 ${theme.spacing(3)}px`
+    },
+
     toolbar: {
       display: 'flex',
       justifyContent: 'space-between'
@@ -27,9 +31,9 @@ const FooterBottom = (): React.ReactElement => {
   const classes = useStyles()
 
   return (
-    <AppBar position="relative" elevation={0}>
-      <Container disableGutters>
-        <Toolbar className={classes.toolbar}>
+    <AppBar className={classes.appBar} position="relative" elevation={0}>
+      <Container>
+        <Toolbar className={classes.toolbar} disableGutters>
           <section>
             <Typography variant="caption">Created by Andy Ng with ❤</Typography>
             <Link href={DEVELOPER_IN} target="_blank">

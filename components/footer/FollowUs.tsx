@@ -6,11 +6,11 @@ import YouTubeIcon from '@material-ui/icons/YouTube'
 
 const FollowUs: React.FC = (): React.ReactElement => {
   return (
-    <Grid justify="flex-end" container>
+    <Grid container>
       <Grid item>
         <Typography variant="button">FOLLOW US</Typography>
       </Grid>
-      <Grid spacing={1} justify="flex-end" container>
+      <Grid spacing={1} container>
         <Grid item>
           <IconButton>
             <FacebookIcon />

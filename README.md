@@ -9,18 +9,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 #### Folder structures:
 
 ```
- .github: Github actions
- .next: Build folder
- /apollo: GraphQL
- /components: All components
- /data: All constant data
- /mock-data: Mock data for testing
- /pages: All pages and default components across this application
- /public: For public assets such as images, favicon
- /services: All the service for api, charts, format, etc...
- /states: State management for this application
- /styles: Styling for this application
- /types: Type Declarations
+.github: Github actions
+.next: Build folder
+/apollo: GraphQL
+/components: All components
+/data: All constant data
+/mock-data: Mock data for testing
+/pages: All pages and default components across this application
+/public: For public assets such as images, favicon
+/services: All the service for api, charts, format, etc...
+/states: State management for this application
+/styles: Styling for this application
+/types: Type Declarations
 ```
 
 #### First, run the development server:
