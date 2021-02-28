@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, makeStyles } from '@material-ui/core'
+import { Container, AppBar, Toolbar, makeStyles } from '@material-ui/core'
 import { ICoinLogo } from 'components'
 import { Menu } from 'components/menu/Menu'
 import React from 'react'
@@ -24,10 +24,12 @@ const Header = (): React.ReactElement => {
 
   return (
     <AppBar position="relative" color="inherit" elevation={0}>
-      <Toolbar className={classes.toolbar}>
-        <ICoinLogo />
-        <Menu />
-      </Toolbar>
+      <Container>
+        <Toolbar className={classes.toolbar} disableGutters>
+          <ICoinLogo />
+          <Menu />
+        </Toolbar>
+      </Container>
     </AppBar>
   )
 }

@@ -1,5 +1,11 @@
 import { IRootStore } from 'types'
-import { makeStyles, AppBar, Divider, Toolbar } from '@material-ui/core'
+import {
+  makeStyles,
+  Container,
+  AppBar,
+  Divider,
+  Toolbar
+} from '@material-ui/core'
 import { TopBarContent } from 'components/top-bar/TopBarContent'
 import { useGlobal } from 'components'
 import { useSelector } from 'react-redux'
@@ -23,9 +29,11 @@ const TopBar = (): React.ReactElement => {
 
   return (
     <AppBar position="relative" elevation={0}>
-      <Toolbar className={classes.toolbar}>
-        <TopBarContent globalData={globalData} />
-      </Toolbar>
+      <Container>
+        <Toolbar className={classes.toolbar} variant="dense" disableGutters>
+          <TopBarContent globalData={globalData} />
+        </Toolbar>
+      </Container>
       <Divider light />
     </AppBar>
   )

@@ -9,7 +9,67 @@ Object {
         class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorInherit MuiPaper-elevation0"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-regular Header-toolbar-1 MuiToolbar-gutters"
+          class="MuiContainer-root MuiContainer-maxWidthLg"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular Header-toolbar-1"
+          >
+            <a
+              class="MuiTypography-root MuiLink-root MuiLink-underlineNone ICoinLogo-logo-2 MuiTypography-colorPrimary"
+              href="/"
+            >
+              <img
+                alt="Logo"
+                class="ICoinLogo-image-3"
+                src="/logo.svg"
+              />
+              <h5
+                class="MuiTypography-root ICoinLogo-title-4 MuiTypography-h5"
+              >
+                iCoin
+              </h5>
+            </a>
+            <button
+              class="MuiButtonBase-root MuiIconButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <div
+              class="PrivateSwipeArea-root-6 PrivateSwipeArea-anchorRight-8"
+              style="width: 20px;"
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorInherit MuiPaper-elevation0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Header-toolbar-1"
         >
           <a
             class="MuiTypography-root MuiLink-root MuiLink-underlineNone ICoinLogo-logo-2 MuiTypography-colorPrimary"
@@ -54,58 +114,6 @@ Object {
             style="width: 20px;"
           />
         </div>
-      </header>
-    </div>
-  </body>,
-  "container": <div>
-    <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative MuiAppBar-colorInherit MuiPaper-elevation0"
-    >
-      <div
-        class="MuiToolbar-root MuiToolbar-regular Header-toolbar-1 MuiToolbar-gutters"
-      >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone ICoinLogo-logo-2 MuiTypography-colorPrimary"
-          href="/"
-        >
-          <img
-            alt="Logo"
-            class="ICoinLogo-image-3"
-            src="/logo.svg"
-          />
-          <h5
-            class="MuiTypography-root ICoinLogo-title-4 MuiTypography-h5"
-          >
-            iCoin
-          </h5>
-        </a>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <div
-          class="PrivateSwipeArea-root-6 PrivateSwipeArea-anchorRight-8"
-          style="width: 20px;"
-        />
       </div>
     </header>
   </div>,

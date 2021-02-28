@@ -12,7 +12,7 @@ Object {
           class="MuiContainer-root MuiContainer-maxWidthLg"
         >
           <div
-            class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-2"
+            class="MuiToolbar-root MuiToolbar-dense FooterBottom-toolbar-2"
           >
             <section>
               <span
@@ -94,7 +94,7 @@ Object {
         class="MuiContainer-root MuiContainer-maxWidthLg"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-regular FooterBottom-toolbar-2"
+          class="MuiToolbar-root MuiToolbar-dense FooterBottom-toolbar-2"
         >
           <section>
             <span

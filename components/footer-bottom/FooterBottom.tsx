@@ -33,7 +33,7 @@ const FooterBottom = (): React.ReactElement => {
   return (
     <AppBar className={classes.appBar} position="relative" elevation={0}>
       <Container>
-        <Toolbar className={classes.toolbar} disableGutters>
+        <Toolbar className={classes.toolbar} variant="dense" disableGutters>
           <section>
             <Typography variant="caption">Created by Andy Ng with ❤</Typography>
             <Link href={DEVELOPER_IN} target="_blank">
